@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+<h1>Employees Table</h1>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Employee ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Title</th>
+    </tr>
+    {{for x in rows:}}
+    <tr>
+        <td>{{=x[0]}}</td>
+        <td>{{=x[1]}}</td>
+        <td>{{=x[2]}}</td>
+        <td>{{=x[3]}}</td>
+        <td>{{=x[4]}}</td>
+    </tr>
+    {{ pass }}
+</table>
