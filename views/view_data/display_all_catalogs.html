@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+<h1>Catalog Table</h1>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Price (ß)</th>
+        <th>Category</th>
+        <th>Mass (kg)</th>
+        <th>Shelf Life (years)</th>
+        <th>Ingredient List</th>
+        <th>Allergens</th>
+        <th>Vendor ID</th>
+        <th>Image URL</th>
+    </tr>
+    {{for x in rows:}}
+    <tr>
+        <td><!--<a href="/{{=request.application}}/{{=request.controller}}/update/{{=x.id}}">-->{{=x.product_name}}</a></td>
+        <td>{{=x.description}}</td>
+        <td>{{=x.price}}</td>
+        <td>{{=x.category}}</td>
+        <td>{{=x.mass_kg}}</td>
+        <td>{{=x.shelf_life_yrs}}</td>
+        <td>{{=x.ingredient_list}}</td>
+        <td>{{=x.allergens}}</td>
+        <td>{{=x.vendor_id}}</td>
+        <td>{{=x.img_url}}</td>
+    </tr>
+    {{ pass }}
+</table>

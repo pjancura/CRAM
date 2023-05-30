@@ -27,7 +27,7 @@ db.define_table('companies',
 
 #creates foreign key references for table(companies)
 db.companies.state_abbr.requires = IS_IN_DB(db, db.states_usa.id, '%(state_abbr)s')
-db.companies.sic_code.requires = IS_IN_DB(db, db.sic_codes.sic_code, '%(sic_code)s     %(industry_title)s')
+db.companies.sic_code.requires = IS_IN_DB(db, db.sic_codes.sic_code, '%(sic_code)s   %(industry_title)s')
 
 db.define_table('persons',
                 Field('first_name', type = 'string', notnull=True),
@@ -83,6 +83,8 @@ db.define_table('invoice_line_items',
                 Field('prod_quantity', type = 'integer')
                 )
 
+
+
 #creates foreign key reference for table(invoice_line_items)
 db.invoice_line_items.prod_id.requires=IS_IN_DB(db, db.catalogs.id, '%(product_name)s')
 
@@ -101,6 +103,38 @@ db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_nam
 
 
 
+#########################    This is a test element for the invoice calculations
+
+
+db.define_table('fake_line_items',
+                Field('invoice_id', type = 'integer'),
+                Field('prod_id', type = 'integer'),                
+                Field('prod_quantity', type = 'integer'),
+                Field('total_item_price', type = 'decimal(20,2)'),
+                Field('total_mass_kg', type = 'decimal(20,2)'),
+                Field('shipping', type = 'decimal(20,2)'),
+                Field('total_cost', type = 'decimal(20,2)')
+                )
+
+
+
+db.invoice_line_items.prod_id.requires=IS_IN_DB(db, db.catalogs.id, '%(product_name)s')
+
+
+db.define_table('fake_invoices',
+                Field('purchase_date', type = 'date', requires=IS_DATE(), notnull=True),
+                Field('p_id', type = 'integer', notnull=True),
+                Field('due_date', type = 'date', compute=lambda r: r['purchase_date'] + datetime.timedelta(days=30)),
+                Field('invoice_total', type = 'decimal(20,2)', notnull=True),
+                Field('credit', type = 'decimal(20,2)', default=0),
+                Field('payment_total', type = 'decimal(20,2)', default=0),
+                Field('balance_due', type = 'decimal(20,2)', compute=lambda r: r['invoice_total'] - r['credit'] - r['payment_total'])
+                )
+
+db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s %(co_id)s')
+
+
+
 
 
 
@@ -109,10 +143,5 @@ db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_nam
 
 ######################################      WORK SPACE / SAVE FOR LATER
 
-
-# Field('single_unit_price', type = 'decimal(20,2)', writable=False),
-# Field('single_unit_mass', type='decimal(20,2)', writable=False),
-                # Field('total_item_price', type = 'integer', writable=False),
-                # Field('total_mass_kg', type = 'decimal(20,2)'),
-                # Field('shipping', type = 'decimal(20,2)'),
-                # Field('total_cost', type = 'decimal(20,2)')
+                # Field('single_unit_price', type = 'decimal(20,2)'),
+                # Field('single_unit_mass', type='decimal(20,2)'),
