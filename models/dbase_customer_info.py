@@ -95,7 +95,7 @@ db.define_table('invoices',
                 Field('invoice_total', type = 'decimal(20,2)', notnull=True),
                 Field('credit', type = 'decimal(20,2)', default=0),
                 Field('payment_total', type = 'decimal(20,2)', default=0),
-                Field('balance_due', type = 'decimal(20,2)', compute=lambda r: r['invoice_total'] - r['credit'] - r['payment_total'])
+                #Field('balance_due', type = 'decimal(20,2)', compute=lambda r: r['invoice_total'] - r['credit'] - r['payment_total'])
                 )
 
 #creates foreign key reference for table(invoices)

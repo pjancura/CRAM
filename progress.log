@@ -9,3 +9,8 @@
 [2023-05-25 18:14:48] CREATE view_data/index.html: 0
 [2023-05-25 18:59:50] CREATE update_data.py: 0
 [2023-05-25 19:00:46] CREATE update_data/invoice.html: 0
+[2023-05-30 12:51:06] CREATE defaul_cram.py: 0
+[2023-05-30 12:51:47] CREATE defaul_cram.py: 0
+[2023-05-30 12:52:52] CREATE default_cram/index.html: 0
+[2023-05-30 12:53:16] EDIT CRAM/views/default_cram/index.html: 0
+[2023-05-30 12:54:02] EDIT CRAM/views/default_cram/index.html: 0
