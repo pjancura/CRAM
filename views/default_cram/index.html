@@ -1,0 +1,44 @@
+{{extend 'layout_new.html'}}
+<h1>This is the default_cram/index.html template</h1>
+
+This is the homepage for CRAM.....employees will login and then be sent to their
+respective controllers / views.
+<br /><br /><br />
+<a class="btn btn-primary" href="/admin/default">
+  <i class="fa fa-cog"></i>
+  all projects admin
+</a>
+<a class="btn btn-primary" href="/admin/default/design/CRAM">
+  <i class="fa fa-cog"></i>
+  admin for CRAM
+</a>
+
+<br /><br />{{=session}}
+
+
+
+<br><br><br>
+{{if session.flash != None:}}
+    {{if user_role_id != "2":}}
+    <a href="employees.html">Employee Table</a>
+    {{pass}}
+    <br><br>
+    {{=user_f_l}}
+    <br><br>
+    {{=user_role_id}}
+    <p>
+      This says the role to which the person logged in is assigned:<br /><br />{{=dict.keys(session.auth.user_groups)}}
+    </p>
+{{pass}}
+
+<br><br><br>
+<a href="employees.html">Employee Table Test for logged in or not</a>
+<br><br><br>
+
+<!-- ###this returns a dictionary of data that can be accessed -->
+<br /><br />{{=session}}
+
+
+
+
+

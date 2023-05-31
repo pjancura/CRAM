@@ -39,3 +39,5 @@ routers = {
 # NOTE! To change language in your application using these rules add this line in one of your models files:
 # ----------------------------------------------------------------------------------------------------------------------
 #   if request.uri_language: T.force(request.uri_language)
+
+

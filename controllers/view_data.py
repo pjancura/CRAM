@@ -33,3 +33,4 @@ def display_all_catalogs():
     rows = db(db.catalogs).select(orderby=db.catalogs.id)
     return locals()
 
+
