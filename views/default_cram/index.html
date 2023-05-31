@@ -1,10 +1,17 @@
-{{extend 'layout.html'}}
+{{extend 'layout_new.html'}}
 <h1>This is the default_cram/index.html template</h1>
 
 This is the homepage for CRAM.....employees will login and then be sent to their
 respective controllers / views.
 <br /><br /><br />
-
+<a class="btn btn-primary" href="/admin/default">
+  <i class="fa fa-cog"></i>
+  all projects admin
+</a>
+<a class="btn btn-primary" href="/admin/default/design/CRAM">
+  <i class="fa fa-cog"></i>
+  admin for CRAM
+</a>
 
 <br /><br />{{=session}}
 

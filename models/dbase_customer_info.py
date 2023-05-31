@@ -52,7 +52,8 @@ db.define_table('contact_notes',
                 Field('date_created', type = 'date', requires=IS_DATE(), notnull=True),
                 Field('time_of_event', type = 'time', requires=IS_TIME(), default='12:00 AM', notnull=True),
                 Field('person_id', type = 'integer', notnull=True),
-                Field('contact_note', type = 'text', notnull=True)
+                Field('contact_note', type = 'text', notnull=True),
+                Field('completed', type='boolean', requires=IS_IN_SET(['True', 'False']), notnull=True)
                 )
 
 #creates foreign key reference for table(persons)
@@ -128,7 +129,6 @@ db.define_table('fake_invoices',
                 Field('invoice_total', type = 'decimal(20,2)', notnull=True),
                 Field('credit', type = 'decimal(20,2)', default=0),
                 Field('payment_total', type = 'decimal(20,2)', default=0),
-                Field('balance_due', type = 'decimal(20,2)', compute=lambda r: r['invoice_total'] - r['credit'] - r['payment_total'])
                 )
 
 db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s %(co_id)s')
