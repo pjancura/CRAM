@@ -76,7 +76,10 @@ db.define_table('catalogs',
                 )
 
 
-
+######################################################################################################################################
+#             Everything below that line needs work
+#               These will eventually create the ability to create invoices that can be assigned to a customer
+######################################################################################################################################
 
 db.define_table('invoice_line_items',
                 Field('invoice_id', type = 'integer'),
