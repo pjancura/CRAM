@@ -16,7 +16,7 @@ def display_all_companies():
 
 
 ###### USING DB.EXECUTESQL(?????) WILL RETURN A LIST OF TUPLES
-@auth.requires_membership(['ceo', 'database_admin'])
+@auth.requires_membership('database_admin')
 def display_all_employees():
     rows = db.executesql('Select auth_user.id, auth_user.first_name, auth_user.last_name, auth_user.email, auth_group.role \
                         From auth_user \

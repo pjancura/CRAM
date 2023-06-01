@@ -14,3 +14,11 @@
 [2023-05-30 12:52:52] CREATE default_cram/index.html: 0
 [2023-05-30 12:53:16] EDIT CRAM/views/default_cram/index.html: 0
 [2023-05-30 12:54:02] EDIT CRAM/views/default_cram/index.html: 0
+[2023-05-31 17:40:53] CREATE sales_rep.py: 0
+[2023-05-31 17:48:17] DELETE CRAM/views/sales_rep/index.html: -2
+[2023-05-31 17:48:32] CREATE sales_rep/index.html: 0
+[2023-05-31 17:54:08] CREATE ceo_portal.py: 0
+[2023-05-31 17:55:06] CREATE portal_ceo/index.html: 0
+[2023-05-31 19:29:25] CREATE portal_sales_rep/add_customer_or_company.html: 0
+[2023-06-01 11:37:44] CREATE portal_sales_rep/add_new_note.html: 0
+[2023-06-01 14:42:05] CREATE portal_sales_rep/add_company.html: 0

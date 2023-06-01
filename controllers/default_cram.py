@@ -12,7 +12,7 @@ def index():
         user_role_id = f"{list(session.auth.user_groups.keys())[0]}"
     return locals()
 
-@auth.requires_login()
+
 def employees():
     rows = db.executesql('Select auth_user.id, auth_user.first_name, auth_user.last_name, auth_user.email, auth_group.role \
                         From auth_user \
