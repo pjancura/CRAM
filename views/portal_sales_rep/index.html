@@ -1,0 +1,48 @@
+{{extend 'layout.html'}}
+{{if emp_num == "0":}}
+<h1>Login error: Please try logging in again</h1>
+{{else:}}
+<h1>This is the sales_rep/index.html template</h1>
+<br><br>
+<!-- sometimes {{=request.controller}}/ is needed for the link to work other times not  why???? -->
+<a href="{{=request.controller}}/add_customer_or_company.html">Add Customer</a>
+<a href="{{=request.controller}}/add_new_note.html">Add Note</a>
+<a href="{{=request.controller}}/add_company.html">Add Company</a>
+
+<p>{{=today_date}}</p>
+<p>This is the employee number: {{=emp_num}}</p>
+<table>
+{{for x in rows:}}
+{{if x[4] == emp_num:}}
+    <tr>
+        <td><a href="{{=request.controller}}/view_customer/{{=x[0]}}">{{=x[0]}}</a></td>
+        <td>{{=x[1]}}</td>
+        <td>{{=x[2]}}</td>
+        <td>{{=x[3]}}</td>
+    </tr>
+{{pass}}
+{{pass}}
+</table>
+<br><br><br>
+<table>
+
+    {{for x in notes_on_customers:}}
+    {{if x[3] >= today_date :}}
+    {{if x[0] == emp_num:}}
+    <tr>
+        <td>{{=x[1]}} {{=x[2]}}</td>
+        <td>{{=x[3]}}</td>
+        {{if x[4] == "0:00":}}
+        <td>Anytime Today</td>
+
+        {{else:}}
+        <td>{{=x[4]}}</td>
+        {{pass}}
+        <td>{{=x[5]}}</td>
+    </tr>
+    {{pass}}
+    {{pass}}
+    {{pass}}
+</table>
+{{pass}}
+
