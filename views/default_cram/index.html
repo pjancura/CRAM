@@ -10,30 +10,30 @@
         background-color: transparent;
         padding: 10px;
       }
-  
+
       nav ul {
         background-color: transparent;
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
-  
+
       nav ul li {
         margin-right: 10px;
       }
-  
+
       nav ul li a {
         text-decoration: none;
         color: #333;
         padding: 5px;
       }
-  
+
       /* Custom CSS for the home button */
       .home-button {
         width: 70px; /* Adjust the width as desired */
         height: auto; /* Maintain aspect ratio */
       }
-      
+
       footer {
         background-color: #f5f5f5;
         padding: 20px;
@@ -41,16 +41,16 @@
         font-size: 14px;
         color: #777;
       }
-      
+
       .carousel-item {
         display: relative;
       }
-  
+
       .carousel-item img {
         object-fit: cover;
         flex: 1;
       }
-  
+
       .carousel-item .carousel-caption {
         position: absolute;
         top: 50%;
@@ -63,14 +63,14 @@
         height: 60%;
         border-radius: 20px;
       }
-  
+
           /* Styling for the products section */
           .products {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
       }
-  
+
       /* Styling for product items */
       .product {
         width: 300px;
@@ -79,14 +79,14 @@
         border: 0px solid #ddd;
         border-radius: 5px;
       }
-  
+
       /* Styling for product images */
       .product img {
         width: 100%;
         height: auto;
         border-radius: 5px;
       }
-  
+
       /* Styling for product names */
       .product h3 {
         margin-top: 10px;
@@ -100,12 +100,12 @@
         border: 1px solid #ccc;
         border-radius: 5px;
       }
-  
+
       .login-container h2 {
         text-align: center;
         margin-bottom: 20px;
       }
-  
+
       .login-container input[type="text"],
       .login-container input[type="password"] {
         width: 100%;
@@ -114,7 +114,7 @@
         border: 1px solid #ccc;
         border-radius: 3px;
       }
-  
+
       .login-container button[type="submit"] {
         width: 100%;
         padding: 10px;
@@ -133,16 +133,26 @@
         color: #e6440e;
       }
       a:visited {
-        color: #ffffff;
+        color: #e6440e;
       }
       a:hover {
-        color: #ffffff;
+        color: #e6440e;
       }
       a:active {
         color: #e6440e;
       }
-
-      
+      #copy {
+          text-align:right;
+      }
+      #info{
+          text-align:left;
+      }
+      #team{
+          text-align:right;
+      }
+      #contact{
+          text-align:right;
+      }
   </style>
 </head>
 <body>
@@ -181,9 +191,6 @@
           <li class="nav-item">
             <a class="nav-link" href="PERTContacts.html">Contact</a>
           </li>
-       
-           
-         
         </ul>
         {{if 'auth' in globals():}}
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -245,7 +252,7 @@
           <p>"At PERT, we believe that our greatest asset is our people. We foster a dynamic and inclusive work environment where individuals are valued, empowered, and inspired to reach their full potential. We are not just a company; we are a community of passionate individuals driven by a shared vision.
 
             When you join PERT, you become part of a team that embraces innovation, creativity, and collaboration. We encourage a culture of continuous learning and personal growth, providing opportunities for professional development and advancement. We believe in investing in our employees, nurturing their talents, and supporting their aspirations.
-            
+
             As a Dystopian Food Company, we recognize the challenges and uncertainties of our world. However, we see these challenges as opportunities to make a meaningful impact. We are constantly pushing the boundaries, seeking individuals who are bold, resilient, and forward-thinking. Together, we strive to create a future where food sustainability and innovation coexist.</p>
         </div>
       </div>
@@ -259,19 +266,16 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
-</section>
-
-<footer>
-  <p style ="text-align: right;">&copy; 2023 PERT Food Distribution</p>
-  <p style ="text-align: left;"></p>3456 Distant Dr, p:(456)234-7890 </p>
-  <p>p:(456)234-7890</p>
-  <p>email: dystopia.co@hotmail.com</p>
- <a href="team_bio.html"> <p style ="text-align: right;">Meet the Core Team</p></a>
-</footer>
+ <footer>
+  <p id ="copy">&copy; 2023 PERT Food Distribution</p>
+  <p id ="info">3456 Distant Dr, Dystopia OH 77777 </p>
+  <p id="info">phone:(456)234-7890</p>
+  <p id ="info">email: dystopia.co@hotmail.com</p>
+ <a href="russell_bio.html"> <p id ="team">Meet the Core Team</p></a>
+    <p id ="contact">Contact Us </p>
+ </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
-  
-  </html>
+</html>
