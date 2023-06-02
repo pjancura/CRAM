@@ -13,10 +13,6 @@ def index():
 
     return locals()
 
-@auth.requires_login()
-def view_customer():
-    if request.args(0) is None:
-        rows = db(db.persons).select()
 
 @auth.requires_login()
 def add_customer_or_company():
@@ -52,7 +48,15 @@ def view_customer():
     person = db(db.persons.id == id_num).select()
     person_company = db(db.companies.id == person[0].co_id).select()
     person_notes = db(db.contact_notes.person_id == person[0].id).select()
-    # specific_company = []
-    # for row in company.find(lambda row: row.):
-    #     specific_company.append(row)
+    return locals()
+
+@auth.requires_login()
+def update_company():
+    company_id = request.args(0)
+    record = db.companies(company_id) or redirect(URL(''))
+    form = SQLFORM(db.companies, record)
+    if form.process().accepted:
+        response.flash = T('Record Updated')
+    else:
+        response.flash = T('Please complete the form.')
     return locals()

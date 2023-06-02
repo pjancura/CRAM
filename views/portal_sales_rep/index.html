@@ -5,9 +5,9 @@
 <h1>This is the sales_rep/index.html template</h1>
 <br><br>
 <!-- sometimes {{=request.controller}}/ is needed for the link to work other times not  why???? -->
-<a href="{{=request.controller}}/add_customer_or_company.html">Add Customer</a>
-<a href="{{=request.controller}}/add_new_note.html">Add Note</a>
-<a href="{{=request.controller}}/add_company.html">Add Company</a>
+<a href="{{=URL('add_customer_or_company.html')}}">Add Customer</a>
+<a href="{{=URL('add_new_note.html')}}">Add Note</a>
+<a href="{{=URL('add_company.html')}}">Add Company</a>
 
 <p>{{=today_date}}</p>
 <p>This is the employee number: {{=emp_num}}</p>
@@ -15,7 +15,7 @@
 {{for x in rows:}}
 {{if x[4] == emp_num:}}
     <tr>
-        <td><a href="{{=request.controller}}/view_customer/{{=x[0]}}">{{=x[0]}}</a></td>
+        <td><a href="{{=URL('view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
         <td>{{=x[1]}}</td>
         <td>{{=x[2]}}</td>
         <td>{{=x[3]}}</td>
