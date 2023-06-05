@@ -24,3 +24,4 @@
 [2023-06-01 14:42:05] CREATE portal_sales_rep/add_company.html: 0
 [2023-06-05 14:44:18] CREATE portal_manager.py: 0
 [2023-06-05 14:44:34] CREATE portal_dbadmin.py: 0
+[2023-06-05 17:59:20] CREATE portal_dbadmin/employees.html: 0

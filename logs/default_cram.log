@@ -1918,3 +1918,258 @@ All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corpo
 2023-06-05 14:40:25,912 - default_cram - INFO - {}
 2023-06-05 14:40:25,912 - default_cram - INFO - {}
 2023-06-05 14:40:25,912 - default_cram - INFO - {}
+2023-06-05 17:20:13,286 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:20:23,696 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:20:23,696 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:20:44,367 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:20:44,367 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:20:44,367 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:20:48,633 - default_cram - INFO - {}
+2023-06-05 17:20:48,633 - default_cram - INFO - {}
+2023-06-05 17:20:48,633 - default_cram - INFO - {}
+2023-06-05 17:20:48,633 - default_cram - INFO - {}
+2023-06-05 17:22:39,467 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:22:39,467 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:22:39,467 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:22:39,467 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:22:39,467 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:36,182 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:36,182 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:36,182 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:36,182 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:36,182 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:36,182 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:46,619 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:48,820 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:27:50,833 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:16,417 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:33:31,890 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:36,886 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:39,318 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,029 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:40,681 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:41,203 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:45,014 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:34:49,823 - default_cram - INFO - {}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:22,807 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:35:55,506 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}
+2023-06-05 17:58:35,500 - default_cram - INFO - {}

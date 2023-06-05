@@ -161,3 +161,5 @@ if configuration.get('scheduler.enabled'):
 ####################################################
 #change login redirect variables
 
+auth.settings.login_next = URL(a='CRAM', c='default_cram', f='index')
+auth.settings.logout_next = URL(a='CRAM', c='default_cram', f='index')
