@@ -32,6 +32,7 @@
 </table>
 {{pass}}
 <br><br><br>
+
 <table>
     <tr>
         <h3>Company Info</h3>
@@ -48,24 +49,28 @@
     </tr>
     {{for x in person_company:}}
     <tr>
-        <td>{{=x.id}}</td>
-        <td>{{=x.company_name}}</td>
-        <td>{{=x.address}}</td>
-        <td>{{=x.city}}</td>
-        <td>{{=x.state_abbr}}</td>
-        <td>{{=x.zipcode}}</td>
-        <td>{{=x.sic_code}}</td>
-        <td>{{=x.s_media_link}}</td>
+        <td>{{=x.companies.id}}</td>
+        <td>{{=x.companies.company_name}}</td>
+        <td>{{=x.companies.address}}</td>
+        <td>{{=x.companies.city}}</td>
+        <td>{{=x.states_usa.state_abbr}}</td>
+        <td>{{=x.companies.zipcode}}</td>
+        <td>{{=x.companies.sic_code}}</td>
+        <td>{{=x.companies.s_media_link}}</td>
     </tr>
     {{pass}}
+
+
     <tr>
-        <td><a href="{{=URL('update_company', args = [person_company[0].id])}}">Update Company</a></td>
+        <!-- example below of how to access a value when the row that is returned has a "join" -->
+        <!-- you need to have the row[0].table_name.field_name -->
+        <td><a href="{{=URL('update_company', args = [person_company[0].companies.id])}}">Update Company</a></td>
     </tr>
 </table>
 <br><br><br>
 <table>
     <tr>
-        <h3>Notes on Customer</h3>
+        <thead>Notes on Customer</thead>
     </tr>
     <tr>
         <th>Date of Note</th>
@@ -73,11 +78,15 @@
         <th>Contact Note</th>
         <th>Status</th>
     </tr>
+
     {{ for x in person_notes:}}
     <tr>
         <td>{{=x.date_created}}</td>
-        <td>{{=x.time_of_event}}</td>
-
+        {{if x.time_of_event.strftime("%H %M") == "00 00":}}
+        <td>Anytime Today</td>
+        {{else:}}
+        <td>{{=x.time_of_event.strftime("%H:%M")}}</td>
+        {{pass}}
         <td>{{=x.contact_note}}</td>
         {{if x.completed:}}
         <td>Done</td>
@@ -86,9 +95,9 @@
         {{pass}}
     </tr>
     {{pass}}
-
+    
 </table>
-
+<a href="{{=URL('index')}}">Vault Door</a>
 {{block page_js}}
 <script>
 

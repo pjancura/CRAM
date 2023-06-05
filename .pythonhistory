@@ -1,0 +1,11 @@
+_HiStOrY_V2_
+print(person[0])
+print(view_customer())
+print(portal_sales_rep)
+print(globals())
+view_customer()
+exec(portal_sales_rep)
+print(controllers())
+portal_sales_rep.view_customer(34)
+default.index()
+quit()

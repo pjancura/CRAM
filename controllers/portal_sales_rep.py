@@ -1,6 +1,16 @@
 # -*- coding: utf-8 -*-
 # try something like
 import datetime
+import logging
+from logging import handlers
+
+logger = logging.getLogger("portal_sales_rep")
+logger.setLevel(logging.DEBUG)
+handler = handlers.RotatingFileHandler("../MacOS/applications/CRAM/logs/portal_sales_rep.log", "a", 1000000, 5)
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 @auth.requires_login()
 def index():
@@ -46,9 +56,13 @@ def add_company():
 def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()
-    person_company = db(db.companies.id == person[0].co_id).select()
+    person_company = db(db.companies.id == person[0].co_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
     person_notes = db(db.contact_notes.person_id == person[0].id).select()
+    logger.info(f'this is the company on the person: {type(person_notes[0].time_of_event)}')
     return locals()
+
+
+
 
 @auth.requires_login()
 def update_company():
