@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # try something like
-def index_prime(): return (dict(message = 'This is index_prime test'))
+def index(): return (dict(message = 'This is index_prime test'))
 
+def about_us(): return locals()
 
-
-def index():
+def index_prime():
     if session.flash == None:
         pass
     else: 
