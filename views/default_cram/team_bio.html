@@ -1,45 +1,14 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="../static/images/PERT1.jpeg" alt="PERT Logo" class="home-button">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="about_us.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTProducts.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTCustomers.html">Customers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTSuppliers.html">Suppliers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTInvestors.html">Investors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTCareers.html">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTSustainability.html">Sustainability</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTContacts.html">Contact</a>
-          </li>
-        </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
 {{extend 'layout.html'}}
-  </header>
+
+{{block header}}
+<div class="jumbotron jumbotron-fluid background" style="background-color: #004567; color:white; padding:30px;word-wrap:break-word;">
+  <div class="container center">
+    <h1 style="font-family:Copperplate; font-size:75px; color:red;"><em>Creators</em></h1>
+  </div>
+</div>
+{{end}}
+
+{{extend 'layout.html'}}
 <html lang="en">
 <head>
     <meta charset="UTF-8">

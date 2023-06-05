@@ -1,0 +1,33 @@
+2023-06-04 11:46:24,681 - __restricted__ - INFO - this is the notes on the person: contact_notes.id,contact_notes.emp_id,contact_notes.date_created,contact_notes.time_of_event,contact_notes.person_id,contact_notes.contact_note,contact_notes.completed
+105,13,2021-11-29,13:45:00,36,Seeing them at the upcoming event,True
+159,10,2022-08-14,00:00:00,36,Reaching out via email,True
+
+2023-06-04 12:17:23,778 - portal_sales_rep - INFO - this is the notes on the person: contact_notes.id,contact_notes.emp_id,contact_notes.date_created,contact_notes.time_of_event,contact_notes.person_id,contact_notes.contact_note,contact_notes.completed
+105,13,2021-11-29,13:45:00,36,Seeing them at the upcoming event,True
+159,10,2022-08-14,00:00:00,36,Reaching out via email,True
+
+2023-06-04 12:19:05,819 - portal_sales_rep - INFO - this is the company on the person: companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-06-04 12:19:05,819 - portal_sales_rep - INFO - this is the company on the person: companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-06-04 12:20:36,137 - portal_sales_rep - INFO - this is the company on the person: <class 'pydal.objects.Rows'>
+2023-06-04 12:20:36,137 - portal_sales_rep - INFO - this is the company on the person: <class 'pydal.objects.Rows'>
+2023-06-04 12:20:36,137 - portal_sales_rep - INFO - this is the company on the person: <class 'pydal.objects.Rows'>
+2023-06-04 12:20:36,137 - portal_sales_rep - INFO - this is the company on the person: <class 'pydal.objects.Rows'>
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:22:45,345 - portal_sales_rep - INFO - this is the company on the person: 13:45:00
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>
+2023-06-04 12:25:16,972 - portal_sales_rep - INFO - this is the company on the person: <class 'datetime.time'>

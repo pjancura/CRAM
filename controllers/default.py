@@ -5,6 +5,9 @@
 # -------------------------------------------------------------------------
 
 # ---- example index page ----
+def index_prime():
+    return dict(message = 'this is a test')
+
 def index():
     response.flash = T("Hello World")
     return dict(message=T('Welcome to web2py!'))

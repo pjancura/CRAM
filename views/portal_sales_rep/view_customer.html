@@ -1,0 +1,105 @@
+
+{{extend 'layout.html'}}
+<h1>This is the portal_sales_rep/view_customer.html template</h1>
+
+<table>
+    <tr>
+    <h3>Customer Info</h3>
+    </tr>
+    <tr>
+        <th>Customer Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Work Phone Number</th>
+        <th>Email</th>
+        <th>Birthday</th>
+        <th>Contact Type</th>
+        <th>Referral Source</th>
+        <th>Date Acquired</th>
+    </tr>
+    {{for x in person:}}
+    <tr>
+        <td>{{=x.id}}</td>
+        <td>{{=x.first_name}}</td>
+        <td>{{=x.last_name}}</td>
+        <td>{{=x.work_phone_num}}</td>
+        <td>{{=x.email}}</td>
+        <td>{{=x.birthday}}</td>
+        <td>{{=x.contact_type}}</td>
+        <td>{{=x.referral_source}}</td>
+        <td>{{=x.created_on_date}}</td>
+    </tr>
+</table>
+{{pass}}
+<br><br><br>
+
+<table>
+    <tr>
+        <h3>Company Info</h3>
+    </tr>
+    <tr>
+        <th>Company Id</th>
+        <th>Company Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>ZIP Code</th>
+        <th>SIC Code</th>
+        <th>Social Media URL</th>
+    </tr>
+    {{for x in person_company:}}
+    <tr>
+        <td>{{=x.companies.id}}</td>
+        <td>{{=x.companies.company_name}}</td>
+        <td>{{=x.companies.address}}</td>
+        <td>{{=x.companies.city}}</td>
+        <td>{{=x.states_usa.state_abbr}}</td>
+        <td>{{=x.companies.zipcode}}</td>
+        <td>{{=x.companies.sic_code}}</td>
+        <td>{{=x.companies.s_media_link}}</td>
+    </tr>
+    {{pass}}
+
+
+    <tr>
+        <!-- example below of how to access a value when the row that is returned has a "join" -->
+        <!-- you need to have the row[0].table_name.field_name -->
+        <td><a href="{{=URL('update_company', args = [person_company[0].companies.id])}}">Update Company</a></td>
+    </tr>
+</table>
+<br><br><br>
+<table>
+    <tr>
+        <thead>Notes on Customer</thead>
+    </tr>
+    <tr>
+        <th>Date of Note</th>
+        <th>Time of Event</th>
+        <th>Contact Note</th>
+        <th>Status</th>
+    </tr>
+
+    {{ for x in person_notes:}}
+    <tr>
+        <td>{{=x.date_created}}</td>
+        {{if x.time_of_event.strftime("%H %M") == "00 00":}}
+        <td>Anytime Today</td>
+        {{else:}}
+        <td>{{=x.time_of_event.strftime("%H:%M")}}</td>
+        {{pass}}
+        <td>{{=x.contact_note}}</td>
+        {{if x.completed:}}
+        <td>Done</td>
+        {{else:}}
+        <td>To be completed</td>
+        {{pass}}
+    </tr>
+    {{pass}}
+    
+</table>
+<a href="{{=URL('index')}}">Vault Door</a>
+{{block page_js}}
+<script>
+
+</script>
+{{end page_js}}
