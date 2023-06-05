@@ -22,3 +22,5 @@
 [2023-05-31 19:29:25] CREATE portal_sales_rep/add_customer_or_company.html: 0
 [2023-06-01 11:37:44] CREATE portal_sales_rep/add_new_note.html: 0
 [2023-06-01 14:42:05] CREATE portal_sales_rep/add_company.html: 0
+[2023-06-05 14:44:18] CREATE portal_manager.py: 0
+[2023-06-05 14:44:34] CREATE portal_dbadmin.py: 0
