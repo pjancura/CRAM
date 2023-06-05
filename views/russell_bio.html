@@ -1,5 +1,4 @@
-{{extend 'layout.html'}}
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>PERT - Home</title>
@@ -147,9 +146,10 @@
   </style>
 </head>
 <body>
+  <div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="PERTHome.html">
+      <a class="navbar-brand" href="index.html">
         <img src="../static/images/PERT1.jpeg" alt="PERT Logo" class="home-button">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,7 +158,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../CRAM/views/Aboutus.html">About</a>
+            <a class="nav-link" href="about_us.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="PERTProducts.html">Products</a>
@@ -181,10 +181,36 @@
           <li class="nav-item">
             <a class="nav-link" href="PERTContacts.html">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTLogin.html">Log in</a>
+       
+           
+         
+        </ul>
+        {{if 'auth' in globals():}}
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{if auth.user:}}{{=auth.user.first_name}}{{else:}}LOGIN{{pass}}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              {{if auth.user:}}
+              <a class="dropdown-item" href="{{=URL('default','user/profile')}}">{{=T('Profile')}}</a>
+              {{if 'change_password' not in auth.settings.actions_disabled:}}
+              <a class="dropdown-item" href="{{=URL('default','user/change_password')}}">{{=T('Change Password')}}</a>
+              {{pass}}
+              <a class="dropdown-item" href="{{=URL('default','user/logout')}}">{{=T('Logout')}}</a>
+              {{else:}}
+              <a class="dropdown-item" href="{{=URL('default','user/login')}}">{{=T('Login')}}</a>
+              {{if 'register' not in auth.settings.actions_disabled:}}
+              <a class="dropdown-item" href="{{=URL('default','user/register')}}">{{=T('Sign up')}}</a>
+              {{pass}}
+              {{if 'retrieve_password' not in auth.settings.actions_disabled:}}
+              <a class="dropdown-item" href="{{=URL('default','user/retrieve_password')}}">{{=T('Lost Password')}}</a>
+              {{pass}}
+              {{pass}}
+            </div>
           </li>
         </ul>
+        {{pass}}
       </div>
     </nav>
   </header>
@@ -237,10 +263,15 @@
 </section>
 
 <footer>
-  <p>&copy; 2023 PERT Food Distribution</p>
+  <p style ="text-align: right;">&copy; 2023 PERT Food Distribution</p>
+  <p style ="text-align: left;"></p>3456 Distant Dr, p:(456)234-7890 </p>
+  <p>p:(456)234-7890</p>
+  <p>email: dystopia.co@hotmail.com</p>
+ <a href="team_bio.html"> <p style ="text-align: right;">Meet the Core Team</p></a>
 </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
+  
   </html>
