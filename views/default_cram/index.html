@@ -3,7 +3,7 @@
 <head>
   <title>PERT - Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="PERTCSS.css">
+  <link rel="stylesheet" type="text/css" href="PERTCSS.css">
   <style>
     header {
         font-family: Arial, Helvetica, sans-serif;
@@ -159,7 +159,7 @@
   <div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="{{=URL('default_cram','index.html')}}">
         <img src="../static/images/PERT1.jpeg" alt="PERT Logo" class="home-button">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -171,7 +171,7 @@
             <a class="nav-link" href="about_us.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTProducts.html">Products</a>
+            <a class="nav-link" href="{{=URL('view_data','display_all_catalogs.html')}}">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="PERTCustomers.html">Customers</a>
@@ -192,6 +192,36 @@
             <a class="nav-link" href="PERTContacts.html">Contact</a>
           </li>
         </ul>
+        {{if auth.user_groups:}}
+        <ul class="nav navbar-nav">
+          <!-- add links and conditions for the other "Vaults" -->
+          {{if list(session.auth.user_groups.keys())[0] == 2:}}
+          {{pass}}
+          
+        {{if list(session.auth.user_groups.keys())[0] == 3:}}  
+        <li class="nav-item dropdown">
+          <a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Vault</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/admin/default">
+              <i class="fa fa-cog"></i>
+              all projects admin
+            </a>
+            <a class="dropdown-item" href="/admin/default/design/CRAM">
+              <i class="fa fa-cog"></i>
+              admin for CRAM
+            </a>
+          </div>
+        </li>
+        {{pass}}
+        {{if list(session.auth.user_groups.keys())[0] == 4 or list(session.auth.user_groups.keys()) == 5:}}
+        {{pass}}
+        {{if list(session.auth.user_groups.keys())[0] == 6 or list(session.auth.user_groups.keys())[0] == 7:}}
+          <li class="nav-item">
+            <a class = "nav-link" href="{{=URL('portal_sales_rep', 'index.html')}}" aria-haspopup="true" aria-expanded="false">Your Vault</a>
+          </li>
+          {{pass}}
+        </ul>
+          {{pass}}
         {{if 'auth' in globals():}}
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
           <li class="nav-item dropdown">
@@ -271,7 +301,7 @@
   <p id ="info">3456 Distant Dr, Dystopia OH 77777 </p>
   <p id="info">phone:(456)234-7890</p>
   <p id ="info">email: dystopia.co@hotmail.com</p>
- <a href="russell_bio.html"> <p id ="team">Meet the Core Team</p></a>
+ <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
     <p id ="contact">Contact Us </p>
  </footer>
     </body>
