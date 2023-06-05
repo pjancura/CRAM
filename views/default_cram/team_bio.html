@@ -1,0 +1,112 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+<div class="jumbotron jumbotron-fluid background" style="background-color: #004567; color:white; padding:30px;word-wrap:break-word;">
+  <div class="container center">
+    <h1 style="font-family:Copperplate; font-size:75px; color:red;"><em>Creators</em></h1>
+  </div>
+</div>
+{{end}}
+
+{{extend 'layout.html'}}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Page</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .profile {
+      width: 23%;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .profile img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .profile h3 {
+      margin-bottom: 5px;
+    }
+    h1{
+        text-align: center;
+        font-family:Copperplate;
+        color: red;
+        font-size: 30px;
+    }
+    h3{
+
+    }
+    body{
+        background-color: gold;
+        color: royalblue;
+    }
+   </style>
+    
+</head>
+<body>
+    <h1>Meet The Team</h1>
+  <div class="container">
+    <div class="profile">
+      <img src="../static/images/russell.jpg" alt="Profile 1">
+      <h3>Russell Rodgers</h3>
+      <p>Fun fact no one knows about me: I love to volunteer and help others
+          <br>
+        Favorite part of the program: Working on the Capstone Project
+        <br>
+        Favorite item on the menu:Savage Steaks
+        <br>
+        Contribution to the team: Using my knowledge of HTML/CSS I developed and styled the About us section,our bio page, profile page for our customers, and styled the login screen</p>
+    </div>
+    <div class="profile">
+      <img src="image2.jpg" alt="Profile 2">
+      <h3>Paul Jancura</h3>
+      <p>Fun fact no one knows about me:I have had multiple collapsed lungs
+        <br>
+      Favorite part of the program:Solving the SQL lab about the highest per capita income county per state and what that per capita income was.
+      <br>
+      Favorite item on the menu:Apocalyptic Angus
+      <br>
+      Contribution to the team: <p>Generated most of the Data and backend of the website.  Created several of the .html files to view, create, update, or delete the data.
+    </p>
+    </div>
+    <div class="profile">
+      <img src="image3.jpg" alt="Profile 3">
+      <h3>Eugene</h3>
+      <p>Fun fact no one knows about me:I play an old fighting game because of course I am that guy. I play a particular princess in that game and she has a turnip she loves to pull for me. It was enough of a thing it is going on my right wrist.
+ 
+        <br>
+      Favorite part of the program: the emotional rollercoaster of discovery with the weirdness of Javascript, then despair with SQL, then a glimmer of hope with python.
+
+      <br>
+      Favorite item on the menu:My favourite item on our menu would be a few things, together. Nothing makes me feel more at home than a peanut butter and jelly sandwich. Whatever bread.
+
+      <br>
+      Contribution to the team: theme and moral support. I am like an emotional support animal, except i can also make coffee.
+    </p>
+    </div>
+    <div class="profile">
+      <img src="image4.jpg" alt="Profile 4">
+      <h3>Todd Marshall</h3>
+      <p>Fun fact no one knows about me:I can juggle up to 10 objects at once 
+        <br>
+      Favorite part of the program: learning HTML/CSS
+      <br>
+      Favorite item on the menu: 3d printed beef. its delicious!
+      <br>
+      Contribution to the team:i am a front end developer </p>
+    </div>
+  </div>
+</body>
+</html>
