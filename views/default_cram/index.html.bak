@@ -130,7 +130,7 @@
         background-size: cover; /* Adjust to your preference */
       }
       a {
-        color: #red;
+        color: #e6440e;
       }
       a:visited {
         color: #e6440e;
@@ -142,9 +142,15 @@
         color: #e6440e;
       }
       #copy {
-          text-align:right;
+          text-align:center;
       }
-      #info{
+      #email{
+          text-align:left;
+      }
+      #phone{
+          text-align:left;
+      }
+      #address{
           text-align:left;
       }
       #team{
@@ -153,6 +159,7 @@
       #contact{
           text-align:right;
       }
+     
   </style>
 </head>
 <body>
@@ -207,9 +214,6 @@
               <a class="dropdown-item" href="{{=URL('default','user/logout')}}">{{=T('Logout')}}</a>
               {{else:}}
               <a class="dropdown-item" href="{{=URL('default','user/login')}}">{{=T('Login')}}</a>
-              {{if 'register' not in auth.settings.actions_disabled:}}
-              <a class="dropdown-item" href="{{=URL('default','user/register')}}">{{=T('Sign up')}}</a>
-              {{pass}}
               {{if 'retrieve_password' not in auth.settings.actions_disabled:}}
               <a class="dropdown-item" href="{{=URL('default','user/retrieve_password')}}">{{=T('Lost Password')}}</a>
               {{pass}}
@@ -267,12 +271,12 @@
     </a>
   </div>
  <footer>
-  <p id ="copy">&copy; 2023 PERT Food Distribution</p>
-  <p id ="info">3456 Distant Dr, Dystopia OH 77777 </p>
-  <p id="info">phone:(456)234-7890</p>
-  <p id ="info">email: dystopia.co@hotmail.com</p>
- <a href="russell_bio.html"> <p id ="team">Meet the Core Team</p></a>
+     <a href="team_bio.html"> <p id ="team">Meet the Core Team</p></a>
     <p id ="contact">Contact Us </p>
+  <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
+  <p id="phone">phone:(456)234-7890</p>
+  <p id ="email">email: dystopia.co@hotmail.com</p>
+     <p id ="copy">&copy; 2023 PERT Food Distribution</p>
  </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
