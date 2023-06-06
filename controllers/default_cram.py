@@ -24,3 +24,17 @@ def about_us():
 def team_bio():
     return locals()
 
+def pert_careers():
+    return locals()
+
+def pert_investors():
+    return loclas()
+
+def pert_products():
+    return locals()
+
+def pert_suppliers():
+    return locals()
+
+def pert_sustainability():
+    return locals()
