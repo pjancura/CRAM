@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<h1>This is the portal_sales_rep/add_company.html template</h1>
+
+{{=company_form}}
+<br><br>
+<a href="{{=URL('index')}}">Vault Door</a>
+<br><br>
+{{block page_js}}
+<script>
+    document.getElementById("companies_s_media_link__label").innerHTML = "Main Website URL";
+
+</script>
+{{end page_js}}

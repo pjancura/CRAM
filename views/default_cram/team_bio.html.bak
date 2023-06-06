@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{extend 'layout_new.html'}}
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,6 +42,8 @@
     </nav>
 
   </header>
+=======
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -91,7 +94,7 @@
     <h1>Meet The Team</h1>
   <div class="container">
     <div class="profile">
-      <img src="../static/images/russell.jpg" alt="Profile 1">
+      <img src="../static/images/russell.jpg" alt="Russell">
       <h3>Russell Rodgers</h3>
       <p>Fun fact no one knows about me: I love to volunteer and help others
           <br>
@@ -102,7 +105,7 @@
         Contribution to the team: Using my knowledge of HTML/CSS I developed and styled the About us section,our bio page, profile page for our customers, and styled the login screen</p>
     </div>
     <div class="profile">
-      <img src="../static" alt="Profile 2">
+      <img src="../static/images/pj1.jpg" alt="Paul">
       <h3>Paul Jancura</h3>
       <p>Fun fact no one knows about me:I have had multiple collapsed lungs
         <br>
