@@ -166,8 +166,12 @@
   <div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="{{=URL('default_cram', 'index.html')}}">
+        {{if request.args:}}
+        <img src="../../static/images/PERT1.jpeg" alt="PERT Logo" class="home-button">
+        {{else:}}
         <img src="../static/images/PERT1.jpeg" alt="PERT Logo" class="home-button">
+        {{pass}}
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -195,8 +199,37 @@
           <li class="nav-item">
             <a class="nav-link" href="PERTSustainability.html">Sustainability</a>
           </li>
-        
         </ul>
+        {{if auth.user_groups:}}
+        <ul class="nav navbar-nav">
+          <!-- add links and conditions for the other "Vaults" -->
+          {{if list(session.auth.user_groups.keys())[0] == 2:}}
+          {{pass}}
+          
+        {{if list(session.auth.user_groups.keys())[0] == 3:}}  
+        <li class="nav-item dropdown">
+          <a class = "nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Vault</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/admin/default">
+              <i class="fa fa-cog"></i>
+              all projects admin
+            </a>
+            <a class="dropdown-item" href="/admin/default/design/CRAM">
+              <i class="fa fa-cog"></i>
+              admin for CRAM
+            </a>
+          </div>
+        </li>
+        {{pass}}
+        {{if list(session.auth.user_groups.keys())[0] == 4 or list(session.auth.user_groups.keys()) == 5:}}
+        {{pass}}
+        {{if list(session.auth.user_groups.keys())[0] == 6 or list(session.auth.user_groups.keys())[0] == 7:}}
+          <li class="nav-item">
+            <a class = "nav-link" href="{{=URL('portal_sales_rep', 'index.html')}}" aria-haspopup="true" aria-expanded="false">Your Vault</a>
+          </li>
+          {{pass}}
+        </ul>
+          {{pass}}
         {{if 'auth' in globals():}}
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
           <li class="nav-item dropdown">

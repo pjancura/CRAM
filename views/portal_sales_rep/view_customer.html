@@ -1,7 +1,9 @@
 
-{{extend 'layout.html'}}
+{{extend 'layout_new.html'}}
 <h1>This is the portal_sales_rep/view_customer.html template</h1>
-
+<br>
+<a href="{{=URL('index')}}">Vault Door</a>
+<br><br>
 <table>
     <tr>
     <h3>Customer Info</h3>
@@ -29,8 +31,11 @@
         <td>{{=x.referral_source}}</td>
         <td>{{=x.created_on_date}}</td>
     </tr>
+    {{pass}}
+    <tr>
+        <td><a href="{{=URL('update_customer', args = [person[0].id])}}">Update Customer</a></td>
+    </tr>
 </table>
-{{pass}}
 <br><br><br>
 
 <table>
@@ -70,10 +75,10 @@
 <br><br><br>
 <table>
     <tr>
-        <thead>Notes on Customer</thead>
+        <h3>Notes on Customer</h3>
     </tr>
     <tr>
-        <th>Date of Note</th>
+        <th>Date</th>
         <th>Time of Event</th>
         <th>Contact Note</th>
         <th>Status</th>
@@ -81,23 +86,25 @@
 
     {{ for x in person_notes:}}
     <tr>
-        <td>{{=x.date_created}}</td>
+        <td><a href="{{=URL('update_note', args = [person_notes[0].id])}}">{{=x.date_created}}</a></td>
         {{if x.time_of_event.strftime("%H %M") == "00 00":}}
         <td>Anytime Today</td>
         {{else:}}
         <td>{{=x.time_of_event.strftime("%H:%M")}}</td>
         {{pass}}
         <td>{{=x.contact_note}}</td>
-        {{if x.completed:}}
-        <td>Done</td>
+        {{if x.status == "complete":}}
+        <td>Complete</td>
+        {{elif x.status == "incomplete":}}
+        <td>Incomplete</td>
         {{else:}}
-        <td>To be completed</td>
+        <td>Ongoing</td>
         {{pass}}
     </tr>
     {{pass}}
-    
+    <tr>
+    </tr>
 </table>
-<a href="{{=URL('index')}}">Vault Door</a>
 {{block page_js}}
 <script>
 
