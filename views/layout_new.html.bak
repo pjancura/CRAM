@@ -195,7 +195,9 @@
           <li class="nav-item">
             <a class="nav-link" href="PERTSustainability.html">Sustainability</a>
           </li>
-        
+        <li class="nav-item">
+            <a class="nav-link" href="PERTSustainability.html">Your Vault</a>
+          </li>
         </ul>
           {{if auth.user_groups:}}
         <ul class="nav navbar-nav">
@@ -266,7 +268,7 @@
 
     {{block footer}} <!-- this is default footer -->
     <footer>
-      <a href="{{=URL('default_cram','team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
+        <a href="team_bio.html"> <p id ="team">Meet the Core Team</p></a>
        <p id ="contact">Contact Us </p>
      <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
      <p id="phone">phone:(456)234-7890</p>
