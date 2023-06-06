@@ -18,7 +18,7 @@ def index():
     today_date = datetime.date.today()
     rows = db.executesql('SELECT persons.id, first_name, last_name, c.company_name, persons.employee_id \
                         FROM persons JOIN companies c on c.id = persons.co_id;')
-    notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, cn.time_of_event, cn.contact_note, cn.completed \
+    notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, cn.time_of_event, cn.contact_note, cn.status \
                                         FROM contact_notes cn join persons on persons.id = cn.person_id;')
 
     return locals()
@@ -57,7 +57,7 @@ def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()
     person_company = db(db.companies.id == person[0].co_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
-    person_notes = db(db.contact_notes.person_id == person[0].id).select()
+    person_notes = db(db.contact_notes.person_id == person[0].id).select()    
     return locals()
 
 @auth.requires_login()
