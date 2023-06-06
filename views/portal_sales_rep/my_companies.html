@@ -1,0 +1,33 @@
+{{extend 'layout.html'}}
+
+<h1>This is the portal_sales_rep/my_companies.html template</h1>
+<a href="{{=URL('index')}}">Vault Door</a>
+
+<table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>My Companies</h3>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Company Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>ZIP Code</th>
+        <th>SIC Code</th>
+        <th>Social Media Link</th>
+    </tr>
+    {{for row in rows_of_companies:}}
+    <tr>
+        <td>{{=row[0].companies.id}}</td>
+        <td>{{=row[0].companies.company_name}}</td>
+        <td>{{=row[0].companies.address}}</td>
+        <td>{{=row[0].companies.city}}</td>
+        <td>{{=row[0].states_usa.state_abbr}}</td>
+        <td>{{=row[0].companies.zipcode}}</td>
+        <td>{{=row[0].companies.sic_code}}</td>
+        <td>{{=row[0].companies.s_media_link}}</td>
+
+    </tr>
+    {{pass}}
+</table>
