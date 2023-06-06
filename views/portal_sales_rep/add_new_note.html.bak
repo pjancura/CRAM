@@ -1,4 +1,4 @@
-{{extend 'layout_new.html'}}
+{{extend 'layout.html'}}
 <h1>Add a Note</h1>
 {{=BEAUTIFY(note_form)}}
 <br><br>
