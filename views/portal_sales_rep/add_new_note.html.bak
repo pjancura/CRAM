@@ -1,9 +1,22 @@
-{{extend 'layout.html'}}
-<h1>Add a Note</h1>
+{{extend 'layout_new.html'}}
+<head>
+    <style>
+        h1{
+            color:red;
+            font-family:Copperplate;
+        }
+        body{
+            background-color:light grey;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<h1><em>Add a Note</em></h1>
 {{=BEAUTIFY(note_form)}}
 <br><br>
 <a href="{{=URL('index')}}">Vault Door</a>
-<br><br>
+
 
 {{block page_js}}
 <script>
@@ -44,3 +57,4 @@
     document.getElementById("contact_notes_date_created").value = `${theYear}-${theMonth}-${theDay}`;
 </script>
 {{end page_js}}
+</body>

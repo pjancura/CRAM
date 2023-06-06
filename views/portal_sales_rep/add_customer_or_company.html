@@ -1,6 +1,19 @@
 {{extend 'layout_new.html'}}
-<h1>Add Customer/Company</h1>
-<h3>Customer Form</h3>
+<head>
+   <style>
+       h1,h3{
+           font-family:Copperplate;
+       }
+       body{
+           background-color:light grey;
+           color:red;
+           font-family:Courier New; font-size:15px;
+       }
+    </style> 
+</head>
+<body>
+<h1><em>Add Customer/Company</em></h1>
+<h3><em>Customer Form</em></h3>
 {{=customer_form}}
 {{=company_form}}
 <br><br>
@@ -66,3 +79,4 @@
     }
 </script>
 {{end page_js}}
+</body>
