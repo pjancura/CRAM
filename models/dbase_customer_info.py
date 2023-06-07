@@ -51,16 +51,17 @@ db.persons.co_id.requires = IS_IN_DB(db, db.companies.id, '%(company_name)s')
 # time data must in military and formatted HH:MM   with optional :SS 
 db.define_table('contact_notes',
                 Field('emp_id', type = 'integer', notnull=True),
-                Field('date_created', type = 'date', requires=IS_DATE(), notnull=True),
-                Field('time_of_event', type = 'time', requires=IS_TIME(), default='12:00 AM', notnull=True),
-                Field('person_id', type = 'integer', notnull=True),
-                Field('contact_note', type = 'text', notnull=True),
-                Field('completed', type='boolean', requires=IS_IN_SET(['True', 'False']), notnull=True)
+                Field('date_created', type = 'date', requires=IS_DATE()),
+                Field('time_of_event', type = 'time', requires=IS_TIME(), default='12:00 AM'),
+                Field('person_id', type = 'integer'),
+                Field('contact_note', type = 'text'),
+                Field('status', type='text', requires=IS_IN_SET(['complete', 'incomplete', 'ongoing']), default='incomplete')
                 )
 
 #creates foreign key reference for table(persons)
 db.contact_notes.emp_id.requires= IS_IN_DB(db, db.auth_user.id, '%(first_name)s %(last_name)s')
 db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s')
+
 
 
 

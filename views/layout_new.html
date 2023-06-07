@@ -3,7 +3,7 @@
 <head>
   <title>PERT - Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="PERTCSS.css">
+  <!-- <link rel="stylesheet" href="PERTCSS.css"> -->
   <style>
     header {
         font-family: Arial, Helvetica, sans-serif;
@@ -126,7 +126,9 @@
       }
 
       body {
+        {{if request.controller == "cram_default" and request.function == "index.html":}}
         background-image: url("images/Farm.jpeg");
+        {{pass}}
         background-size: cover; /* Adjust to your preference */
       }
       a {
@@ -166,8 +168,9 @@
   <div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="../static/images/PERT1.jpeg" alt="PERT Logo" class="home-button">
+      <a class="navbar-brand" href="{{=URL('default_cram', 'index.html')}}">
+        <img src="{{=URL('static', 'images/PERT1.jpeg')}}" alt="PERT Logo" class="home-button">
+
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -175,27 +178,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="about_us.html">About</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'about_us.html')}}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTProducts.html">Products</a>
+            <a class="nav-link" href="{{=URL('view_data','display_all_catalogs.html')}}">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTCustomers.html">Customers</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_suppliers.html')}}">Suppliers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTSuppliers.html">Suppliers</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_investors.html')}}">Investors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTInvestors.html">Investors</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_careers.html')}}">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTCareers.html">Careers</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_sustainability.html')}}">Sustainability</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTSustainability.html">Sustainability</a>
-          </li>
-        
         </ul>
           {{if auth.user_groups:}}
         <ul class="nav navbar-nav">
@@ -221,8 +220,16 @@
         {{if list(session.auth.user_groups.keys())[0] == 4 or list(session.auth.user_groups.keys()) == 5:}}
         {{pass}}
         {{if list(session.auth.user_groups.keys())[0] == 6 or list(session.auth.user_groups.keys())[0] == 7:}}
-          <li class="nav-item">
-            <a class = "nav-link" href="{{=URL('portal_sales_rep', 'index.html')}}" aria-haspopup="true" aria-expanded="false">Your Vault</a>
+          <li class="nav-item dropdown">
+            <a class = "nav-link ;dropdown-toggle" href="#" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">Your Vault</a>
+            <div class="dropdown-menu dropdown-menu-left">
+              <a class = "nav-link" href="{{=URL('portal_sales_rep', 'index.html')}}">Vault Door</a>
+              <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'my_companies.html')}}">My Companies</a>
+              <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'add_company.html')}}">New Company</a>
+              <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'add_customer.html')}}">New Customer</a>
+              <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'add_customer_or_company.html')}}">New Customer and Company</a>    
+              <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'add_new_note.html')}}">New Note</a>       
+            </div>
           </li>
           {{pass}}
         </ul>
@@ -266,7 +273,7 @@
 
     {{block footer}} <!-- this is default footer -->
     <footer>
-        <a href="team_bio.html"> <p id ="team">Meet the Core Team</p></a>
+      <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
        <p id ="contact">Contact Us </p>
      <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
      <p id="phone">phone:(456)234-7890</p>
@@ -274,7 +281,6 @@
         <p id ="copy">&copy; 2023 PERT Food Distribution</p>
     </footer>
     {{end}}
-       </body>
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
        {{block page_js}}{{end page_js}}
@@ -289,3 +295,7 @@
     {{pass}}
      </body>
    </html>
+
+
+
+   

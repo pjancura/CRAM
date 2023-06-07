@@ -1,5 +1,5 @@
 {{extend 'layout_new.html'}}
-<head>
+{{block head}}
     <style>
         h1{
             color:red;
@@ -10,8 +10,9 @@
             color:red;
         }
     </style>
-</head>
-<body>
+{{end}}
+
+
 <h1><em>Add a Note</em></h1>
 {{=BEAUTIFY(note_form)}}
 <br><br>
@@ -57,4 +58,4 @@
     document.getElementById("contact_notes_date_created").value = `${theYear}-${theMonth}-${theDay}`;
 </script>
 {{end page_js}}
-</body>
+
