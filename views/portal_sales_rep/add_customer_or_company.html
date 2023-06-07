@@ -17,8 +17,6 @@
 {{=customer_form}}
 {{=company_form}}
 <br><br>
-<a href="{{=URL('index')}}">Vault Door</a>
-<br><br>
 
 
 {{block page_js}}
@@ -40,42 +38,58 @@
     labelAddCompany.innerHTML = 'Add Company:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="addCompany" id="addCompany" onchange="exposeCompanyForm()">';
     eleDivCompany.appendChild(labelAddCompany);
     
-
+    //sets the display for formCompany to 'none'
     let formCompany = document.forms[1];
     formCompany.setAttribute("id","formCompany");
     let eleFormCompany = document.getElementById("formCompany");
-    eleFormCompany.setAttribute("style","display:none");
+    //appends a div inside the formCompany
+    let formCompanyHTML = formCompany.innerHTML;
+    formCompany.innerHTML = `<div id='companyFormDiv'>${formCompanyHTML}</div>`;
+    let newCompanyDiv = document.getElementById("companyFormDiv");
+    newCompanyDiv.setAttribute("style","display:none");
     
     
-    
-    eleDivCompany.appendChild(eleFormCompany);
+    //repositions the form fields inside a new div below the checkbox 'addCompany'
+    eleDivCompany.appendChild(newCompanyDiv);
 
     //sets the value of Employee Id to whoever is logged in and disables the field
-    document.getElementById("persons_employee_id").disabled = "True";
+    document.getElementById("persons_employee_id").setAttribute('readonly', 'True');
     document.getElementById("persons_employee_id").value = {{=str(session.auth.user.id)}};
     //sets the value of Created On Date to today's date
     let todayDate = new Date();
     theDay = todayDate.getDate();
     if (theDay <= 9){
         theDay = "0" + theDay;
-        console.log(theDay);
     }
     theMonth = todayDate.getMonth() + 1;
     if (theMonth <= 9){
         theMonth = "0" + theMonth;
-        console.log(theMonth);
     }
     theYear = todayDate.getFullYear();
     document.getElementById("persons_created_on_date").value = `${theYear}-${theMonth}-${theDay}`;
 
+    //sets the id for the customer form
+    let formCustomer = document.forms[0];
+    formCustomer.setAttribute("id", "formCustomer");
+    //removes the submit button for the company form
+    document.getElementById("submit_record__row").firstChild.firstChild.remove()
+
+
+
     //this exposes and hides the company form
+    //changes the action of the customer form so that both forms can be processed
     function exposeCompanyForm(){
-        console.log("heard");
-        let eleFormCompany = document.getElementById("formCompany");
-        if (eleFormCompany.getAttribute("style") == "display:none"){
-            eleFormCompany.setAttribute("style","display:block");  
+        if (document.getElementById("addCompany").checked){
+            document.getElementById("persons_co_id").disabled = "True";
+            formCustomer.setAttribute("action", "{{=URL('portal_sales_rep', 'submit_customer_and_company')}}");
+        } else {
+            document.getElementById("persons_co_id").removeAttribute("disabled");
+            formCustomer.setAttribute("action", "#");
+        }
+        if (newCompanyDiv.getAttribute("style") == "display:none"){
+            newCompanyDiv.setAttribute("style","display:block");  
         } else{
-            eleFormCompany.setAttribute("style", "display:none");
+            newCompanyDiv.setAttribute("style", "display:none");
         }
     }
 </script>

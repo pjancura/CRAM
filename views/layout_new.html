@@ -3,7 +3,7 @@
 <head>
   <title>PERT - Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="PERTCSS.css">
+  <!-- <link rel="stylesheet" href="PERTCSS.css"> -->
   <style>
     header {
         font-family: Arial, Helvetica, sans-serif;
@@ -126,7 +126,9 @@
       }
 
       body {
+        {{if request.controller == "cram_default" and request.function == "index.html":}}
         background-image: url("images/Farm.jpeg");
+        {{pass}}
         background-size: cover; /* Adjust to your preference */
       }
       a {
