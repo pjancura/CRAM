@@ -35,3 +35,6 @@ def pert_products():
 
 def pert_suppliers():
     return locals()
+
+def pert_sustainability():
+    return locals()

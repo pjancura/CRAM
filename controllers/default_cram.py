@@ -28,7 +28,7 @@ def pert_careers():
     return locals()
 
 def pert_investors():
-    return loclas()
+    return locals()
 
 def pert_products():
     return locals()
