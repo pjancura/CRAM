@@ -175,27 +175,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="about_us.html">About</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'about_us.html')}}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTProducts.html">Products</a>
+            <a class="nav-link" href="{{=URL('view_data','display_all_catalogs.html')}}">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTCustomers.html">Customers</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_suppliers.html')}}">Suppliers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTSuppliers.html">Suppliers</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_investors.html')}}">Investors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTInvestors.html">Investors</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_careers.html')}}">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="PERTCareers.html">Careers</a>
+            <a class="nav-link" href="{{=URL('default_cram', 'pert_sustainability.html')}}">Sustainability</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="PERTSustainability.html">Sustainability</a>
-          </li>
-        
         </ul>
           {{if auth.user_groups:}}
         <ul class="nav navbar-nav">
@@ -266,7 +262,7 @@
 
     {{block footer}} <!-- this is default footer -->
     <footer>
-        <a href="team_bio.html"> <p id ="team">Meet the Core Team</p></a>
+      <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
        <p id ="contact">Contact Us </p>
      <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
      <p id="phone">phone:(456)234-7890</p>
@@ -274,7 +270,6 @@
         <p id ="copy">&copy; 2023 PERT Food Distribution</p>
     </footer>
     {{end}}
-       </body>
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
        {{block page_js}}{{end page_js}}
@@ -289,3 +284,7 @@
     {{pass}}
      </body>
    </html>
+
+
+
+   
