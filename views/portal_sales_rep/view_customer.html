@@ -1,10 +1,8 @@
 
 {{extend 'layout_new.html'}}
-<h1>This is the portal_sales_rep/view_customer.html template</h1>
-<br>
-<a href="{{=URL('index')}}">Vault Door</a>
-<br><br>
-<table>
+<h1>Customer:&nbsp;{{=person[0].first_name}}&nbsp;{{=person[0].last_name}}</h1>
+
+<table class="table table-striped table-hover table-bordered table-sm">
     <tr>
     <h3>Customer Info</h3>
     </tr>
@@ -38,7 +36,7 @@
 </table>
 <br><br><br>
 
-<table>
+<table class="table table-striped table-hover table-bordered table-sm">
     <tr>
         <h3>Company Info</h3>
     </tr>
@@ -73,7 +71,7 @@
     </tr>
 </table>
 <br><br><br>
-<table>
+<table class="table table-striped table-hover table-bordered table-sm">
     <tr>
         <h3>Notes on Customer</h3>
     </tr>

@@ -1,6 +1,5 @@
 {{extend 'layout_new.html'}}
-<html>
-<head>
+{{block head}}
   <title>PERT - Products</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="PERTCSS.css">
@@ -144,9 +143,8 @@
 
       
   </style>
-</head>
+{{end}}
 
-<body>
   
   <section class="products">
     <div class="product">
@@ -174,10 +172,4 @@
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2023 PERT Food Distribution</p>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+ 

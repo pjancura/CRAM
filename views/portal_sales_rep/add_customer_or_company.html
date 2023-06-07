@@ -1,5 +1,5 @@
 {{extend 'layout_new.html'}}
-<head>
+{{block head}}
    <style>
        h1,h3{
            font-family:Copperplate;
@@ -10,8 +10,8 @@
            font-family:Courier New; font-size:15px;
        }
     </style> 
-</head>
-<body>
+{{end}}
+
 <h1><em>Add Customer/Company</em></h1>
 <h3><em>Customer Form</em></h3>
 {{=customer_form}}
@@ -80,4 +80,4 @@
     }
 </script>
 {{end page_js}}
-</body>
+

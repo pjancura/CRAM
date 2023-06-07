@@ -53,6 +53,11 @@ def add_company():
     return locals()
 
 @auth.requires_login()
+def add_customer():
+    customer_form = SQLFORM(db.persons).process()
+    return locals()
+
+@auth.requires_login()
 def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()

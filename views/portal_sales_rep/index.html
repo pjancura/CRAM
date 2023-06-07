@@ -1,5 +1,5 @@
 {{extend 'layout_new.html'}}
-<head>
+{{block head}}
     <style>
         body{
             background-color:light grey;
@@ -12,8 +12,8 @@
         }
     
     </style>
-</head>
-<body>
+{{end}}
+
 {{if emp_num == "0":}}
 <h1>Login error: Please try logging in again</h1>
 {{else:}}
@@ -83,4 +83,4 @@
 </tbody>
 </table>
 {{pass}}
-</body>
+
