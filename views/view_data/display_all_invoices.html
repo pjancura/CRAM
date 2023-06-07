@@ -1,3 +1,27 @@
 {{extend 'layout.html'}}
-<h1>This is the view_data/display_all_invoices.html template</h1>
-{{=BEAUTIFY(response._vars)}}
+<h1>Invoices Table</h1>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Purchase Date</th>
+        <th>Purchase ID</th>
+        <th>Company ID</th>
+        <th>Due Date</th>
+        <th>Invoice Total</th>
+        <th>Credit</th>
+        <th>Payment Total</th>
+        <th>Balance Due</th>
+    </tr>
+    {{for f in rows:}}
+    <tr>
+        <td>{{=x[0]}}</td>
+        <td>{{=x[1]}}</td>
+        <td>{{=x[2]}}</td>
+        <td>{{=x[3]}}</td>
+        <td>{{=x[4]}}</td>
+        <td>{{=x[5]}}</td>
+        <td>{{=x[6]}}</td>
+        <td>{{=x[7]}}</td>
+    </tr>
+    {{ pass }}
+</table>

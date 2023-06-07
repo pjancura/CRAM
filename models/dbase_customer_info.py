@@ -95,11 +95,11 @@ db.invoice_line_items.prod_id.requires=IS_IN_DB(db, db.catalogs.id, '%(product_n
 
 
 db.define_table('invoices',
-                Field('purchase_date', type = 'date', requires=IS_DATE(), notnull=True),
-                Field('p_id', type = 'integer', notnull=True),
+                Field('purchase_date', type = 'date', requires=IS_DATE()),
+                Field('p_id', type = 'integer'),
                 Field('company_id', type = 'integer'),
                 Field('due_date', type = 'date', compute=lambda r: r['purchase_date'] + datetime.timedelta(days=30)),
-                Field('invoice_total', type = 'decimal(20,2)', notnull=True),
+                Field('invoice_total', type = 'decimal(20,2)'),
                 Field('credit', type = 'decimal(20,2)', default=0),
                 Field('payment_total', type = 'decimal(20,2)', default=0),
                 )
