@@ -4,7 +4,7 @@
 {{block header}}
 <div class="jumbotron jumbotron-fluid background" style="background-color: dark grey; color:white; padding:30px;word-wrap:break-word;">
   <div class="container center">
-    <h1 style="font-family:Copperplate; font-size:75px; color:dark red;"><em>In The Vault</em></h1>
+    <h1 style="font-family:Copperplate; font-size:75px; color:red;"><em>In The Vault</em></h1>
   </div>
 </div>
 {{end}}
