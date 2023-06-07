@@ -28,7 +28,7 @@
     eleDivCompany.appendChild(labelAddCompany);
     
 
-    let formCompany = document.forms[2];
+    let formCompany = document.forms[1];
     formCompany.setAttribute("id","formCompany");
     let eleFormCompany = document.getElementById("formCompany");
     eleFormCompany.setAttribute("style","display:none");
@@ -58,6 +58,7 @@
     //this exposes and hides the company form
     function exposeCompanyForm(){
         console.log("heard");
+        let eleFormCompany = document.getElementById("formCompany");
         if (eleFormCompany.getAttribute("style") == "display:none"){
             eleFormCompany.setAttribute("style","display:block");  
         } else{

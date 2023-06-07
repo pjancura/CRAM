@@ -3,7 +3,7 @@
 <head>
   <title>PERT - Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="PERTCSS.css">
+  <!-- <link rel="stylesheet" href="PERTCSS.css"> -->
   <style>
     header {
         font-family: Arial, Helvetica, sans-serif;
@@ -281,7 +281,8 @@
        </body>
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-       {{block page_js}}{{end page_js}}
+       {{block page_js}}
+       {{end page_js}}
     {{if response.google_analytics_id:}}
     <!-- Analytics ==================================== -->
     <script src="{{=URL('static','js/analytics.min.js')}}"></script>
