@@ -60,5 +60,14 @@ def catalog():
     grid = SQLFORM.grid(db.catalogs)
     return locals()
 
+@auth.requires_login()
+def invoices():
+    grid = SQLFORM.grid(db.invoices)
+    return locals()
+
+@auth.requires_login()
+def invoice_line_items():
+    grid = SQLFORM.grid(db.invoice_line_items)
+    return locals()
 
 
