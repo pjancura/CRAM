@@ -1,5 +1,19 @@
 {{extend 'layout_new.html'}}
-<h1>This is the portal_dbadmin/employees.html template</h1>
+{{block head}}
+    <style>
+        body{
+            background-color:light grey;
+            color:red;
+            font-family:Courier New; font-size:15px;
+        }
+        h1{
+            font-family:Copperplate;
+            color:red;
+        }
+    
+    </style>
+{{end}}
+    
+<h1><em>Invoices</em></h1>
 <p><a href="{{=URL('portal_dbadmin', 'index.html')}}">Home</a></p>
 {{=BEAUTIFY(grid)}}
-
