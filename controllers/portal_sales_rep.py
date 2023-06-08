@@ -18,6 +18,8 @@ def index():
     today_date = datetime.date.today()
     rows = db.executesql('SELECT persons.id, first_name, last_name, c.company_name, persons.employee_id \
                         FROM persons JOIN companies c on c.id = persons.co_id;')
+    invoices = db.executesql('SELECT invoices.id, purchase_date, p_id, due_date, invoice_total, credit, \
+                             payment_total FROM invoices;', as_dict=True)
     notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, cn.time_of_event, cn.contact_note, cn.status \
                                         FROM contact_notes cn join persons on persons.id = cn.person_id;')
 

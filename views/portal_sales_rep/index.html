@@ -42,6 +42,39 @@
 <br><br><br>
 <table class="table table-striped table-hover table-bordered table-sm">
     <tr>
+        <h3>INVOICES?</h3>
+    </tr>
+    <tr>
+        <th>ID#</th>
+        <th>Purchase Date</th>
+        <th>PID#</th>
+        <th>Due Date</th>
+        <th>Invoice Total</th>
+        <th>Credit</th>
+        <th>Payment Total</th>
+        <th>Balance Due</th>
+    </tr>
+    {{for i in invoices:}}
+    <tr>
+        <td>{{=i['id']}}</td>
+        <td>{{=i['purchase_date']}}</td>
+        <td>{{=i['p_id']}}</td>
+        <td>{{=i['due_date']}}</td>
+        <td>{{=i['invoice_total']}}</td>
+        {{if i['credit'] == None:}}
+        {{i['credit']=0}}
+        <td>{{=i['credit']}}</td>
+        {{else:}}
+        <td>{{=i['credit']}}</td>
+        {{pass}}
+        <td>{{=i['payment_total']}}</td>
+        {{balance_due=i['invoice_total']-i['credit']-i['payment_total']}}
+        <td>{{=balance_due}}</td>
+    </tr>
+    {{pass}}
+</table>
+<table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
         <h3>Agenda</h3>
     </tr>
     <tr>
