@@ -217,13 +217,25 @@
           </div>
         </li>
         {{pass}}
-        {{if list(session.auth.user_groups.keys())[0] == 4 or list(session.auth.user_groups.keys()) == 5:}}
+        {{if (list(session.auth.user_groups.keys())[0] == 4) or (list(session.auth.user_groups.keys())[0] == 5):}}
+        <li class="nav-item dropdown">
+          <a class = "nav-link dropdown-toggle" href="#" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">Your Vault</a>
+          <div class="dropdown-menu dropdown-menu-left">
+            <a class ="dropdown-item" href="{{=URL('portal_manager', 'index.html')}}">Vault Door</a>
+            <a class="dropdown-item" href="{{=URL('portal_manager', 'all_employees.html')}}">My Employee's Companies</a>
+            <a class="dropdown-item" href="{{=URL('portal_manager', 'all_customers.html')}}">My Employee's Customers</a>
+            <a class="dropdown-item" href="{{=URL('portal_manager', 'add_company.html')}}">New Company</a>
+            <a class="dropdown-item" href="{{=URL('portal_manager', 'add_customer.html')}}">New Customer</a>
+            <a class="dropdown-item" href="{{=URL('portal_manager', 'add_customer_or_company.html')}}">New Customer and Company</a>    
+            <a class="dropdown-item" href="{{=URL('portal_manager', 'add_new_note.html')}}">New Note</a>       
+          </div>
+        </li>
         {{pass}}
-        {{if list(session.auth.user_groups.keys())[0] == 6 or list(session.auth.user_groups.keys())[0] == 7:}}
+        {{if (list(session.auth.user_groups.keys())[0] == 6) or (list(session.auth.user_groups.keys())[0] == 7):}}
           <li class="nav-item dropdown">
-            <a class = "nav-link ;dropdown-toggle" href="#" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">Your Vault</a>
+            <a class = "nav-link dropdown-toggle" href="#" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">Your Vault</a>
             <div class="dropdown-menu dropdown-menu-left">
-              <a class = "nav-link" href="{{=URL('portal_sales_rep', 'index.html')}}">Vault Door</a>
+              <a class = "dropdown-item" href="{{=URL('portal_sales_rep', 'index.html')}}">Vault Door</a>
               <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'my_companies.html')}}">My Companies</a>
               <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'add_company.html')}}">New Company</a>
               <a class="dropdown-item" href="{{=URL('portal_sales_rep', 'add_customer.html')}}">New Customer</a>

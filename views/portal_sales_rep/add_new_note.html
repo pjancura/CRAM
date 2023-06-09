@@ -14,7 +14,9 @@
 
 
 <h1><em>Add a Note</em></h1>
+{{if request.vars:}}
 <p><a id="returnToCustomer" href="">Return to Previous Customer</a></p>
+{{pass}}
 {{=BEAUTIFY(note_form)}}
 <br><br>
 
@@ -58,8 +60,9 @@
     document.getElementById("contact_notes_date_created").value = `${theYear}-${theMonth}-${theDay}`;
 
     // sets href to return to the previous customer view
+    {{if request.vars:}}
     document.getElementById("returnToCustomer").setAttribute("href","{{=return_url}}");
-
+    {{pass}}
 </script>
 {{end page_js}}
 

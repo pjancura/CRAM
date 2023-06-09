@@ -60,7 +60,7 @@
     {{if x[3] >= today_date :}}
     {{if x[0] == emp_num:}}
     <tr>
-        <td>{{=x[1]}} {{=x[2]}}</td>
+        <td><a href="{{=URL('portal_sales_rep','update_note',args=[x[7]])}}">{{=x[1]}} {{=x[2]}}</a></td>
         <td>{{=x[3]}}</td>
         {{if x[4] == "0:00":}}
         <td>Anytime Today</td>
