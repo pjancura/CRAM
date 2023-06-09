@@ -12,8 +12,8 @@
     </style> 
 {{end}}
 
-<h1><em>Add Customer/Company</em></h1>
-<h3><em>Customer Form</em></h3>
+<h1 id="pageHeadline"><em>Add Customer/Company</em></h1>
+<p id="warningPara"></p>
 {{=customer_form}}
 {{=company_form}}
 <br><br>
@@ -79,10 +79,66 @@
     //this exposes and hides the company form
     //changes the action of the customer form so that both forms can be processed
     function exposeCompanyForm(){
+        document.getElementById("persons_co_id").value = document.getElementById("persons_co_id").options[0].value;
+        let firstName = document.getElementById("persons_first_name");
+        let lastName = document.getElementById("persons_last_name");
+        let companyName = document.getElementById("companies_company_name");
+        let companyAddress = document.getElementById("companies_address");
+        let companyCity = document.getElementById("companies_city");
+        let companyState = document.getElementById("companies_state_abbr");
+        let companyZip = document.getElementById("companies_zipcode");
+        let companySic = document.getElementById("companies_sic_code");
+        let companySocial = document.getElementById("companies_s_media_link");
+        let workPhone = document.getElementById("persons_work_phone_num");
+        let customersEmail = document.getElementById("persons_email");
+        let customersBirthday = document.getElementById("persons_birthday");
+        let customersType = document.getElementById("persons_contact_type");
+        let customersSource = document.getElementById("persons_referral_source");
+        let customersCreatedDate = document.getElementById("persons_created_on_date");
         if (document.getElementById("addCompany").checked){
             document.getElementById("persons_co_id").disabled = "True";
             formCustomer.setAttribute("action", "{{=URL('portal_sales_rep', 'submit_customer_and_company')}}");
+            //  adding html validators to every input element
+            firstName.setAttribute("required", "true");
+            lastName.setAttribute("required", "true");
+            companyName.setAttribute("required", "true");
+            companyAddress.setAttribute("required", "true");
+            companyCity.setAttribute("required", "true");
+            companyState.setAttribute("minlength", 1);
+            companyZip.setAttribute('minlength', 5);
+            companyZip.setAttribute("pattern","[0-9]{5}");
+            companySic.setAttribute("required","true");
+            companySocial.setAttribute("type", "url");
+            workPhone.setAttribute("type","tel");
+            workPhone.setAttribute("pattern","[0-9]{3}-[0-9]{3}-[0-9]{4}")
+            customersEmail.setAttribute("type", "email");
+            customersBirthday.setAttribute("type", 'date');
+            customersBirthday.setAttribute("required","true");
+            customersType.setAttribute("required","true");
+            customersSource.setAttribute("required","true");
+            customersCreatedDate.setAttribute("type","date");
         } else {
+            //remove the html validators
+            firstName.removeAttribute("required");
+            lastName.removeAttribute("required");
+            companyName.removeAttribute("required");
+            companyAddress.removeAttribute("required");
+            companyCity.removeAttribute("required");
+            companyState.removeAttribute("minlength");
+            companyZip.removeAttribute('minlength');
+            companyZip.removeAttribute('pattern');
+            companySic.removeAttribute("required");
+            companySocial.setAttribute("type", "text");
+            workPhone.setAttribute("type","text");
+            workPhone.removeAttribute("pattern")
+            customersEmail.setAttribute("type", "text");
+            customersBirthday.setAttribute("type", "text");
+            customersBirthday.removeAttribute("required");
+            customersType.removeAttribute("required");
+            customersSource.removeAttribute("required");
+            customersCreatedDate.setAttribute("type","text");
+            customersCreatedDate.removeAttribute("required");
+            //remove the disabled attribute
             document.getElementById("persons_co_id").removeAttribute("disabled");
             formCustomer.setAttribute("action", "#");
         }
@@ -92,6 +148,19 @@
             newCompanyDiv.setAttribute("style", "display:none");
         }
     }
+
+    //fills in form paceholders where relevant
+    document.getElementById("companies_zipcode").setAttribute("placeholder","#####");
+    document.getElementById("companies_s_media_link").setAttribute("placeholder","http://www.nameofcompany.com");
+    document.getElementById("persons_work_phone_num").setAttribute("placeholder","###-###-####");
+    document.getElementById("persons_email").setAttribute("placeholder","words@mail.com");
+    document.getElementById("persons_birthday").setAttribute("placeholder","YYYY-MM-DD");
+
+
+        
+
+
+
 </script>
 {{end page_js}}
 

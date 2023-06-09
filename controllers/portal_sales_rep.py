@@ -7,10 +7,11 @@ from logging import handlers
 logger = logging.getLogger("portal_sales_rep")
 logger.setLevel(logging.DEBUG)
 handler = handlers.RotatingFileHandler("../MacOS/applications/CRAM/logs/portal_sales_rep.log", "a", 1000000, 5)
-handler.setLevel(logging.INFO)
+handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
+
 
 @auth.requires_login()
 def index():
@@ -38,7 +39,7 @@ def add_customer_or_company():
 
 @auth.requires_login()
 def submit_customer_and_company():
-    #cast each variable to the data type
+    #cast each variable to the correct data type
     full_year = int(request.vars.created_on_date[:4])
     full_month = int(request.vars.created_on_date[5:7])
     full_day = int(request.vars.created_on_date[8:10])
@@ -49,12 +50,29 @@ def submit_customer_and_company():
         b_full_day = int(request.vars.birthday[8:10])
         birthday_date = datetime.date(b_full_year, b_full_month, b_full_day)
     employee_int = int(request.vars.employee_id)
-    db.companies.insert(company_name=request.vars.company_name, address=request.vars.address, city=request.vars.city, state=request.vars.state_abbr, zipcode=request.vars.zipcode, sic_code=request.vars.sic_code, s_media_link=request.vars.s_media_link)
+    #submits to the companies table
+    try:
+        db.companies.insert(company_name=request.vars.company_name, address=request.vars.address, city=request.vars.city, state_abbr=request.vars.state_abbr, zipcode=request.vars.zipcode, sic_code=request.vars.sic_code, s_media_link=request.vars.s_media_link)
+    except:
+        logger.critical("\nDidn't Insert to Companies")
+    else:
+        logger.debug("\nsubmitted to table: companies")
     #get id of new company information
-    new_co_id = db(db.companies.company_name == request.vars.company_name & db.companies.address == request.vars.address).select(db.companies.id)
-    logger.info(f'\nsubmit_customer_and_company\ncompany_form.process:   \n{new_co_id}\n')
-    #return response.flash message to notify success or failure
-    redirect(URL(c='portal_sales_rep', f='add_customer_or_company'))
+    try:
+        new_co_id = db((db.companies.company_name == request.vars.company_name) & (db.companies.address == request.vars.address)).select(db.companies.id).last()
+    except:
+        logger.critical("\nCould not get new Company ID")
+    else:
+        logger.info(f'\nNew Company ID:  {new_co_id}\n')
+    # submits to the persons table the company info
+    try:
+        db.persons.insert(first_name=request.vars.first_name, last_name=request.vars.last_name, co_id=int(new_co_id), work_phone_num=request.vars.work_phone_num, email=request.vars.email, birthday=birthday_date, contact_type=request.vars.contact_type, referral_source=request.vars.referral_source, employee_id=employee_int, created_on_date=created_date)
+    except:
+        logger.critical("\nCould not submit to table:  persons")
+    else:
+        new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
+        logger.debug("\nSubmitted to table: persons")
+        redirect(URL(c='portal_sales_rep', f='view_customer', args=[new_customer_id[0].id]))
     return locals()
 
 
@@ -99,9 +117,21 @@ def add_customer():
 def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()
-    person_company = db(db.companies.id == person[0].co_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
-    person_notes = db(db.contact_notes.person_id == person[0].id).select()    
+    company_id = person[0].co_id
+    person_id = person[0].id
+    person_company = db(db.companies.id == company_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+    person_notes = db(db.contact_notes.person_id == person_id).select()    
     return locals()
+
+# def test():
+    # id_num = request.args(0)
+    #person = db(db.persons.id == 76).select()
+    # company_id = person[0].co_id
+    # person_id = person[0].id
+    #person_company = db(db.companies.id == 79).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+    # person_notes = db(db.contact_notes.person_id == person_id).select()
+    #return locals()
+
 
 @auth.requires_login()
 def update_customer():

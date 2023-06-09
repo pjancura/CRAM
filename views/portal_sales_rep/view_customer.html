@@ -84,7 +84,7 @@
 
     {{ for x in person_notes:}}
     <tr>
-        <td><a href="{{=URL('update_note', args = [person_notes[0].id])}}">{{=x.date_created}}</a></td>
+        <td><a href="{{=URL('update_note', args = [x.id])}}">{{=x.date_created}}</a></td>
         {{if x.time_of_event.strftime("%H %M") == "00 00":}}
         <td>Anytime Today</td>
         {{else:}}
@@ -101,6 +101,7 @@
     </tr>
     {{pass}}
     <tr>
+       <td><a href="{{=URL('add_new_note.html')}}">Add Note</a></td>
     </tr>
 </table>
 {{block page_js}}
