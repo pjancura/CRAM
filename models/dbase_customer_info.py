@@ -60,7 +60,7 @@ db.define_table('contact_notes',
 
 #creates foreign key reference for table(persons)
 db.contact_notes.emp_id.requires= IS_IN_DB(db, db.auth_user.id, '%(first_name)s %(last_name)s')
-db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s')
+db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(id)s %(first_name)s %(last_name)s')
 
 
 

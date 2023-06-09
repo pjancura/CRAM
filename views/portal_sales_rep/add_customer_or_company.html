@@ -105,18 +105,23 @@
             companyAddress.setAttribute("required", "true");
             companyCity.setAttribute("required", "true");
             companyState.setAttribute("minlength", 1);
+            companyState.setAttribute("required", "true");
             companyZip.setAttribute('minlength', 5);
+            companyZip.setAttribute('required', 'true');
             companyZip.setAttribute("pattern","[0-9]{5}");
             companySic.setAttribute("required","true");
             companySocial.setAttribute("type", "url");
+            companySocial.setAttribute("required","true");
             workPhone.setAttribute("type","tel");
-            workPhone.setAttribute("pattern","[0-9]{3}-[0-9]{3}-[0-9]{4}")
+            workPhone.setAttribute("pattern","[0-9]{3}-[0-9]{3}-[0-9]{4}");
+            workPhone.setAttribute("required","true");
             customersEmail.setAttribute("type", "email");
+            customersEmail.setAttribute("required","true");
             customersBirthday.setAttribute("type", 'date');
-            customersBirthday.setAttribute("required","true");
             customersType.setAttribute("required","true");
             customersSource.setAttribute("required","true");
             customersCreatedDate.setAttribute("type","date");
+            customersCreatedDate.setAttribute("required","true");
         } else {
             //remove the html validators
             firstName.removeAttribute("required");
@@ -125,15 +130,19 @@
             companyAddress.removeAttribute("required");
             companyCity.removeAttribute("required");
             companyState.removeAttribute("minlength");
+            companyState.removeAttribute("required");
             companyZip.removeAttribute('minlength');
             companyZip.removeAttribute('pattern');
+            companyZip.removeAttribute('required');
             companySic.removeAttribute("required");
             companySocial.setAttribute("type", "text");
+            companySocial.removeAttribute("required");
             workPhone.setAttribute("type","text");
-            workPhone.removeAttribute("pattern")
+            workPhone.removeAttribute("pattern");
+            workPhone.removeAttribute("required");
             customersEmail.setAttribute("type", "text");
+            customersEmail.removeAttribute("required");
             customersBirthday.setAttribute("type", "text");
-            customersBirthday.removeAttribute("required");
             customersType.removeAttribute("required");
             customersSource.removeAttribute("required");
             customersCreatedDate.setAttribute("type","text");

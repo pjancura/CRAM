@@ -101,7 +101,7 @@
     </tr>
     {{pass}}
     <tr>
-       <td><a href="{{=URL('add_new_note.html')}}">Add Note</a></td>
+       <td><a href="{{=URL('portal_sales_rep','add_new_note.html', vars=dict(id=person[0].id))}}">Add Note</a></td>
     </tr>
 </table>
 {{block page_js}}

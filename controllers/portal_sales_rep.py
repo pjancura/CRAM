@@ -19,7 +19,8 @@ def index():
     today_date = datetime.date.today()
     rows = db.executesql('SELECT persons.id, first_name, last_name, c.company_name, persons.employee_id \
                         FROM persons JOIN companies c on c.id = persons.co_id;')
-    notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, cn.time_of_event, cn.contact_note, cn.status \
+    notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, \
+                                        cn.time_of_event, cn.contact_note, cn.status \
                                         FROM contact_notes cn join persons on persons.id = cn.person_id;')
 
     return locals()
@@ -31,6 +32,8 @@ def index():
 def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
+    if request.vars:
+        response.flash = msg
     if customer_form.process().accepted:
         response.flash = T('Customer Added')
     else:
@@ -49,29 +52,26 @@ def submit_customer_and_company():
         b_full_month = int(request.vars.birthday[5:7])
         b_full_day = int(request.vars.birthday[8:10])
         birthday_date = datetime.date(b_full_year, b_full_month, b_full_day)
+    else:
+        birthday_date = ''
     employee_int = int(request.vars.employee_id)
     #submits to the companies table
     try:
-        db.companies.insert(company_name=request.vars.company_name, address=request.vars.address, city=request.vars.city, state_abbr=request.vars.state_abbr, zipcode=request.vars.zipcode, sic_code=request.vars.sic_code, s_media_link=request.vars.s_media_link)
-    except:
-        logger.critical("\nDidn't Insert to Companies")
-    else:
-        logger.debug("\nsubmitted to table: companies")
-    #get id of new company information
-    try:
-        new_co_id = db((db.companies.company_name == request.vars.company_name) & (db.companies.address == request.vars.address)).select(db.companies.id).last()
-    except:
-        logger.critical("\nCould not get new Company ID")
-    else:
-        logger.info(f'\nNew Company ID:  {new_co_id}\n')
-    # submits to the persons table the company info
-    try:
-        db.persons.insert(first_name=request.vars.first_name, last_name=request.vars.last_name, co_id=int(new_co_id), work_phone_num=request.vars.work_phone_num, email=request.vars.email, birthday=birthday_date, contact_type=request.vars.contact_type, referral_source=request.vars.referral_source, employee_id=employee_int, created_on_date=created_date)
-    except:
-        logger.critical("\nCould not submit to table:  persons")
-    else:
+        db.companies.insert(company_name=request.vars.company_name, address=request.vars.address, \
+                            city=request.vars.city, state_abbr=request.vars.state_abbr, zipcode=request.vars.zipcode, \
+                                sic_code=request.vars.sic_code, s_media_link=request.vars.s_media_link)
+        new_co_id = db((db.companies.company_name == request.vars.company_name) & \
+                       (db.companies.address == request.vars.address)).select(db.companies.id).last()
+        db.persons.insert(first_name=request.vars.first_name, last_name=request.vars.last_name, \
+                        co_id=int(new_co_id), work_phone_num=request.vars.work_phone_num, \
+                        email=request.vars.email, birthday=birthday_date, contact_type=request.vars.contact_type, \
+                        referral_source=request.vars.referral_source, employee_id=employee_int, created_on_date=created_date)
         new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
-        logger.debug("\nSubmitted to table: persons")
+    except:
+        logger.critical(f"\nsomething broke\n{request.vars}")
+        redirect(URL(c='portal_sales_rep', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
+    else:
+        logger.debug("\nSubmitted to everyting")
         redirect(URL(c='portal_sales_rep', f='view_customer', args=[new_customer_id[0].id]))
     return locals()
 
@@ -93,6 +93,13 @@ def add_new_note():
         r_3 = r_2.replace(",","")
         i = int(r_3)
         list_customer_ids.append(i)
+    if note_form.process().accepted:
+        response.flash = T('Record Updated')
+    else:
+        response.flash = T('Please complete the form.')
+    if request.vars:
+        return_url = URL('portal_sales_rep','view_customer', args=[request.vars.id])
+    
     return locals()
 
 @auth.requires_login()
