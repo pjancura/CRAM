@@ -3519,3 +3519,42 @@ All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corpo
 2023-06-09 20:34:46,845 - default_cram - INFO - {4: 'manager1'}
 2023-06-09 20:34:46,845 - default_cram - INFO - {4: 'manager1'}
 2023-06-09 20:34:46,845 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 15:07:42,905 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:09:16,305 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:09:16,305 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:09:31,641 - default_cram - INFO - {}
+2023-06-10 15:09:31,641 - default_cram - INFO - {}
+2023-06-10 15:09:31,641 - default_cram - INFO - {}
+2023-06-10 15:09:39,287 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 15:09:39,287 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 15:09:39,287 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 15:09:39,287 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 15:09:58,056 - default_cram - INFO - {}
+2023-06-10 15:09:58,056 - default_cram - INFO - {}
+2023-06-10 15:09:58,056 - default_cram - INFO - {}
+2023-06-10 15:09:58,056 - default_cram - INFO - {}
+2023-06-10 15:09:58,056 - default_cram - INFO - {}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 15:10:13,547 - default_cram - INFO - {5: 'manager2'}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:13,673 - default_cram - INFO - {}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}
+2023-06-10 16:05:24,021 - default_cram - INFO - {4: 'manager1'}

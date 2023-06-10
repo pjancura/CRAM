@@ -23,6 +23,10 @@
 
 {{block page_js}}
 <script>
+        // adds directions to time_of_event
+        timeAside = document.createElement("p");
+    timeAside.innerHTML = "12:00 AM or 00:00:00 means an event that can happen anytime that day."
+    document.getElementById("contact_notes_time_of_event__row").children[1].append(timeAside);
 
     //changes who is visible in the customer dropdown
     customerList = {{=list_customer_ids}};

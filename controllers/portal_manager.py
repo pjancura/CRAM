@@ -97,10 +97,39 @@ def submit_customer_and_company():
 @auth.requires_login()
 def add_new_note():
     note_form = SQLFORM(db.contact_notes)
-    emp_num = session.auth.user.id
-    relevant_customers = db.executesql(f'SELECT persons.id \
-                                        FROM persons \
-                                        WHERE persons.employee_id = {emp_num};')
+    man_group = list(session.auth.user_groups.keys())[0]
+    rows_customers = db(db.persons).select(db.persons.id, db.persons.first_name, db.persons.last_name, \
+                                           db.companies.company_name, db.persons.work_phone_num, db.persons.email, \
+                                            db.persons.birthday, db.persons.contact_type, db.persons.referral_source, \
+                                            db.persons.employee_id, db.persons.created_on_date, \
+                                            join=[db.companies.on(db.companies.id == db.persons.co_id)])
+    if man_group == 4:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 6).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+        # collect rows of companies
+        relevant_customers = []
+        for row in rows_customers:
+            if row.persons.employee_id in employees_list:
+                logger.info(f"employee_id: {row.persons.id}  \t {row.persons.employee_id}")
+                relevant_customers.append(row.persons.id)
+            else:
+                continue
+    else:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 7).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+        # collect rows of companies 
+        relevant_customers = []
+        for row in rows_customers:
+            if row.persons.employee_id in employees_list:
+                relevant_customers.append(row.persons.id)
+            else:
+                continue
     list_customer_ids = []
     for x in relevant_customers:
         s_id = str(x)
@@ -256,5 +285,55 @@ def all_employee_customers():
                 employee_rows_customers.append(row)
             else:
                 continue
-    #logger.info(f"\ncustomer rows: {employee_rows_customers}")
+    return locals()
+
+@auth.requires_login()
+def all_employee_companies():
+    # get manager id number
+    man_group = list(session.auth.user_groups.keys())[0]
+    rows_customers = db(db.persons).select()
+    rows_companies = db(db.companies) \
+                    .select(db.companies.id, db.companies.company_name, db.companies.address, \
+                    db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                    db.companies.sic_code, db.companies.s_media_link, \
+                    join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+    if man_group == 4:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 6).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+        # collect rows of companies
+        customer_co_ids = []
+        for row in rows_customers:
+            if row.employee_id in employees_list:
+                logger.info(f"employee_id: {row.id}  \t {row.employee_id}")
+                customer_co_ids.append(row.co_id)
+            else:
+                continue
+        employee_rows_companies = []
+        for row in rows_companies:
+            if row.companies.id in customer_co_ids:
+                employee_rows_companies.append(row)
+            else:
+                continue
+    else:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 7).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+        # collect rows of companies 
+        customer_co_ids = []
+        for row in rows_customers:
+            if row.employee_id in employees_list:
+                customer_co_ids.append(row.co_id)
+            else:
+                continue
+        employee_rows_companies = []
+        for row in rows_companies:
+            if row.companies.id in customer_co_ids:
+                employee_rows_companies.append(row)
+            else:
+                continue
     return locals()
