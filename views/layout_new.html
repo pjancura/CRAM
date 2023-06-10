@@ -204,6 +204,19 @@
         <ul class="nav navbar-nav" id="theVaultDropdown">
           <!-- add links and conditions for the other "Vaults" -->
           {{if list(session.auth.user_groups.keys())[0] == 2:}}
+          <li class="nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" href="#" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">Your Vault</a>
+            <div class="dropdown-menu dropdown-menu-left">
+              <a class ="dropdown-item" href="{{=URL('portal_ceo', 'index.html')}}">Vault Door</a>
+              <a class ="dropdown-item" href="{{=URL('portal_ceo', 'customers.html')}}">All Customers</a>
+              <a class ="dropdown-item" href="{{=URL('portal_ceo', 'companies.html')}}">All Companies</a>
+              <a class="dropdown-item" href="{{=URL('portal_ceo', 'add_company.html')}}">New Company</a>
+              <a class="dropdown-item" href="{{=URL('portal_ceo', 'add_customer.html')}}">New Customer</a>
+              <a class="dropdown-item" href="{{=URL('portal_ceo', 'add_customer_or_company.html')}}">New Customer and Company</a>    
+              <a class="dropdown-item" href="{{=URL('portal_ceo', 'add_new_note.html')}}">New Note</a>
+              <a class="dropdown-item" href="{{=URL('portal_ceo', 'add_new_product.html')}}">New Product</a>       
+            </div>
+          </li>
           {{pass}}
           
         {{if list(session.auth.user_groups.keys())[0] == 3:}}  
