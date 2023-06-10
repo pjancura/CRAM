@@ -1,11 +1,7 @@
 {{extend 'layout_new.html'}}
-
-<h1>This is the portal_sales_rep/my_companies.html template</h1>
-<a href="{{=URL('index')}}">Vault Door</a>
-
 <table class="table table-striped table-hover table-bordered table-sm">
     <tr>
-        <h3>My Companies</h3>
+        <h1>My Companies</h1>
     </tr>
     <tr>
         <th>ID</th>
@@ -19,7 +15,7 @@
     </tr>
     {{for row in rows_of_companies:}}
     <tr>
-        <td>{{=row[0].companies.id}}</td>
+        <td><a href="{{=URL('portal_sales_rep','update_company',args=[row[0].companies.id])}}">{{=row[0].companies.id}}</a></td>
         <td>{{=row[0].companies.company_name}}</td>
         <td>{{=row[0].companies.address}}</td>
         <td>{{=row[0].companies.city}}</td>

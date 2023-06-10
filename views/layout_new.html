@@ -34,6 +34,10 @@
         height: auto; /* Maintain aspect ratio */
       }
 
+      #theVaultDropdown{
+        width: 16rem;
+      }
+
       footer {
         background-color: #f5f5f5;
         padding: 20px;
@@ -197,7 +201,7 @@
           </li>
         </ul>
           {{if auth.user_groups:}}
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav" id="theVaultDropdown">
           <!-- add links and conditions for the other "Vaults" -->
           {{if list(session.auth.user_groups.keys())[0] == 2:}}
           {{pass}}
