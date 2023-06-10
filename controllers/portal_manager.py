@@ -219,3 +219,42 @@ def my_companies():
         rows_of_companies.append(company_row)
                                 
     return locals()
+
+@auth.requires_login()
+def all_employee_customers():
+    # get manager id number
+    man_group = list(session.auth.user_groups.keys())[0]
+    rows_customers = db(db.persons).select(db.persons.id, db.persons.first_name, db.persons.last_name, \
+                                           db.companies.company_name, db.persons.work_phone_num, db.persons.email, \
+                                            db.persons.birthday, db.persons.contact_type, db.persons.referral_source, \
+                                            db.persons.employee_id, db.persons.created_on_date, \
+                                            join=[db.companies.on(db.companies.id == db.persons.co_id)])
+    if man_group == 4:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 6).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+        # collect rows of companies
+        employee_rows_customers = []
+        for row in rows_customers:
+            if row.persons.employee_id in employees_list:
+                logger.info(f"employee_id: {row.persons.id}  \t {row.persons.employee_id}")
+                employee_rows_customers.append(row)
+            else:
+                continue
+    else:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 7).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+        # collect rows of companies 
+        employee_rows_customers = []
+        for row in rows_customers:
+            if row.persons.employee_id in employees_list:
+                employee_rows_customers.append(row)
+            else:
+                continue
+    #logger.info(f"\ncustomer rows: {employee_rows_customers}")
+    return locals()
