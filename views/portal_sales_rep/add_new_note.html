@@ -15,7 +15,7 @@
 
 <h1><em>Add a Note</em></h1>
 {{if request.vars:}}
-<p><a id="returnToCustomer" href="">Return to Previous Customer</a></p>
+<p id="returnToCustomerPara"><a id="returnToCustomer" href="">Return to Previous Customer</a></p>
 {{pass}}
 {{=BEAUTIFY(note_form)}}
 <br><br>
@@ -23,10 +23,13 @@
 
 {{block page_js}}
 <script>
-        // adds directions to time_of_event
-        timeAside = document.createElement("p");
+    // adds directions to time_of_event
+    timeAside = document.createElement("p");
     timeAside.innerHTML = "12:00 AM or 00:00:00 means an event that can happen anytime that day."
     document.getElementById("contact_notes_time_of_event__row").children[1].append(timeAside);
+
+    // makes the note input field required
+    document.getElementById("contact_notes_contact_note").setAttribute("required","true");
 
     //changes who is visible in the customer dropdown
     customerList = {{=list_customer_ids}};
@@ -79,7 +82,12 @@
 
     // sets href to return to the previous customer view
     {{if request.vars:}}
-    document.getElementById("returnToCustomer").setAttribute("href","{{=return_url}}");
+    let returnURL = "{{=return_url}}";
+    if (returnURL != "/portal_sales_rep/view_customer/None"){
+        document.getElementById("returnToCustomer").setAttribute("href","{{=return_url}}");
+    } else {
+        document.getElementById("returnToCustomerPara").remove();
+    }
     {{pass}}
 </script>
 {{end page_js}}

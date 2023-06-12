@@ -13,7 +13,7 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def index():
     emp_num = session.auth.user.id
     today_date = datetime.date.today()
@@ -28,7 +28,7 @@ def index():
 
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
@@ -40,7 +40,7 @@ def add_customer_or_company():
         response.flash = T('Please complete the form.')
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def submit_customer_and_company():
     try:
         #cast each variable to the correct data type
@@ -78,7 +78,7 @@ def submit_customer_and_company():
 
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def add_new_note():
     note_form = SQLFORM(db.contact_notes)
     emp_num = session.auth.user.id
@@ -103,7 +103,7 @@ def add_new_note():
         return_url = URL('portal_sales_rep','view_customer', args=[request.vars.id]) 
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def add_company():
     company_form = SQLFORM(db.companies)
     if company_form.process().accepted:
@@ -114,7 +114,7 @@ def add_company():
         response.flash = 'please fill out the form'
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def add_customer():
     customer_form = SQLFORM(db.persons)
     if customer_form.process().accepted:
@@ -125,7 +125,7 @@ def add_customer():
         response.flash = 'please fill out the form'
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()
@@ -140,7 +140,7 @@ def view_customer():
     return locals()
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def update_customer():
     persons_id = request.args(0)
     record = db.persons(persons_id) or redirect(URL(''))
@@ -157,7 +157,7 @@ def update_customer():
 
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def update_company():
     company_id = request.args(0)
     record = db.companies(company_id) or redirect(URL(''))
@@ -172,7 +172,7 @@ def update_company():
         response.flash = 'please fill out the form'
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def update_note():
     note_id = request.args(0)
     record = db.contact_notes(note_id) or redirect(URL(''))
@@ -187,8 +187,7 @@ def update_note():
     return locals()
 
 
-#work on this##########################
-@auth.requires_login()
+@auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def my_companies():
     emp_num = session.auth.user.id
     my_query = db.persons.employee_id == emp_num

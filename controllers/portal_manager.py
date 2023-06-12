@@ -12,7 +12,7 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def index():
     man_num = session.auth.user.id
     man_group = list(session.auth.user_groups.keys())
@@ -29,7 +29,7 @@ def index():
     logger.info(f'\nmanager group number: {man_group}\nemployee group: {emp_group}')
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def employee_view():
     emp_num = int(request.args(0))
     today_date = datetime.date.today()
@@ -44,7 +44,7 @@ def employee_view():
 
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
@@ -70,7 +70,7 @@ def add_customer_or_company():
     logger.info(f"employee id list: {employees_list}")
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def submit_customer_and_company():
     #cast each variable to the correct data type
     full_year = int(request.vars.created_on_date[:4])
@@ -108,7 +108,7 @@ def submit_customer_and_company():
 
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def add_new_note():
     note_form = SQLFORM(db.contact_notes)
     man_group = list(session.auth.user_groups.keys())[0]
@@ -162,7 +162,7 @@ def add_new_note():
         return_url = URL('portal_sales_rep','view_customer', args=[request.vars.id]) 
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def add_company():
     company_form = SQLFORM(db.companies)
     if company_form.process().accepted:
@@ -173,7 +173,7 @@ def add_company():
         response.flash = 'please fill out the form'
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def add_customer():
     customer_form = SQLFORM(db.persons)
     if customer_form.process().accepted:
@@ -198,7 +198,7 @@ def add_customer():
     logger.info(f"employee id list: {employees_list}")
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()
@@ -213,7 +213,7 @@ def view_customer():
     return locals()
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def update_customer():
     persons_id = request.args(0)
     record = db.persons(persons_id) or redirect(URL(''))
@@ -230,7 +230,7 @@ def update_customer():
 
 
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def update_company():
     company_id = request.args(0)
     record = db.companies(company_id) or redirect(URL(''))
@@ -245,7 +245,7 @@ def update_company():
         response.flash = 'please fill out the form'
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def update_note():
     note_id = request.args(0)
     record = db.contact_notes(note_id) or redirect(URL(''))
@@ -260,8 +260,8 @@ def update_note():
     return locals()
 
 
-#work on this##########################
-@auth.requires_login()
+
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def my_companies():
     emp_num = session.auth.user.id
     my_query = db.persons.employee_id == emp_num
@@ -277,7 +277,7 @@ def my_companies():
                                 
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def all_employee_customers():
     # get manager id number
     man_group = list(session.auth.user_groups.keys())[0]
@@ -315,7 +315,7 @@ def all_employee_customers():
                 continue
     return locals()
 
-@auth.requires_login()
+@auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def all_employee_companies():
     # get manager id number
     man_group = list(session.auth.user_groups.keys())[0]

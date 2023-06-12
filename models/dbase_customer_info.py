@@ -40,8 +40,8 @@ db.define_table('persons',
                 Field('birthday', type = 'date', default = "", requires = IS_DATE()),
                 Field('contact_type', type = 'string', requires = IS_IN_SET(['customer', 'vendor']), notnull=True),
                 Field('referral_source', type = 'string', requires = IS_IN_SET(['cold call', 'email', 'event', 'newsletter', 'referred by customer'])),
-                Field('employee_id', type = 'integer'),
-                Field('created_on_date', type='date', requires=IS_DATE())
+                Field('employee_id', type = 'integer', notnull=True),
+                Field('created_on_date', type='date', requires=IS_DATE(), notnull=True)
                 )
 
 #creates foreign key reference for table(persons)
@@ -54,9 +54,9 @@ db.define_table('contact_notes',
                 Field('emp_id', type = 'integer', notnull=True),
                 Field('date_created', type = 'date', requires=IS_DATE()),
                 Field('time_of_event', type = 'time', requires=IS_TIME(), default='12:00 AM'),
-                Field('person_id', type = 'integer'),
-                Field('contact_note', type = 'text'),
-                Field('status', type='text', requires=IS_IN_SET(['complete', 'incomplete', 'ongoing']), default='incomplete')
+                Field('person_id', type = 'integer', notnull=True),
+                Field('contact_note', type = 'text', notnull=True),
+                Field('status', type='text', requires=IS_IN_SET(['complete', 'incomplete', 'ongoing']), default='incomplete', notnull=True)
                 )
 
 #creates foreign key reference for table(persons)

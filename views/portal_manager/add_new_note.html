@@ -23,6 +23,8 @@
 
 {{block page_js}}
 <script>
+    // makes the note input field required
+    document.getElementById("contact_notes_contact_note").setAttribute("required","true");
     // adds directions to time_of_event
     timeAside = document.createElement("p");
     timeAside.innerHTML = "12:00 AM or 00:00:00 means an event that can happen anytime that day."
