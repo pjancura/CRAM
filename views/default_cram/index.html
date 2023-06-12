@@ -1,6 +1,6 @@
 {{extend 'layout_new.html'}}
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+{{if not auth.user:}}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="" data-slide-to="0" class="active"></li>
       <li data-target="" data-slide-to="1"></li>
@@ -44,4 +44,113 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
- 
+  {{else:}}
+  <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+  {{=BEAUTIFY(recent_customer)}}
+  {{=BEAUTIFY(emp_with_most_customers)}}
+
+  
+  {{block page_js}}
+  <script>
+  let stateNameList = '{{=state_name}}';
+  let newStateList = [];
+  let word = '';
+  let discard = '';
+  let counter = 0
+  for (let i = 0; i < stateNameList.length; i++){
+    let newChar = stateNameList[i];
+    if (newChar == "["){
+      continue;
+    } else if (newChar == ","){
+      i++;
+      continue;
+    } else if (newChar == "&"){
+      counter++
+      if (word.length > 0){
+        newStateList.push(word);
+      }
+      word = '';
+      discard += newChar;
+    } else if (discard.length > 0 && newChar != ";"){
+      counter++;
+      discard += newChar
+    } else if (newChar == ";" && word == ""){
+      counter++;
+      discard = '';
+    } else if (newChar == " " && word == ""){
+      counter++;
+      continue;
+    } else if (discard == "" && counter > 0){
+      counter++;
+      word += newChar;
+    } else {
+      console.log(`I ran ${counter} times`)
+      break;
+    }
+  }
+  var stateData = [{
+    values: {{=state_count}},
+    labels: newStateList,
+    type: 'pie'
+  }];
+
+  var stateLayout = {
+    height: 400,
+    width: 500
+  };
+
+  Plotly.newPlot('statePieChart', stateData, stateLayout);
+
+  let empNameList = "{{=cc_employee_names}}";
+  let newEmpNameList = [];
+  let word2 = '';
+  let discard2 = '';
+  let counter2 = 0
+  for (let i = 0; i < empNameList.length; i++){
+    let newCharE = empNameList[i];
+    if (newCharE == "["){
+      continue;
+    } else if (newCharE == ","){
+      i++;
+      continue;
+    } else if (newCharE == "&"){
+      counter2++
+      if (word2.length > 0){
+        newEmpNameList.push(word2);
+      }
+      word2 = '';
+      discard2 += newCharE;
+    } else if (discard2.length > 0 && newCharE != ";"){
+      counter2++;
+      discard2 += newCharE
+    } else if (newCharE == ";" && word2 == ""){
+      counter2++;
+      discard2 = '';
+    } else if (newCharE == " " && word2 == ""){
+      counter2++;
+      continue;
+    } else if (discard2 == "" && counter2 > 0){
+      counter2++;
+      word2 += newCharE;
+    } else {
+      console.log(`I ran ${counter2} times`)
+      break;
+    }
+  }
+  console.log(newEmpNameList);
+  var empData = [{
+    values: {{=cc_customer_counts}},
+    labels: newEmpNameList,
+    type: 'pie'
+  }];
+
+  var stateLayout = {
+    height: 400,
+    width: 500
+  };
+
+  Plotly.newPlot('employeePieChart', empData, stateLayout);
+  </script>
+  {{end page_js}}
+ {{pass}}
