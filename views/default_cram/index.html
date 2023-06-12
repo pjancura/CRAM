@@ -96,6 +96,7 @@
   }];
 
   var stateLayout = {
+    title: "Customers Per State",
     height: 400,
     width: 500
   };
@@ -145,12 +146,13 @@
     type: 'pie'
   }];
 
-  var stateLayout = {
+  var empLayout = {
+    title: "Customers Per Employee",
     height: 400,
     width: 500
   };
 
-  Plotly.newPlot('employeePieChart', empData, stateLayout);
+  Plotly.newPlot('employeePieChart', empData, empLayout, {displayModeBar: true});
   </script>
   {{end page_js}}
  {{pass}}
