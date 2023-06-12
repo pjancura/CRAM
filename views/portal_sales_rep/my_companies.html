@@ -1,0 +1,45 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        h1, h3{
+            color:red;
+            font-family:Copperplate;
+        }
+        body{
+            background-color:light grey;
+            color:red;
+        }
+    </style>
+{{end}}
+
+
+<h3><em>My Companies</em></h3>
+
+<table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3><em>My Companies</em></h3>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Company Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>ZIP Code</th>
+        <th>SIC Code</th>
+        <th>Social Media Link</th>
+    </tr>
+    {{for row in rows_of_companies:}}
+    <tr>
+        <td>{{=row[0].companies.id}}</td>
+        <td>{{=row[0].companies.company_name}}</td>
+        <td>{{=row[0].companies.address}}</td>
+        <td>{{=row[0].companies.city}}</td>
+        <td>{{=row[0].states_usa.state_abbr}}</td>
+        <td>{{=row[0].companies.zipcode}}</td>
+        <td>{{=row[0].companies.sic_code}}</td>
+        <td>{{=row[0].companies.s_media_link}}</td>
+
+    </tr>
+    {{pass}}
+</table>

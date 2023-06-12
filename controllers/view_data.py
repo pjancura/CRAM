@@ -16,7 +16,7 @@ def display_all_companies():
 
 
 ###### USING DB.EXECUTESQL(?????) WILL RETURN A LIST OF TUPLES
-@auth.requires_membership(['ceo', 'database_admin'])
+@auth.requires_membership('database_admin')
 def display_all_employees():
     rows = db.executesql('Select auth_user.id, auth_user.first_name, auth_user.last_name, auth_user.email, auth_group.role \
                         From auth_user \
@@ -26,10 +26,13 @@ def display_all_employees():
     return locals()
 
 def display_all_invoices():
-    rows = db(db.contact_notes).select(orderby=db.contact_notes.id)
+    rows = db(db.invoices).select(orderby=db.invoices.id)
     return locals()
 
 def display_all_catalogs():
     rows = db(db.catalogs).select(orderby=db.catalogs.id)
     return locals()
 
+
+
+    #rows = db(db.contact_notes).select(orderby=db.contact_notes.id)

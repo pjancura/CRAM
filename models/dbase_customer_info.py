@@ -16,7 +16,7 @@ db.define_table('sic_codes',
                 )
 
 db.define_table('companies',
-                Field('company_name', type = 'string', notnull=True, unique=True),
+                Field('company_name', type = 'string', notnull=True),
                 Field('address', type = 'string', notnull=True),
                 Field('city', type = 'string', notnull=True),
                 Field('state_abbr', type = 'string', notnull=True),
@@ -24,6 +24,8 @@ db.define_table('companies',
                 Field('sic_code', type = 'string', requires = IS_LENGTH(5), notnull=True),
                 Field('s_media_link', type = 'string', requires = IS_URL(), notnull=True, unique=True)
                 )
+
+
 
 #creates foreign key references for table(companies)
 db.companies.state_abbr.requires = IS_IN_DB(db, db.states_usa.id, '%(state_abbr)s')
@@ -38,26 +40,29 @@ db.define_table('persons',
                 Field('birthday', type = 'date', default = "", requires = IS_DATE()),
                 Field('contact_type', type = 'string', requires = IS_IN_SET(['customer', 'vendor']), notnull=True),
                 Field('referral_source', type = 'string', requires = IS_IN_SET(['cold call', 'email', 'event', 'newsletter', 'referred by customer'])),
-                Field('employee_id', type = 'integer'),
-                Field('created_on_date', type='date', requires=IS_DATE())
+                Field('employee_id', type = 'integer', notnull=True),
+                Field('created_on_date', type='date', requires=IS_DATE(), notnull=True)
                 )
 
 #creates foreign key reference for table(persons)
 db.persons.co_id.requires = IS_IN_DB(db, db.companies.id, '%(company_name)s')
+db.persons.employee_id.requires = IS_IN_DB(db, db.auth_user.id, '%(first_name)s %(last_name)s %(id)s')
 
 
 # time data must in military and formatted HH:MM   with optional :SS 
 db.define_table('contact_notes',
                 Field('emp_id', type = 'integer', notnull=True),
-                Field('date_created', type = 'date', requires=IS_DATE(), notnull=True),
-                Field('time_of_event', type = 'time', requires=IS_TIME(), default='12:00 AM', notnull=True),
+                Field('date_created', type = 'date', requires=IS_DATE()),
+                Field('time_of_event', type = 'time', requires=IS_TIME(), default='12:00 AM'),
                 Field('person_id', type = 'integer', notnull=True),
-                Field('contact_note', type = 'text', notnull=True)
+                Field('contact_note', type = 'text', notnull=True),
+                Field('status', type='text', requires=IS_IN_SET(['complete', 'incomplete', 'ongoing']), default='incomplete', notnull=True)
                 )
 
 #creates foreign key reference for table(persons)
 db.contact_notes.emp_id.requires= IS_IN_DB(db, db.auth_user.id, '%(first_name)s %(last_name)s')
-db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s')
+db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(id)s %(first_name)s %(last_name)s')
+
 
 
 
@@ -88,18 +93,22 @@ db.define_table('invoice_line_items',
 #creates foreign key reference for table(invoice_line_items)
 db.invoice_line_items.prod_id.requires=IS_IN_DB(db, db.catalogs.id, '%(product_name)s')
 
+
+
 db.define_table('invoices',
                 Field('purchase_date', type = 'date', requires=IS_DATE(), notnull=True),
                 Field('p_id', type = 'integer', notnull=True),
+                Field('company_id', type = 'integer'),
                 Field('due_date', type = 'date', compute=lambda r: r['purchase_date'] + datetime.timedelta(days=30)),
                 Field('invoice_total', type = 'decimal(20,2)', notnull=True),
                 Field('credit', type = 'decimal(20,2)', default=0),
                 Field('payment_total', type = 'decimal(20,2)', default=0),
-                Field('balance_due', type = 'decimal(20,2)', compute=lambda r: r['invoice_total'] - r['credit'] - r['payment_total'])
                 )
 
 #creates foreign key reference for table(invoices)
 db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s %(co_id)s')
+db.invoices.company_id.requires=IS_IN_DB(db, db.companies.id, '%(company_name)s %(id)s')
+
 
 
 
@@ -128,7 +137,6 @@ db.define_table('fake_invoices',
                 Field('invoice_total', type = 'decimal(20,2)', notnull=True),
                 Field('credit', type = 'decimal(20,2)', default=0),
                 Field('payment_total', type = 'decimal(20,2)', default=0),
-                Field('balance_due', type = 'decimal(20,2)', compute=lambda r: r['invoice_total'] - r['credit'] - r['payment_total'])
                 )
 
 db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s %(co_id)s')
@@ -142,6 +150,3 @@ db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_nam
 
 
 ######################################      WORK SPACE / SAVE FOR LATER
-
-                # Field('single_unit_price', type = 'decimal(20,2)'),
-                # Field('single_unit_mass', type='decimal(20,2)'),

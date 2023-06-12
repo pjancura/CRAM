@@ -1,0 +1,156 @@
+{{extend 'layout_new.html'}}
+{{if not auth.user:}}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="" data-slide-to="0" class="active"></li>
+      <li data-target="" data-slide-to="1"></li>
+      <li data-target="" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../static/images/DystopianLandscape1.jpeg" alt="Dyst1">
+        <div class="carousel-caption">
+          <h3>Our Mission</h3>
+          <p>"At PERT, our mission is to nourish the dystopian world with innovative and sustainable food solutions. We are committed to providing accessible and nutritious sustenance that transcends the harsh realities of our time. Through cutting-edge technology and relentless creativity, we strive to revolutionize the way people perceive and consume food in the dystopian era. With a focus on resource efficiency, environmental stewardship, and ethical practices, we aim to empower individuals to thrive amidst the challenges of their dystopian existence. PERT: Fueling resilience, sustenance, and hope in a world veiled by darkness."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" href="PERTSustainability.html" src="../static/images/DystopianLandscape02.jpeg" alt="Dyst2">
+        <div class="carousel-caption">
+          <h3>Sustainability</h3>
+          <p>"At PERT, we deeply believe in the power of sustainability. We understand that the choices we make today shape the world we'll inherit tomorrow. That's why we are committed to integrating sustainable practices into every aspect of our operations. From sourcing ethically and locally grown ingredients to minimizing waste through innovative production methods, sustainability is at the core of our business.
+
+            We strive to reduce our environmental footprint by implementing energy-efficient technologies, optimizing packaging materials, and supporting renewable energy sources. Our commitment extends beyond our products to the communities we serve, as we actively engage in initiatives that promote environmental education and conservation.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" href="PERTCareers.html" src="../static/images/Dystopianlandscape03.jpeg" alt="Dyst3">
+        <div class="carousel-caption">
+          <h3>Careers</h3>
+          <p>"At PERT, we believe that our greatest asset is our people. We foster a dynamic and inclusive work environment where individuals are valued, empowered, and inspired to reach their full potential. We are not just a company; we are a community of passionate individuals driven by a shared vision.
+
+            When you join PERT, you become part of a team that embraces innovation, creativity, and collaboration. We encourage a culture of continuous learning and personal growth, providing opportunities for professional development and advancement. We believe in investing in our employees, nurturing their talents, and supporting their aspirations.
+
+            As a Dystopian Food Company, we recognize the challenges and uncertainties of our world. However, we see these challenges as opportunities to make a meaningful impact. We are constantly pushing the boundaries, seeking individuals who are bold, resilient, and forward-thinking. Together, we strive to create a future where food sustainability and innovation coexist.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  {{else:}}
+  <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+  {{=BEAUTIFY(recent_customer)}}
+  {{=BEAUTIFY(emp_with_most_customers)}}
+
+  
+  {{block page_js}}
+  <script>
+  let stateNameList = '{{=state_name}}';
+  let newStateList = [];
+  let word = '';
+  let discard = '';
+  let counter = 0
+  for (let i = 0; i < stateNameList.length; i++){
+    let newChar = stateNameList[i];
+    if (newChar == "["){
+      continue;
+    } else if (newChar == ","){
+      i++;
+      continue;
+    } else if (newChar == "&"){
+      counter++
+      if (word.length > 0){
+        newStateList.push(word);
+      }
+      word = '';
+      discard += newChar;
+    } else if (discard.length > 0 && newChar != ";"){
+      counter++;
+      discard += newChar
+    } else if (newChar == ";" && word == ""){
+      counter++;
+      discard = '';
+    } else if (newChar == " " && word == ""){
+      counter++;
+      continue;
+    } else if (discard == "" && counter > 0){
+      counter++;
+      word += newChar;
+    } else {
+      console.log(`I ran ${counter} times`)
+      break;
+    }
+  }
+  var stateData = [{
+    values: {{=state_count}},
+    labels: newStateList,
+    type: 'pie'
+  }];
+
+  var stateLayout = {
+    height: 400,
+    width: 500
+  };
+
+  Plotly.newPlot('statePieChart', stateData, stateLayout);
+
+  let empNameList = "{{=cc_employee_names}}";
+  let newEmpNameList = [];
+  let word2 = '';
+  let discard2 = '';
+  let counter2 = 0
+  for (let i = 0; i < empNameList.length; i++){
+    let newCharE = empNameList[i];
+    if (newCharE == "["){
+      continue;
+    } else if (newCharE == ","){
+      i++;
+      continue;
+    } else if (newCharE == "&"){
+      counter2++
+      if (word2.length > 0){
+        newEmpNameList.push(word2);
+      }
+      word2 = '';
+      discard2 += newCharE;
+    } else if (discard2.length > 0 && newCharE != ";"){
+      counter2++;
+      discard2 += newCharE
+    } else if (newCharE == ";" && word2 == ""){
+      counter2++;
+      discard2 = '';
+    } else if (newCharE == " " && word2 == ""){
+      counter2++;
+      continue;
+    } else if (discard2 == "" && counter2 > 0){
+      counter2++;
+      word2 += newCharE;
+    } else {
+      console.log(`I ran ${counter2} times`)
+      break;
+    }
+  }
+  console.log(newEmpNameList);
+  var empData = [{
+    values: {{=cc_customer_counts}},
+    labels: newEmpNameList,
+    type: 'pie'
+  }];
+
+  var stateLayout = {
+    height: 400,
+    width: 500
+  };
+
+  Plotly.newPlot('employeePieChart', empData, stateLayout);
+  </script>
+  {{end page_js}}
+ {{pass}}

@@ -91,6 +91,7 @@ response.form_label_separator = ''
 # host names must be a list of allowed host names (glob syntax allowed)
 auth = Auth(db, host_names=configuration.get('host.names'))
 
+
 # -------------------------------------------------------------------------
 # create all tables needed by auth, maybe add a list of extra fields
 # -------------------------------------------------------------------------
@@ -157,5 +158,8 @@ if configuration.get('scheduler.enabled'):
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
 
+####################################################
+#change login redirect variables
 
-                
+auth.settings.login_next = URL(a='CRAM', c='default_cram', f='index')
+auth.settings.logout_next = URL(a='CRAM', c='default_cram', f='index')

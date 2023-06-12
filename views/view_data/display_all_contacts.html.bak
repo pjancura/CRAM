@@ -1,5 +1,0 @@
-{{extend 'layout.html'}}
-<h1>These are all of the contacts we have in the persons table</h1>
-
-
-{{=form}}

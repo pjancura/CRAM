@@ -1,0 +1,175 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+  <title>PERT - Products</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="PERTCSS.css">
+  <style>
+   header {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: transparent;
+        padding: 10px;
+      }
+  
+      nav ul {
+        background-color: transparent;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      nav ul li {
+        margin-right: 10px;
+      }
+  
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+      }
+  
+      /* Custom CSS for the home button */
+      .home-button {
+        width: 70px; /* Adjust the width as desired */
+        height: auto; /* Maintain aspect ratio */
+      }
+      
+      footer {
+        background-color: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+      }
+      
+      .carousel-item {
+        display: relative;
+      }
+  
+      .carousel-item img {
+        object-fit: cover;
+        flex: 1;
+      }
+  
+      .carousel-item .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+        color: white;
+        padding: 10px;
+        width: 100%; /* Adjust the width as needed */
+        height: 60%;
+        border-radius: 20px;
+      }
+  
+          /* Styling for the products section */
+          .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+  
+      /* Styling for product items */
+      .product {
+        width: 300px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 0px solid #ddd;
+        border-radius: 5px;
+      }
+  
+      /* Styling for product images */
+      .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+  
+      /* Styling for product names */
+      .product h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+          /* Custom CSS for the login form */
+    .login-container {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+  
+      .login-container button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      body {
+        background-image: url("images/Farm.jpeg");
+        background-size: cover; /* Adjust to your preference */
+      }
+      a {
+        color: #e6440e;
+      }
+      a:visited {
+        color: #ffffff;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+      a:active {
+        color: #e6440e;
+      }
+
+      
+  </style>
+{{end}}
+
+  
+  <section class="products">
+    <div class="product">
+      <a href="">
+        <img src="../static/images/warehouse1.jpeg" alt="warehouse">
+        <h3>Warehouse</h3>
+        <p></p>
+      </a>
+    </div>
+  
+    <div class="product">
+      <a href="">
+        <img src="../static/images/salesman1.jpeg" alt="salesman">
+        <h3>Sales</h3>
+        <p></p>
+      </a>
+    </div>
+  
+    <div class="product">
+      <a href="">
+        <img src="../static/images/truck.jpeg" alt="truck">
+        <h3>"Driver/Transportation"</h3>
+        <p></p>
+      </a>
+    </div>
+  </section>
+
+ 

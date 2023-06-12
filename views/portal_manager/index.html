@@ -1,0 +1,21 @@
+{{extend 'layout_new.html'}}
+
+<table id="customerTable" class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>Employees</h3>
+    </tr>
+    <thead>
+        <tr>
+            <th class="th-sm" sortable>ID#</th>
+            <th class="th-sm" sortable>First Name</th>
+            <th class="th-sm" sortable>Last Name</th>
+        </tr>
+    </thead>
+{{for x in emp_group:}}
+    <tr>
+        <td><a href="{{=URL('portal_manager','employee_view',args=[x['id']])}}">{{=x['id']}}</a></td>
+        <td>{{=x['first_name']}}</td>
+        <td>{{=x['last_name']}}</td>
+    </tr>
+{{pass}}
+</table>

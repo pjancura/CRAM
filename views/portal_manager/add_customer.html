@@ -1,0 +1,53 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        body{
+            background-color:light grey;
+            color:red;
+            font-family:Courier New; font-size:15px;
+        }
+        h1{
+            font-family:Copperplate;
+            color:red;
+        }
+    
+    </style>
+{{end}}
+    
+
+
+
+{{=customer_form}}
+<br><br>
+<br><br>
+{{block page_js}}
+<script>
+     // changes label of Employee Id 
+     document.getElementById("persons_employee_id__label").innerHTML = "Employee ID";
+    //changes label name for Co Id to Company Name
+    document.getElementById("persons_co_id__label").innerHTML = "Company Name";
+    //changes labael name for Work Phone Num to Work Phone Number
+    document.getElementById("persons_work_phone_num__label").innerHTML = "Work Phone Number";
+    document.getElementById("persons_work_phone_num").setAttribute("placeholder","###-###-####");
+    // sets default for Birthday input
+    document.getElementById("persons_birthday").setAttribute("value","1827-03-26");
+    // aside for birthday input
+    birthdayAside = document.createElement("p");
+    birthdayAside.innerHTML = "Use the default date if you do not know the actual birthday";
+    document.getElementById("persons_birthday__row").children[1].appendChild(birthdayAside); 
+    
+    // only displays the appropriate employees
+    let empIdOptions = document.getElementById("persons_employee_id").options;
+    let empIdList = {{=employees_list}};
+    console.log(empIdList);
+    for (i = 0; i < empIdOptions.length; i++){
+        console.log(empIdList.indexOf(parseInt(empIdOptions[i].value)));
+        if ((empIdList.indexOf(parseInt(empIdOptions[i].value)) >= 0) || empIdOptions[i].value == ""){
+            continue;
+        } else {
+            empIdOptions[i].setAttribute("style","display:none;");
+        }
+    }
+</script>
+{{end page_js}}
+

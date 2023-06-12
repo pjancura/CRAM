@@ -1,0 +1,3 @@
+2023-06-09 20:18:53,979 - portal_manager - INFO - 
+manager group number: [4]
+employee group: [{'group_id': 6, 'id': 5, 'last_name': 'Firestorm', 'first_name': 'Ash'}, {'group_id': 6, 'id': 7, 'last_name': 'Bloodthorn', 'first_name': 'Axel'}, {'group_id': 6, 'id': 16, 'last_name': 'Ashenfire', 'first_name': 'Blaze'}, {'group_id': 6, 'id': 11, 'last_name': 'Wraithbane', 'first_name': 'Gideon'}, {'group_id': 6, 'id': 19, 'last_name': 'Grimm', 'first_name': 'Jett'}, {'group_id': 6, 'id': 13, 'last_name': 'Scorch', 'first_name': 'Kai'}, {'group_id': 6, 'id': 6, 'last_name': 'Riftbreaker', 'first_name': 'Nova'}, {'group_id': 6, 'id': 8, 'last_name': 'Nightshade', 'first_name': 'Raven'}, {'group_id': 6, 'id': 14, 'last_name': 'Voidwalker', 'first_name': 'Riley'}]
