@@ -19,7 +19,7 @@ def index():
     rows = db.executesql('SELECT persons.id, first_name, last_name, c.company_name, persons.employee_id \
                         FROM persons JOIN companies c on c.id = persons.co_id;')
     invoices = db.executesql('SELECT invoices.id, purchase_date, p_id, due_date, invoice_total, credit, \
-                             payment_total FROM invoices;', as_dict=True)
+                             payment_total FROM invoices WHERE;', as_dict=True)
     notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, cn.time_of_event, cn.contact_note, cn.status \
                                         FROM contact_notes cn join persons on persons.id = cn.person_id;')
 
@@ -115,4 +115,18 @@ def my_companies():
         rows_of_companies.append(company_row)
                                 
     return locals()
+
+@auth.requires_login()
+def my_invoices():
+    emp_num = session.auth.user.id
+    my_query = db.invoices.p_id == emp_num
+    my_customers_invoices = db(my_query).select()
+    rows_of_invoices = []
+    for row in my_customers_invoices:
+        {{if row.p_id == }}
+        invoice_row = db(db.invoices.id == row.co_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+        rows_of_companies.append(company_row)
+                                
+    return locals()
+
 
