@@ -36,6 +36,11 @@ def customers():
     return locals()
 
 @auth.requires_login()
+def companies():
+    grid = SQLFORM.grid(db.companies)
+    return locals()
+
+@auth.requires_login()
 def sic_codes():
     grid = SQLFORM.grid(db.sic_codes)
     return locals()
@@ -45,10 +50,6 @@ def states_usa():
     grid = SQLFORM.grid(db.states_usa)
     return locals()
 
-@auth.requires_login()
-def companies():
-    grid = SQLFORM.grid(db.companies)
-    return locals()
 
 @auth.requires_login()
 def contact_notes():

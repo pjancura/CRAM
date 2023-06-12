@@ -1,0 +1,27 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        h1{
+            color:red;
+            font-family:Copperplate;
+        }
+        body{
+            background-color:light grey;
+            color:red;
+        }
+    </style>
+{{end}}
+
+
+<h1><em>Add a Note</em></h1>
+
+{{=BEAUTIFY(catalog_form)}}
+<br><br>
+
+
+{{block page_js}}
+<script>
+
+</script>
+{{end page_js}}
+

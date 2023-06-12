@@ -14,13 +14,19 @@
 
 
 <h1><em>Add a Note</em></h1>
+{{if request.vars:}}
+<p><a id="returnToCustomer" href="">Return to Previous Customer</a></p>
+{{pass}}
 {{=BEAUTIFY(note_form)}}
 <br><br>
-<a href="{{=URL('index')}}">Vault Door</a>
 
 
 {{block page_js}}
 <script>
+        // adds directions to time_of_event
+        timeAside = document.createElement("p");
+    timeAside.innerHTML = "12:00 AM or 00:00:00 means an event that can happen anytime that day."
+    document.getElementById("contact_notes_time_of_event__row").children[1].append(timeAside);
 
     //changes who is visible in the customer dropdown
     customerList = {{=list_customer_ids}};
@@ -35,10 +41,10 @@
     //sets the value of Employee Id to whoever is logged in and disables the field
     document.getElementById("contact_notes_emp_id__label").innerHTML = "Employee Name";
     let empId = document.getElementById("contact_notes_emp_id");
-    empId.disabled = "True";
+    empId.setAttribute("readonly","True");
     empId.value = {{=str(session.auth.user.id)}};
 
-    //changes labl of person id
+    //changes label of person id
     document.getElementById("contact_notes_person_id__label").innerHTML = "Customer Name";
 
     //changes label of contact note
@@ -56,6 +62,11 @@
     }
     theYear = todayDate.getFullYear();
     document.getElementById("contact_notes_date_created").value = `${theYear}-${theMonth}-${theDay}`;
+
+    // sets href to return to the previous customer view
+    {{if request.vars:}}
+    document.getElementById("returnToCustomer").setAttribute("href","{{=return_url}}");
+    {{pass}}
 </script>
 {{end page_js}}
 

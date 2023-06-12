@@ -1,0 +1,32 @@
+{{extend 'layout_new.html'}}
+
+
+
+<table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>Employee Companies</h3>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Company Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>ZIP Code</th>
+        <th>SIC Code</th>
+        <th>Social Media Link</th>
+    </tr>
+    {{for row in employee_rows_companies:}}
+    <tr>
+        <td><a href="{{=URL('portal_manager','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
+        <td>{{=row.companies.company_name}}</td>
+        <td>{{=row.companies.address}}</td>
+        <td>{{=row.companies.city}}</td>
+        <td>{{=row.states_usa.state_abbr}}</td>
+        <td>{{=row.companies.zipcode}}</td>
+        <td>{{=row.companies.sic_code}}</td>
+        <td>{{=row.companies.s_media_link}}</td>
+
+    </tr>
+    {{pass}}
+</table>

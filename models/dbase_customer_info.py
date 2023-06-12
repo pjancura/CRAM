@@ -16,7 +16,7 @@ db.define_table('sic_codes',
                 )
 
 db.define_table('companies',
-                Field('company_name', type = 'string', notnull=True, unique=True),
+                Field('company_name', type = 'string', notnull=True),
                 Field('address', type = 'string', notnull=True),
                 Field('city', type = 'string', notnull=True),
                 Field('state_abbr', type = 'string', notnull=True),
@@ -60,7 +60,7 @@ db.define_table('contact_notes',
 
 #creates foreign key reference for table(persons)
 db.contact_notes.emp_id.requires= IS_IN_DB(db, db.auth_user.id, '%(first_name)s %(last_name)s')
-db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s')
+db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(id)s %(first_name)s %(last_name)s')
 
 
 
@@ -106,7 +106,7 @@ db.define_table('invoices',
 
 #creates foreign key reference for table(invoices)
 db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s %(co_id)s')
-
+db.invoices.company_id.requires=IS_IN_DB(db, db.companies.id, '%(company_name)s %(id)s')
 
 
 

@@ -7,10 +7,11 @@ from logging import handlers
 logger = logging.getLogger("portal_sales_rep")
 logger.setLevel(logging.DEBUG)
 handler = handlers.RotatingFileHandler("../MacOS/applications/CRAM/logs/portal_sales_rep.log", "a", 1000000, 5)
-handler.setLevel(logging.INFO)
+handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
+
 
 @auth.requires_login()
 def index():
@@ -18,7 +19,8 @@ def index():
     today_date = datetime.date.today()
     rows = db.executesql('SELECT persons.id, first_name, last_name, c.company_name, persons.employee_id \
                         FROM persons JOIN companies c on c.id = persons.co_id;')
-    notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, cn.date_created, cn.time_of_event, cn.contact_note, cn.status \
+    notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, \
+                                       cn.date_created, cn.time_of_event, cn.contact_note, cn.status , cn.id\
                                         FROM contact_notes cn join persons on persons.id = cn.person_id;')
 
     return locals()
@@ -30,6 +32,8 @@ def index():
 def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
+    if request.vars:
+        response.flash = msg
     if customer_form.process().accepted:
         response.flash = T('Customer Added')
     else:
@@ -38,23 +42,37 @@ def add_customer_or_company():
 
 @auth.requires_login()
 def submit_customer_and_company():
-    #cast each variable to the data type
-    full_year = int(request.vars.created_on_date[:4])
-    full_month = int(request.vars.created_on_date[5:7])
-    full_day = int(request.vars.created_on_date[8:10])
-    created_date = datetime.date(full_year, full_month, full_day)
-    if request.vars.birthday:
-        b_full_year = int(request.vars.birthday[:4])
-        b_full_month = int(request.vars.birthday[5:7])
-        b_full_day = int(request.vars.birthday[8:10])
-        birthday_date = datetime.date(b_full_year, b_full_month, b_full_day)
-    employee_int = int(request.vars.employee_id)
-    db.companies.insert(company_name=request.vars.company_name, address=request.vars.address, city=request.vars.city, state=request.vars.state_abbr, zipcode=request.vars.zipcode, sic_code=request.vars.sic_code, s_media_link=request.vars.s_media_link)
-    #get id of new company information
-    new_co_id = db(db.companies.company_name == request.vars.company_name & db.companies.address == request.vars.address).select(db.companies.id)
-    logger.info(f'\nsubmit_customer_and_company\ncompany_form.process:   \n{new_co_id}\n')
-    #return response.flash message to notify success or failure
-    redirect(URL(c='portal_sales_rep', f='add_customer_or_company'))
+    try:
+        #cast each variable to the correct data type
+        full_year = int(request.vars.created_on_date[:4])
+        full_month = int(request.vars.created_on_date[5:7])
+        full_day = int(request.vars.created_on_date[8:10])
+        created_date = datetime.date(full_year, full_month, full_day)
+        if request.vars.birthday:
+            b_full_year = int(request.vars.birthday[:4])
+            b_full_month = int(request.vars.birthday[5:7])
+            b_full_day = int(request.vars.birthday[8:10])
+            birthday_date = datetime.date(b_full_year, b_full_month, b_full_day)
+        else:
+            birthday_date = ''
+        employee_int = int(request.vars.employee_id)
+        #submits to the companies table
+        db.companies.insert(company_name=request.vars.company_name, address=request.vars.address, \
+                            city=request.vars.city, state_abbr=request.vars.state_abbr, zipcode=request.vars.zipcode, \
+                                sic_code=request.vars.sic_code, s_media_link=request.vars.s_media_link)
+        new_co_id = db((db.companies.company_name == request.vars.company_name) & \
+                       (db.companies.address == request.vars.address)).select(db.companies.id).last()
+        db.persons.insert(first_name=request.vars.first_name, last_name=request.vars.last_name, \
+                        co_id=int(new_co_id), work_phone_num=request.vars.work_phone_num, \
+                        email=request.vars.email, birthday=birthday_date, contact_type=request.vars.contact_type, \
+                        referral_source=request.vars.referral_source, employee_id=employee_int, created_on_date=created_date)
+        new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
+    except:
+        logger.critical(f"\nsomething broke\n{request.vars}")
+        redirect(URL(c='portal_sales_rep', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
+    else:
+        logger.debug("\nSubmitted to everyting")
+        redirect(URL(c='portal_sales_rep', f='view_customer', args=[new_customer_id[0].id]))
     return locals()
 
 
@@ -62,7 +80,7 @@ def submit_customer_and_company():
 
 @auth.requires_login()
 def add_new_note():
-    note_form = SQLFORM(db.contact_notes).process()
+    note_form = SQLFORM(db.contact_notes)
     emp_num = session.auth.user.id
     relevant_customers = db.executesql(f'SELECT persons.id \
                                         FROM persons \
@@ -75,33 +93,52 @@ def add_new_note():
         r_3 = r_2.replace(",","")
         i = int(r_3)
         list_customer_ids.append(i)
+    if note_form.process().accepted:
+        response.flash = 'form accepted'
+    elif note_form.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill out the form'
+    if request.vars:
+        return_url = URL('portal_sales_rep','view_customer', args=[request.vars.id]) 
     return locals()
 
 @auth.requires_login()
 def add_company():
-    company_form = SQLFORM(db.companies).process()
+    company_form = SQLFORM(db.companies)
     if company_form.process().accepted:
-        response.flash = T('Record Updated')
+        response.flash = 'form accepted'
+    elif company_form.errors:
+        response.flash = 'form has errors'
     else:
-        response.flash = T('Please complete the form.')
+        response.flash = 'please fill out the form'
     return locals()
 
 @auth.requires_login()
 def add_customer():
-    customer_form = SQLFORM(db.persons).process()
+    customer_form = SQLFORM(db.persons)
     if customer_form.process().accepted:
-        response.flash = T('Record Updated')
+        response.flash = 'form accepted'
+    elif customer_form.errors:
+        response.flash = 'form has errors'
     else:
-        response.flash = T('Please complete the form.')
+        response.flash = 'please fill out the form'
     return locals()
 
 @auth.requires_login()
 def view_customer():
     id_num = request.args(0)
     person = db(db.persons.id == id_num).select()
-    person_company = db(db.companies.id == person[0].co_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
-    person_notes = db(db.contact_notes.person_id == person[0].id).select()    
+    company_id = person[0].co_id
+    person_id = person[0].id
+    person_company = db(db.companies.id == person[0].co_id) \
+                        .select(db.companies.id, db.companies.company_name, db.companies.address, \
+                        db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                        db.companies.sic_code, db.companies.s_media_link, \
+                        join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+    person_notes = db(db.contact_notes.person_id == person_id).select()    
     return locals()
+
 
 @auth.requires_login()
 def update_customer():
@@ -110,9 +147,11 @@ def update_customer():
     form = SQLFORM(db.persons, record)
     return_url = URL('portal_sales_rep', 'view_customer', args = [record.id])
     if form.process().accepted:
-        response.flash = T('Record Updated')
+        response.flash = 'form accepted'
+    elif form.errors:
+        response.flash = 'form has errors'
     else:
-        response.flash = T('Please complete the form.')
+        response.flash = 'please fill out the form'
     return locals()
 
 
@@ -126,9 +165,11 @@ def update_company():
     attached_customer = db(db.persons.co_id == record.id).select()
     return_url = URL('portal_sales_rep', 'view_customer', args = [attached_customer[0].id])
     if form.process().accepted:
-        response.flash = T('Record Updated')
+        response.flash = 'form accepted'
+    elif form.errors:
+        response.flash = 'form has errors'
     else:
-        response.flash = T('Please complete the form.')
+        response.flash = 'please fill out the form'
     return locals()
 
 @auth.requires_login()
@@ -138,9 +179,11 @@ def update_note():
     form = SQLFORM(db.contact_notes, record)
     return_url = URL('portal_sales_rep', 'view_customer', args = [record.person_id])
     if form.process().accepted:
-        response.flash = T('Record Updated')
+        response.flash = 'form accepted'
+    elif form.errors:
+        response.flash = 'form has errors'
     else:
-        response.flash = T('Please complete the form.')
+        response.flash = 'please fill out the form'
     return locals()
 
 
@@ -152,8 +195,14 @@ def my_companies():
     my_companies_ids = db(my_query).select()
     rows_of_companies = []
     for row in my_companies_ids:
-        company_row = db(db.companies.id == row.co_id).select(db.companies.id, db.companies.company_name, db.companies.address, db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, db.companies.sic_code, db.companies.s_media_link, join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+        company_row = db(db.companies.id == row.co_id) \
+                    .select(db.companies.id, db.companies.company_name, db.companies.address, \
+                    db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                    db.companies.sic_code, db.companies.s_media_link, \
+                    join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+        logger.info(company_row)
         rows_of_companies.append(company_row)
                                 
+    #logger.info(f"company row:  {rows_of_companies}")
     return locals()
 
