@@ -54,6 +54,20 @@ def add_customer_or_company():
         response.flash = T('Customer Added')
     else:
         response.flash = T('Please complete the form.')
+    man_group = list(session.auth.user_groups.keys())[0]
+    if man_group == 4:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 6).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+    else:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 7).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+    logger.info(f"employee id list: {employees_list}")
     return locals()
 
 @auth.requires_login()
@@ -168,6 +182,20 @@ def add_customer():
         response.flash = 'form has errors'
     else:
         response.flash = 'please fill out the form'
+    man_group = list(session.auth.user_groups.keys())[0]
+    if man_group == 4:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 6).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+    else:
+        # ids of related employees and collect employee ids
+        employees = db(db.auth_membership.group_id == 7).select(db.auth_user.id, join=[db.auth_user.on(db.auth_membership.user_id == db.auth_user.id)])
+        employees_list = []
+        for x in employees:
+            employees_list.append(x.id)
+    logger.info(f"employee id list: {employees_list}")
     return locals()
 
 @auth.requires_login()

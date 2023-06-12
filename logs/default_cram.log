@@ -3649,3 +3649,81 @@ All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corpo
 2023-06-10 17:14:55,671 - default_cram - INFO - {2: 'ceo'}
 2023-06-10 17:14:55,671 - default_cram - INFO - {2: 'ceo'}
 2023-06-10 17:14:55,671 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:10:43,507 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:10:48,727 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:10:48,727 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:06,735 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:06,735 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:06,735 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:48,060 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:48,060 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:48,060 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:48,060 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:52,171 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:52,171 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:52,171 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:52,171 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:12:52,171 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 20:25:23,970 - default_cram - INFO - {}
+2023-06-11 20:25:23,970 - default_cram - INFO - {}
+2023-06-11 20:25:23,970 - default_cram - INFO - {}
+2023-06-11 20:25:23,970 - default_cram - INFO - {}
+2023-06-11 20:25:23,970 - default_cram - INFO - {}
+2023-06-11 20:25:23,970 - default_cram - INFO - {}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:26:20,856 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:34:54,237 - default_cram - INFO - {3: 'database_admin'}
+2023-06-11 20:38:47,803 - default_cram - INFO - {}
+2023-06-11 20:38:47,803 - default_cram - INFO - {}
+2023-06-11 20:39:58,573 - default_cram - INFO - {4: 'manager1'}
+2023-06-11 20:39:58,573 - default_cram - INFO - {4: 'manager1'}
+2023-06-11 20:39:58,573 - default_cram - INFO - {4: 'manager1'}
+2023-06-11 20:42:42,489 - default_cram - INFO - {}
+2023-06-11 20:42:42,489 - default_cram - INFO - {}
+2023-06-11 20:42:42,489 - default_cram - INFO - {}
+2023-06-11 20:42:42,489 - default_cram - INFO - {}
+2023-06-11 20:42:53,296 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-11 20:42:53,296 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-11 20:42:53,296 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-11 20:42:53,296 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-11 20:42:53,296 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-11 20:42:53,296 - default_cram - INFO - {7: 'sales_rep_2'}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:11,747 - default_cram - INFO - {}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:25:32,703 - default_cram - INFO - {5: 'manager2'}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:55:55,553 - default_cram - INFO - {}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}
+2023-06-11 21:56:04,774 - default_cram - INFO - {2: 'ceo'}

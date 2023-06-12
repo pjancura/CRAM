@@ -46,6 +46,7 @@ db.define_table('persons',
 
 #creates foreign key reference for table(persons)
 db.persons.co_id.requires = IS_IN_DB(db, db.companies.id, '%(company_name)s')
+db.persons.employee_id.requires = IS_IN_DB(db, db.auth_user.id, '%(first_name)s %(last_name)s %(id)s')
 
 
 # time data must in military and formatted HH:MM   with optional :SS 

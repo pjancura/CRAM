@@ -22,11 +22,8 @@
 <br><br>
 {{block page_js}}
 <script>
-     //sets the value of Employee Id to whoever is logged in and disables the field
+     // changes label of Employee Id 
      document.getElementById("persons_employee_id__label").innerHTML = "Employee ID";
-    let empId = document.getElementById("persons_employee_id");
-    empId.setAttribute("readonly","true");
-    empId.value = {{=str(session.auth.user.id)}};
     //changes label name for Co Id to Company Name
     document.getElementById("persons_co_id__label").innerHTML = "Company Name";
     //changes labael name for Work Phone Num to Work Phone Number
@@ -37,7 +34,20 @@
     // aside for birthday input
     birthdayAside = document.createElement("p");
     birthdayAside.innerHTML = "Use the default date if you do not know the actual birthday";
-    document.getElementById("persons_birthday__row").children[1].appendChild(birthdayAside);    
+    document.getElementById("persons_birthday__row").children[1].appendChild(birthdayAside); 
+    
+    // only displays the appropriate employees
+    let empIdOptions = document.getElementById("persons_employee_id").options;
+    let empIdList = {{=employees_list}};
+    console.log(empIdList);
+    for (i = 0; i < empIdOptions.length; i++){
+        console.log(empIdList.indexOf(parseInt(empIdOptions[i].value)));
+        if ((empIdList.indexOf(parseInt(empIdOptions[i].value)) >= 0) || empIdOptions[i].value == ""){
+            continue;
+        } else {
+            empIdOptions[i].setAttribute("style","display:none;");
+        }
+    }
 </script>
 {{end page_js}}
 

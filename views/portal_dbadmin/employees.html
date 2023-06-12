@@ -1,4 +1,4 @@
-{{extend 'layout.html'}}
+{{extend 'layout_new.html'}}
 {{block head}}
     <style>
         body{
@@ -15,6 +15,6 @@
 {{end}}
     
 <h1><em>Employees</em></h1>
-<p><a href="{{=URL('portal_dbadmin', 'index.html')}}">Home</a></p>
-<br><br><br>
+
+
 {{=BEAUTIFY(grid)}}

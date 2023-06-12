@@ -53,8 +53,24 @@
     eleDivCompany.appendChild(newCompanyDiv);
 
     //sets the value of Employee Id to whoever is logged in and disables the field
-    document.getElementById("persons_employee_id").setAttribute('readonly', 'True');
-    document.getElementById("persons_employee_id").value = {{=str(session.auth.user.id)}};
+    let empId = document.getElementById("persons_employee_id");
+    empId.value = {{=str(session.auth.user.id)}};
+        // disables the employee id field until the submit button is focused
+        empId.setAttribute("disabled","true");
+    
+    function disableDisabled(){
+        if (empId.disabled == true){
+            empId.removeAttribute("disabled");
+            empId.setAttribute("readonly","true");
+        } else {
+            empId.setAttribute("disabled","true");
+            empId.removeAttribute("readonly");
+        }
+    };
+
+    document.forms[0].children[10].firstChild.firstChild.addEventListener("mouseover",disableDisabled);
+    document.forms[0].children[10].firstChild.firstChild.addEventListener("mouseout",disableDisabled);
+
     //sets the value of Created On Date to today's date
     let todayDate = new Date();
     theDay = todayDate.getDate();

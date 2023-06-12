@@ -25,7 +25,6 @@
      //sets the value of Employee Id to whoever is logged in and disables the field
      document.getElementById("persons_employee_id__label").innerHTML = "Employee ID";
     let empId = document.getElementById("persons_employee_id");
-    empId.setAttribute("readonly","true");
     empId.value = {{=str(session.auth.user.id)}};
     //changes label name for Co Id to Company Name
     document.getElementById("persons_co_id__label").innerHTML = "Company Name";

@@ -1245,3 +1245,2329 @@ employee group: [{'group_id': 6, 'id': 5, 'last_name': 'Firestorm', 'first_name'
 2023-06-10 17:09:17,907 - portal_manager - INFO - 
 manager group number: [2]
 employee group: [{'group_id': 6, 'id': 5, 'last_name': 'Firestorm', 'first_name': 'Ash'}, {'group_id': 6, 'id': 7, 'last_name': 'Bloodthorn', 'first_name': 'Axel'}, {'group_id': 6, 'id': 16, 'last_name': 'Ashenfire', 'first_name': 'Blaze'}, {'group_id': 6, 'id': 11, 'last_name': 'Wraithbane', 'first_name': 'Gideon'}, {'group_id': 6, 'id': 19, 'last_name': 'Grimm', 'first_name': 'Jett'}, {'group_id': 6, 'id': 13, 'last_name': 'Scorch', 'first_name': 'Kai'}, {'group_id': 6, 'id': 6, 'last_name': 'Riftbreaker', 'first_name': 'Nova'}, {'group_id': 6, 'id': 8, 'last_name': 'Nightshade', 'first_name': 'Raven'}, {'group_id': 6, 'id': 14, 'last_name': 'Voidwalker', 'first_name': 'Riley'}]
+2023-06-11 20:40:01,588 - portal_manager - INFO - 
+manager group number: [4]
+employee group: [{'group_id': 6, 'id': 5, 'last_name': 'Firestorm', 'first_name': 'Ash'}, {'group_id': 6, 'id': 7, 'last_name': 'Bloodthorn', 'first_name': 'Axel'}, {'group_id': 6, 'id': 16, 'last_name': 'Ashenfire', 'first_name': 'Blaze'}, {'group_id': 6, 'id': 11, 'last_name': 'Wraithbane', 'first_name': 'Gideon'}, {'group_id': 6, 'id': 19, 'last_name': 'Grimm', 'first_name': 'Jett'}, {'group_id': 6, 'id': 13, 'last_name': 'Scorch', 'first_name': 'Kai'}, {'group_id': 6, 'id': 6, 'last_name': 'Riftbreaker', 'first_name': 'Nova'}, {'group_id': 6, 'id': 8, 'last_name': 'Nightshade', 'first_name': 'Raven'}, {'group_id': 6, 'id': 14, 'last_name': 'Voidwalker', 'first_name': 'Riley'}]
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:44,803 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:44,804 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:44,805 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:44,806 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:44,807 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:44,808 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:44,809 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:44,810 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:44,811 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:44,812 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:44,813 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:44,813 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:44,813 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:44,813 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:44,813 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,487 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,488 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,489 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,490 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,491 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,492 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,493 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,494 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,495 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,496 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,497 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,498 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,499 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:40:57,500 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,176 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,177 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,178 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,179 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,180 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,181 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,182 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,183 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,184 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,185 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,186 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,187 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,188 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,189 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,190 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,191 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,192 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:41:03,193 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,011 - portal_manager - INFO - employee_id: 1  	 14
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,013 - portal_manager - INFO - employee_id: 2  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 4  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,014 - portal_manager - INFO - employee_id: 5  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,015 - portal_manager - INFO - employee_id: 9  	 11
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 13  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,016 - portal_manager - INFO - employee_id: 16  	 6
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 17  	 7
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,017 - portal_manager - INFO - employee_id: 19  	 13
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,018 - portal_manager - INFO - employee_id: 20  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 21  	 14
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,019 - portal_manager - INFO - employee_id: 22  	 16
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 23  	 11
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,020 - portal_manager - INFO - employee_id: 25  	 8
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 26  	 7
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,021 - portal_manager - INFO - employee_id: 28  	 6
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 29  	 7
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,022 - portal_manager - INFO - employee_id: 31  	 19
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 33  	 8
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,023 - portal_manager - INFO - employee_id: 34  	 6
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 35  	 8
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,024 - portal_manager - INFO - employee_id: 39  	 19
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 40  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,025 - portal_manager - INFO - employee_id: 41  	 7
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,026 - portal_manager - INFO - employee_id: 42  	 11
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 43  	 19
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,027 - portal_manager - INFO - employee_id: 44  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 46  	 8
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,028 - portal_manager - INFO - employee_id: 49  	 13
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 51  	 5
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,029 - portal_manager - INFO - employee_id: 54  	 6
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,030 - portal_manager - INFO - employee_id: 56  	 16
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 57  	 5
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,031 - portal_manager - INFO - employee_id: 60  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 61  	 13
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,032 - portal_manager - INFO - employee_id: 64  	 14
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,033 - portal_manager - INFO - employee_id: 67  	 16
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 68  	 14
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,034 - portal_manager - INFO - employee_id: 70  	 5
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 72  	 13
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,035 - portal_manager - INFO - employee_id: 73  	 7
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 74  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 20:42:28,036 - portal_manager - INFO - employee_id: 75  	 16
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:25:37,797 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:42:59,705 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:43:42,978 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:44:47,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:13,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:33,981 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:45:58,372 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:46:47,486 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:06,387 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:24,063 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:47:37,836 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:49:00,974 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:25,231 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:50:34,106 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:13,971 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:51:36,629 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:52:36,151 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:53:26,336 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:00,493 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:54:50,451 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
+2023-06-11 21:55:20,244 - portal_manager - INFO - employee id list: [12, 10, 18, 9, 20, 17, 15]
