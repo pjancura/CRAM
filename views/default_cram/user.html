@@ -6,10 +6,7 @@
       {{=T('Sign Up') if request.args(0) == 'register' else T('Log In') if request.args(0) == 'login' else T(request.args(0).replace('_',' ').title())}}
     </h2>
     {{=form}}
-    {{if request.args(0)=='login' and not 'register' in auth.settings.actions_disabled:}}
-    <a href="{{=URL('user/register')}}">{{=T('Register')}}</a>
-    <br/>
-    {{pass}}
+
     {{if request.args(0)=='login' and not 'retrieve_password' in auth.settings.actions_disabled:}}
     <a href="{{=URL('user/retrieve_password')}}">{{=T('Lost your password?')}}</a>
     {{pass}}
