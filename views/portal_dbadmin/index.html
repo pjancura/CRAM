@@ -1,5 +1,20 @@
-{{extend 'layout.html'}}
-<h1>This is the portal_dbadmin/employees.html template</h1>
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        body{
+            background-color:light grey;
+            color:red;
+            font-family:Courier New; font-size:15px;
+        }
+        h1{
+            font-family:Copperplate;
+            color:red;
+        }
+    
+    </style>
+{{end}}
+    
+<h1><em>PERT Portal</em></h1>
 <p><a href="{{=URL('portal_dbadmin', 'index.html')}}">Home</a></p>
 <p><a href="{{=URL('portal_dbadmin', 'employees.html')}}">Employees</a></p>
 <p><a href="{{=URL('portal_dbadmin', 'employees_group.html')}}">Employee Groups</a></p>
@@ -10,8 +25,7 @@
 <p><a href="{{=URL('portal_dbadmin', 'catalog.html')}}">Catalog</a></p>
 <p><a href="{{=URL('portal_dbadmin', 'sic_codes.html')}}">SIC Codes</a></p>
 <p><a href="{{=URL('portal_dbadmin', 'states_usa.html')}}">USA States</a></p>
+<p><a href="{{=URL('portal_dbadmin', 'invoices.html')}}">Invoices</a></p>
+<p><a href="{{=URL('portal_dbadmin', 'invoice_line_items.html')}}">Invoice Line Items</a></p>
 
 <br><br><br>
-
-
-

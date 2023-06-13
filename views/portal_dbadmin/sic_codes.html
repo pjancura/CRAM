@@ -1,4 +1,18 @@
-{{extend 'layout.html'}}
-<h1>This is the portal_dbadmin/employees.html template</h1>
-<p><a href="{{=URL('portal_dbadmin', 'index.html')}}">Home</a></p>
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        body{
+            background-color:light grey;
+            color:red;
+            font-family:Courier New; font-size:15px;
+        }
+        h1{
+            font-family:Copperplate;
+            color:red;
+        }
+    
+    </style>
+{{end}}
+    
+<h3><em>SIC Codes</em></h3>
 {{=BEAUTIFY(grid)}}

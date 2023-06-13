@@ -1,0 +1,231 @@
+{{extend 'layout_new.html'}} {{import datetime}} {{block head}}
+<style>
+  body {
+    background-color: light grey;
+    color: red;
+    font-family: Courier New;
+    font-size: 15px;
+  }
+  h1 {
+    font-family: Copperplate;
+    color: red;
+  }
+</style>
+{{end}} {{if emp_num == "0":}}
+<h1>Login error: Please try logging in again</h1>
+{{else:}}
+<h1><em>Sales Rep</em></h1>
+
+<!-- <p>{{=today_date}}</p> -->
+<!-- <p>This is the employee number: {{=emp_num}}</p> -->
+<table
+  id="customerTable"
+  class="table table-striped table-hover table-bordered table-sm"
+>
+  <tr>
+    <h3>Customers</h3>
+  </tr>
+  <thead>
+    <tr>
+      <th class="th-sm">
+        <button class="btn btn-light" id="customerID" onclick="sortTable(this)" style="color: red; font-weight:bold;">ID</button>
+      </th>
+      <th class="th-sm">First Name</th>
+      <th class="th-sm">
+        <button
+          class="btn btn-light"
+          id="customerLastName"
+          onclick="sortTable(this)"
+          style="color: red; font-weight:bold;"
+        >
+          Last Name
+        </button>
+      </th>
+      <th class="th-sm">        
+        <button
+        class="btn btn-light"
+        id="customerCoName"
+        onclick="sortTable(this)"
+        style="color: red; font-weight:bold;"
+      >
+        Company Name
+      </button></th>
+    </tr>
+  </thead>
+  {{for x in rows:}} {{if x[4] == emp_num:}}
+  <tr>
+    <td><a href="{{=URL('view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
+    <td>{{=x[1]}}</td>
+    <td>{{=x[2]}}</td>
+    <td>{{=x[3]}}</td>
+  </tr>
+  {{pass}} {{pass}}
+</table>
+<br /><br /><br />
+<table class="table table-striped table-hover table-bordered table-sm" id="agendaTable">
+  <tr>
+    <h3>Agenda</h3>
+  </tr>
+  <tr>
+    <th class="th-sm">Customer Name</th>
+    <th class="th-sm"><button class="btn btn-light" id="agendaDate" onclick="sortTable(this)"
+      style="color: red; font-weight:bold;">Date</button></th>
+    <th class="th-sm">Time of Event</th>
+    <th class="th-sm">Note</th>
+  </tr>
+  <tbody>
+    {{for x in notes_on_customers:}} 
+    {{if x[3] >= today_date or x[6] != "complete":}} 
+    {{if x[0] == emp_num:}} 
+    {{if x[3] <= today_date:}}
+    <tr class="lateEvent">
+      {{else:}}
+    </tr>
+
+    <tr>
+      {{pass}}
+      <td>
+        <a href="{{=URL('portal_sales_rep','update_note',args=[x[7]])}}"
+          >{{=x[1]}} {{=x[2]}}</a
+        >
+      </td>
+      <td>{{=x[3]}}</td>
+      {{if x[4] == "0:00" or x[4] == "00:00:00":}}
+      <td>Anytime Today</td>
+
+      {{else:}}
+      <td>{{=x[4]}}</td>
+      {{pass}}
+      <td>{{=x[5]}}</td>
+    </tr>
+    {{pass}} {{pass}} {{pass}}
+  </tbody>
+</table>
+{{pass}} {{block page_js}}
+<script>
+  let lateEventRow = document.getElementsByClassName("lateEvent");
+  for (let i = 0; i < lateEventRow.length; i++){
+      lateEventRow[i].children[0].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+      lateEventRow[i].children[1].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+      lateEventRow[i].children[2].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+      lateEventRow[i].children[3].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+  }
+
+
+  function sortTable(button) {
+      var table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending, isDate;
+      isDate = false;
+      if (button.id == "customerLastName"){
+          cellIndex = 2;
+          table = document.getElementById("customerTable");
+          if (button.innerHTML == "Last Name" || button.innerHTML == "Last Name ˇ"){
+            ascending = true;
+            button.innerHTML = "Last Name ^";
+          } else {
+            ascending = false;
+            button.innerHTML = "Last Name ˇ"
+          }
+      } else if (button.id == "customerID"){
+          cellIndex = 0;
+          table = document.getElementById("customerTable");
+          if (button.innerHTML == "ID" || button.innerHTML == "ID ˇ"){
+            ascending = true;
+            button.innerHTML = "ID ^";
+          } else {
+            ascending = false;
+            button.innerHTML = "ID ˇ"
+          }
+      } else if (button.id == "customerCoName"){
+        cellIndex = 3;
+        table = document.getElementById("customerTable");
+        if (button.innerHTML == "Company Name" || button.innerHTML == "Company Name ˇ"){
+            ascending = true;
+            button.innerHTML = "Company Name ^";
+          } else {
+            ascending = false;
+            button.innerHTML = "Company Name ˇ"
+          }
+      } else if (button.id == "agendaDate"){
+        cellIndex = 1;
+        table = document.getElementById("agendaTable");
+        isDate = true;
+        if (button.innerHTML == "Date" || button.innerHTML == "Date ˇ"){
+            ascending = true;
+            button.innerHTML = "Date ^";
+          } else {
+            ascending = false;
+            button.innerHTML = "Date ˇ"
+          }
+      } else {
+        return;
+      }
+    switching = true;
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+      // Start by saying: no switching is done:
+      switching = false;
+      rows = table.rows;
+      /* Loop through all table rows (except the
+      first ones, which contains table headers): */
+      for (i = 2; i < (rows.length - 1); i++) {
+        // Start by saying there should be no switching:
+        shouldSwitch = false;
+        /* Get the two elements you want to compare,
+        one from current row and one from the next: */
+        if (rows[i].getElementsByTagName("td")[cellIndex].children.length >= 1){
+          x = rows[i].getElementsByTagName("td")[cellIndex].children[0];
+          y = rows[i + 1].getElementsByTagName("td")[cellIndex].children[0];
+        } else {
+          x = rows[i].getElementsByTagName("td")[cellIndex];
+          y = rows[i + 1].getElementsByTagName("td")[cellIndex];
+        }
+        // Check if the two rows should switch place:
+        if (ascending == true){
+            if (isNaN(x.innerHTML)){
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    // If so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            } else {
+                if (parseInt(x.innerHTML) > parseInt(y.innerHTML)){
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        } else {
+            if (isNaN(x.innerHTML)){
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    // If so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            } else {
+                if (parseInt(x.innerHTML) < parseInt(y.innerHTML)){
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+      }
+      if (ascending == true){
+        if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+      } else {
+        if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            rows[i + 1].after(rows[i]);
+            switching = true;
+        }
+      }
+    }
+}
+</script>
+{{end page_js}}
+

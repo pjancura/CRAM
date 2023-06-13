@@ -1,0 +1,36 @@
+{{extend 'layout_new.html'}}
+
+<table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>Customers of Employees</h3>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Company Name</th>
+        <th>Work Phone Number</th>
+        <th>Email</th>
+        <th>Birthday</th>
+        <th>Contact Type</th>
+        <th>Referral Source</th>
+        <th>Associated Employee</th>
+        <th>Created On Date</th>
+    </tr>
+    {{for row in employee_rows_customers:}}
+    <tr>
+        <td><a href="{{=URL('portal_manager','update_customer',args=[row.persons.id])}}">{{=row.persons.id}}</a></td>
+        <td>{{=row.persons.first_name}}</td>
+        <td><a href="{{=URL('portal_manager','view_customer',args=[row.persons.id])}}">{{=row.persons.last_name}}</a></td>
+        <td>{{=row.companies.company_name}}</td>
+        <td>{{=row.persons.work_phone_num}}</td>
+        <td>{{=row.persons.email}}</td>
+        <td>{{=row.persons.birthday}}</td>
+        <td>{{=row.persons.contact_type}}</td>
+        <td>{{=row.persons.referral_source}}</td>
+        <td>{{=row.persons.employee_id}}</td>
+        <td>{{=row.persons.created_on_date}}</td>
+
+    </tr>
+    {{pass}}
+</table>

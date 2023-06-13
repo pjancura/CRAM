@@ -1,3 +1,75 @@
-{{extend 'layout.html'}}
-<h1>This is the portal_ceo/index.html template</h1>
-{{=BEAUTIFY(response._vars)}}
+{{extend 'layout_new.html'}}
+<h1>The Team</h1>
+<table id="dbadminTable" class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>Database Administrators</h3>
+    </tr>
+    <thead>
+        <tr>
+            <th class="th-sm" sortable>ID#</th>
+            <th class="th-sm" sortable>First Name</th>
+            <th class="th-sm" sortable>Last Name</th>
+            <th class="th-sm" sortable>Company Role</th>
+        </tr>
+    </thead>
+{{for x in emp_group_dbadmin:}}
+    <tr>
+        <td>{{=x['id']}}</a></td>
+        <td>{{=x['first_name']}}</td>
+        <td>{{=x['last_name']}}</td>
+        <td>Database Administrator</td>
+    </tr>
+{{pass}}
+</table>
+
+<table id="managerTable" class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>Managers</h3>
+    </tr>
+    <thead>
+        <tr>
+            <th class="th-sm" sortable>ID#</th>
+            <th class="th-sm" sortable>First Name</th>
+            <th class="th-sm" sortable>Last Name</th>
+            <th class="th-sm" sortable>Company Role</th>
+        </tr>
+    </thead>
+{{for x in emp_group_manager:}}
+    <tr>
+        <td><a href="{{=URL('portal_ceo','manager_view',args=[x['id']])}}">{{=x['id']}}</a></td>
+        <td>{{=x['first_name']}}</td>
+        <td>{{=x['last_name']}}</td>
+        {{if x['group_id'] == 4:}}
+        <td>Manager 1</td>
+        {{else:}}
+        <td>Manager 2</td>
+        {{pass}}
+    </tr>
+{{pass}}
+</table>
+
+<table id="salesRepTable" class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+        <h3>Sales Representatives</h3>
+    </tr>
+    <thead>
+        <tr>
+            <th class="th-sm" sortable>ID#</th>
+            <th class="th-sm" sortable>First Name</th>
+            <th class="th-sm" sortable>Last Name</th>
+            <th class="th-sm" sortable>Company Role</th>
+        </tr>
+    </thead>
+{{for x in emp_group_sales_rep:}}
+    <tr>
+        <td><a href="{{=URL('portal_ceo','employee_view',args=[x['id']])}}">{{=x['id']}}</a></td>
+        <td>{{=x['first_name']}}</td>
+        <td>{{=x['last_name']}}</td>
+        {{if x['group_id'] == 6:}}
+        <td>Sales Rep 1</td>
+        {{else:}}
+        <td>Sales Rep 2</td>
+        {{pass}}
+    </tr>
+{{pass}}
+</table>
