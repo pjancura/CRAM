@@ -1,3 +1,75 @@
 2023-06-09 20:18:53,979 - portal_manager - INFO - 
 manager group number: [4]
 employee group: [{'group_id': 6, 'id': 5, 'last_name': 'Firestorm', 'first_name': 'Ash'}, {'group_id': 6, 'id': 7, 'last_name': 'Bloodthorn', 'first_name': 'Axel'}, {'group_id': 6, 'id': 16, 'last_name': 'Ashenfire', 'first_name': 'Blaze'}, {'group_id': 6, 'id': 11, 'last_name': 'Wraithbane', 'first_name': 'Gideon'}, {'group_id': 6, 'id': 19, 'last_name': 'Grimm', 'first_name': 'Jett'}, {'group_id': 6, 'id': 13, 'last_name': 'Scorch', 'first_name': 'Kai'}, {'group_id': 6, 'id': 6, 'last_name': 'Riftbreaker', 'first_name': 'Nova'}, {'group_id': 6, 'id': 8, 'last_name': 'Nightshade', 'first_name': 'Raven'}, {'group_id': 6, 'id': 14, 'last_name': 'Voidwalker', 'first_name': 'Riley'}]
+2023-06-12 19:16:09,231 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-06-12 19:16:09,231 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-06-12 19:16:09,232 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-06-12 19:16:09,232 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-06-12 19:16:09,233 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-06-12 19:16:09,233 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-06-12 19:16:09,234 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-06-12 19:16:09,234 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-06-12 19:16:09,235 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-06-12 19:16:09,235 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-06-12 19:16:09,236 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-06-12 19:16:09,236 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-06-12 19:16:09,237 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-06-12 19:16:09,237 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-06-12 19:16:09,238 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+79,Mutated Delights,862 Cataclysm Street,Wastelandville,MI,48005,2040,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,238 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+79,Mutated Delights,862 Cataclysm Street,Wastelandville,MI,48005,2040,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,238 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+80,Mutated Grains,921 Catac Ave,Wastelandville,DC,48005,2020,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,238 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+80,Mutated Grains,921 Catac Ave,Wastelandville,DC,48005,2020,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,239 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+99,asdfasdfasdf,asdf,asdf,FL,12345,800,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,239 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+99,asdfasdfasdf,asdf,asdf,FL,12345,800,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,240 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+100,asdf,asdf,asdf,CO,12345,1540,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,240 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+100,asdf,asdf,asdf,CO,12345,1540,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,241 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+101,qwer,qwer,qwer,AZ,12355,800,http://www.rubblegrains.com
+
+2023-06-12 19:16:09,241 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+101,qwer,qwer,qwer,AZ,12355,800,http://www.rubblegrains.com
+

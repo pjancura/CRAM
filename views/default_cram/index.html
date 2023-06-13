@@ -45,11 +45,43 @@
     </a>
   </div>
   {{else:}}
+  <h1>Details of the Day</h1>
+  <table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+      <h3>Most Recent Customer</h3>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Company</th>
+    </tr>
+    <tr>
+
+      <td>{{=recent_customer[0]['id']}}</td>
+      <td>{{=recent_customer[0]['first_name']}}  {{=recent_customer[0]['last_name']}}</td>
+      <td>{{=recent_customer[0]['company_name']}}</td>
+    </tr>
+  </table>
+  <br>
+  <table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+      <h3>Employee with Most Customers</h3>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Customer Count</th>
+    </tr>
+    <tr>
+      <td>{{=emp_with_most_customers[0]['first_name']}}  {{=emp_with_most_customers[0]['last_name']}}</td>
+      <td>{{=emp_with_most_customers[0]['customer_count']}}</td>
+    </tr>
+  </table>
+  <br><br>
+  <div id="wrapperDiv" style="display: flex; justify-content: space-evenly;">
   <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
   <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
-  {{=BEAUTIFY(recent_customer)}}
-  {{=BEAUTIFY(emp_with_most_customers)}}
-
+</div>
+  <br><br><br>
   
   {{block page_js}}
   <script>
@@ -89,15 +121,41 @@
       break;
     }
   }
+
+  function colorArray(){
+    let startRed = 255;
+    let startGreen = 0;
+    let startBlue = 0;
+    let colorArrayRGB = [];
+    let lenColors = newStateList.length;
+    for (let i = 0; i < lenColors; i++){
+      let newColor = '';
+      if (i == 0){
+        newColor = `rgb(${startRed},${startGreen},${startBlue})`;
+        colorArrayRGB.push(newColor);
+      } else {
+        startRed = 255 - (i * 7);
+        startGreen = i;
+        startBlue = i * 8;
+        newColor = `rgb(${startRed},${startGreen},${startBlue})`;
+        colorArrayRGB.push(newColor);
+      }
+    }
+    return colorArrayRGB;
+  }
+
   var stateData = [{
     values: {{=state_count}},
     labels: newStateList,
-    type: 'pie'
+    type: 'pie',
+    marker: {
+      colors: colorArray()
+    }
   }];
 
   var stateLayout = {
     title: "Customers Per State",
-    height: 400,
+    height: 500,
     width: 500
   };
 
@@ -139,20 +197,28 @@
       break;
     }
   }
-  console.log(newEmpNameList);
+  
+
+
   var empData = [{
-    values: {{=cc_customer_counts}},
-    labels: newEmpNameList,
-    type: 'pie'
+    y: {{=cc_customer_counts}},
+    x: newEmpNameList,
+    type: 'bar',
+    marker: {
+      color: 'rgb(186, 39, 39)',
+      line: {
+        color: 'rgb(186, 39, 39)',
+      }
+    }
   }];
 
   var empLayout = {
     title: "Customers Per Employee",
-    height: 400,
-    width: 500
+    height: 500,
+    width: 500,
   };
 
-  Plotly.newPlot('employeePieChart', empData, empLayout, {displayModeBar: true});
+  Plotly.newPlot('employeePieChart', empData, empLayout);
   </script>
   {{end page_js}}
  {{pass}}
