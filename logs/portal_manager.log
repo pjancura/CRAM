@@ -3608,3 +3608,6 @@ employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name
 2023-06-12 19:23:07,824 - portal_manager - INFO - 
 manager group number: [5]
 employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]
+2023-06-13 18:27:10,371 - portal_manager - INFO - 
+manager group number: [5]
+employee group: [{'group_id': 7, 'id': 12, 'last_name': 'Silverfox', 'first_name': 'Rogue'}, {'group_id': 7, 'id': 10, 'last_name': 'Dreadwind', 'first_name': 'Scarlett'}, {'group_id': 7, 'id': 18, 'last_name': 'Nyx', 'first_name': 'Violet'}, {'group_id': 7, 'id': 9, 'last_name': 'Shadowstrike', 'first_name': 'Viper'}, {'group_id': 7, 'id': 20, 'last_name': 'Shadowveil', 'first_name': 'Willow'}, {'group_id': 7, 'id': 17, 'last_name': 'Doomhammer', 'first_name': 'Xander'}, {'group_id': 7, 'id': 15, 'last_name': 'Gloomweaver', 'first_name': 'Zara'}]

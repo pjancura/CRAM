@@ -1,22 +1,29 @@
 {{extend 'layout_new.html'}}
 <h1>Catalog</h1>
 
-<table class="table table-striped table-hover">
+<table class="table table-striped table-hover" id="catalogTable">
     <tr>
-        <th>Product Name</th>
+        <th class="th-sm">
+          <button
+            class="btn btn-light"
+            id="productName"
+            onclick="sortTable(this)"
+            style="font-weight:bold;"
+          >
+            Product Name
+          </button></th>
         <th>Description</th>
-        <th>Price (ß)</th>
-        <th>Category</th>
+        <th><button class="btn btn-light" id="itemPrice" onclick="sortTable(this)" style="font-weight:bold;">Price (ß)</button></th>
+        <th><button class="btn btn-light" id="categoryID" onclick="sortTable(this)" style="font-weight: bold;">Category</button></th>
         <th>Mass (kg)</th>
         <th>Shelf Life (years)</th>
         <th>Ingredient List</th>
         <th>Allergens</th>
-        <th>Vendor ID</th>
         <th>Image URL</th>
     </tr>
     {{for x in rows:}}
     <tr>
-        <td><!--<a href="/{{=request.application}}/{{=request.controller}}/update/{{=x.id}}">-->{{=x.product_name}}</a></td>
+        <td>{{=x.product_name}}</a></td>
         <td>{{=x.description}}</td>
         <td>{{=x.price}}</td>
         <td>{{=x.category}}</td>
@@ -24,8 +31,115 @@
         <td>{{=x.shelf_life_yrs}}</td>
         <td>{{=x.ingredient_list}}</td>
         <td>{{=x.allergens}}</td>
-        <td>{{=x.vendor_id}}</td>
         <td><img width="245" src="../../static/images/{{=x.img_url}}" alt=""></td>
     </tr>
     {{ pass }}
 </table>
+{{block page_js}}
+<script>
+    function sortTable(button) {
+        var table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending, isDate;
+        isDate = false;
+        if (button.id == "productName"){
+            cellIndex = 0;
+            table = document.getElementById("catalogTable");
+            if (button.innerHTML == "Product Name" || button.innerHTML == "Product Name ˇ"){
+            ascending = true;
+            button.innerHTML = "Product Name ^";
+            } else {
+            ascending = false;
+            button.innerHTML = "Product Name ˇ"
+            }
+        } else if (button.id == "categoryID"){
+            cellIndex = 3;
+            table = document.getElementById("catalogTable");
+            if (button.innerHTML == "Category" || button.innerHTML == "Category ˇ"){
+            ascending = true;
+            button.innerHTML = "Category ^";
+            } else {
+            ascending = false;
+            button.innerHTML = "Category ˇ"
+            }
+        } else if (button.id == "itemPrice"){
+            cellIndex = 2;
+            table = document.getElementById("catalogTable");
+            if (button.innerHTML == "Price" || button.innerHTML == "Price ˇ"){
+            ascending = true;
+            button.innerHTML = "Price ^";
+            } else {
+            ascending = false;
+            button.innerHTML = "Price ˇ"
+            }
+        } else {
+          return;
+        }
+    switching = true;
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+        // Start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /* Loop through all table rows (except the
+        first ones, which contains table headers): */
+        for (i = 1; i < (rows.length - 1); i++) {
+        // Start by saying there should be no switching:
+        shouldSwitch = false;
+        /* Get the two elements you want to compare,
+        one from current row and one from the next: */
+        if (rows[i].getElementsByTagName("td")[cellIndex].children.length >= 1){
+            x = rows[i].getElementsByTagName("td")[cellIndex].children[0];
+            y = rows[i + 1].getElementsByTagName("td")[cellIndex].children[0];
+        } else {
+            x = rows[i].getElementsByTagName("td")[cellIndex];
+            y = rows[i + 1].getElementsByTagName("td")[cellIndex];
+        }
+        // Check if the two rows should switch place:
+        if (ascending == true){
+            if (isNaN(x.innerHTML)){
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    // If so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            } else {
+                if (parseInt(x.innerHTML) > parseInt(y.innerHTML)){
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        } else {
+            if (isNaN(x.innerHTML)){
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    // If so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            } else {
+                if (parseInt(x.innerHTML) < parseInt(y.innerHTML)){
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+        }
+        if (ascending == true){
+        if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+        } else {
+        if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            rows[i + 1].after(rows[i]);
+            switching = true;
+        }
+        }
+    }
+    }
+</script>
+{{end page_js}}
+
