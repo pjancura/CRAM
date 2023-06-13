@@ -57,12 +57,16 @@
     </tr>
     <tbody>
     {{for x in notes_on_customers:}}
-    {{if x[3] >= today_date :}}
+    {{if x[3] >= today_date or x[6] != "complete":}}
     {{if x[0] == emp_num:}}
+    {{if x[3] <= today_date:}}
+    <tr class="lateEvent">
+    {{else:}}
     <tr>
+    {{pass}}
         <td><a href="{{=URL('portal_sales_rep','update_note',args=[x[7]])}}">{{=x[1]}} {{=x[2]}}</a></td>
         <td>{{=x[3]}}</td>
-        {{if x[4] == "0:00":}}
+        {{if x[4] == "0:00" or x[4] == "00:00:00":}}
         <td>Anytime Today</td>
 
         {{else:}}
@@ -76,4 +80,16 @@
 </tbody>
 </table>
 {{pass}}
+
+{{block page_js}}
+<script>
+   let lateEventRow = document.getElementsByClassName("lateEvent");
+   for (let i = 0; i < lateEventRow.length; i++){
+    lateEventRow[i].children[0].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+    lateEventRow[i].children[1].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+    lateEventRow[i].children[2].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+    lateEventRow[i].children[3].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+   }
+</script>
+{{end page_js}}
 
