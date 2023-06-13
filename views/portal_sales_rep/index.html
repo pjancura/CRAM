@@ -62,13 +62,14 @@
   {{pass}} {{pass}}
 </table>
 <br /><br /><br />
-<table class="table table-striped table-hover table-bordered table-sm">
+<table class="table table-striped table-hover table-bordered table-sm" id="agendaTable">
   <tr>
     <h3>Agenda</h3>
   </tr>
   <tr>
     <th class="th-sm">Customer Name</th>
-    <th class="th-sm">Date</th>
+    <th class="th-sm"><button class="btn btn-light" id="agendaDate" onclick="sortTable(this)"
+      style="color: red; font-weight:bold;">Date</button></th>
     <th class="th-sm">Time of Event</th>
     <th class="th-sm">Note</th>
   </tr>
@@ -112,7 +113,8 @@
 
 
   function sortTable(button) {
-      var table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending;
+      var table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending, isDate;
+      isDate = false;
       if (button.id == "customerLastName"){
           cellIndex = 2;
           table = document.getElementById("customerTable");
@@ -143,6 +145,17 @@
             ascending = false;
             button.innerHTML = "Company Name ˇ"
           }
+      } else if (button.id == "agendaDate"){
+        cellIndex = 1;
+        table = document.getElementById("agendaTable");
+        isDate = true;
+        if (button.innerHTML == "Date" || button.innerHTML == "Date ˇ"){
+            ascending = true;
+            button.innerHTML = "Date ^";
+          } else {
+            ascending = false;
+            button.innerHTML = "Date ˇ"
+          }
       } else {
         return;
       }
@@ -154,18 +167,18 @@
       switching = false;
       rows = table.rows;
       /* Loop through all table rows (except the
-      first, which contains table headers): */
+      first ones, which contains table headers): */
       for (i = 2; i < (rows.length - 1); i++) {
         // Start by saying there should be no switching:
         shouldSwitch = false;
         /* Get the two elements you want to compare,
         one from current row and one from the next: */
-        if (cellIndex == 0 && isNaN(rows[i].getElementsByTagName("td")[cellIndex].children[0].innerHTML) == false){
-            x = rows[i].getElementsByTagName("td")[cellIndex].children[0];
-            y = rows[i + 1].getElementsByTagName("td")[cellIndex].children[0];
+        if (rows[i].getElementsByTagName("td")[cellIndex].children.length >= 1){
+          x = rows[i].getElementsByTagName("td")[cellIndex].children[0];
+          y = rows[i + 1].getElementsByTagName("td")[cellIndex].children[0];
         } else {
-            x = rows[i].getElementsByTagName("td")[cellIndex];
-            y = rows[i + 1].getElementsByTagName("td")[cellIndex];
+          x = rows[i].getElementsByTagName("td")[cellIndex];
+          y = rows[i + 1].getElementsByTagName("td")[cellIndex];
         }
         // Check if the two rows should switch place:
         if (ascending == true){
