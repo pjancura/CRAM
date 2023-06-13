@@ -28,16 +28,7 @@
     timeAside.innerHTML = "12:00 AM or 00:00:00 means an event that can happen anytime that day."
     document.getElementById("contact_notes_time_of_event__row").children[1].append(timeAside);
 
-    //changes who is visible in the customer dropdown
-    customerList = {{=list_customer_ids}};
-    optionsArray = document.getElementById("contact_notes_person_id").options
-    for (i = 1; i < optionsArray.length; i++){
-        if (customerList.indexOf(parseInt(optionsArray[i].value), 0) !== -1){
-            continue;
-        } else {
-            optionsArray[i].setAttribute("style","display:none")
-        }
-    };
+
     //sets the value of Employee Id to whoever is logged in and disables the field
     document.getElementById("contact_notes_emp_id__label").innerHTML = "Employee Name";
     let empId = document.getElementById("contact_notes_emp_id");

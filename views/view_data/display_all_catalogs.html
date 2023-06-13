@@ -31,7 +31,7 @@
         <td>{{=x.shelf_life_yrs}}</td>
         <td>{{=x.ingredient_list}}</td>
         <td>{{=x.allergens}}</td>
-        <td><img width="245" src="{{=URL('static',f'/images/{x.img_url}')}}" alt=""></td>
+        <td><img width="245" src="{{=URL('static',f'/images/{x.img_url}')}}" alt="{{=x.img_url}}"></td>
     </tr>
     {{ pass }}
 </table>
