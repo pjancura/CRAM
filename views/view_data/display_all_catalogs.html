@@ -19,7 +19,7 @@
         <th>Shelf Life (years)</th>
         <th>Ingredient List</th>
         <th>Allergens</th>
-        <th>Image URL</th>
+        <th>Image</th>
     </tr>
     {{for x in rows:}}
     <tr>
@@ -31,7 +31,7 @@
         <td>{{=x.shelf_life_yrs}}</td>
         <td>{{=x.ingredient_list}}</td>
         <td>{{=x.allergens}}</td>
-        <td><img width="245" src="../../static/images/{{=x.img_url}}" alt=""></td>
+        <td><img width="245" src="{{=URL('static',f'/images/{x.img_url}')}}" alt=""></td>
     </tr>
     {{ pass }}
 </table>
