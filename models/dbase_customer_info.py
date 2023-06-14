@@ -65,6 +65,9 @@ db.contact_notes.person_id.requires= IS_IN_DB(db, db.persons.id, '%(id)s %(first
 
 
 
+db.define_table('product_images',
+                Field('image_name',type='string'),
+                Field('pic_file',type='upload'))
 
 db.define_table('catalogs',
                 Field('product_name', type = 'string', unique=True, notnull=True),
@@ -76,9 +79,10 @@ db.define_table('catalogs',
                 Field('ingredient_list', type = 'text', notnull=True),
                 Field('allergens', type = 'string'),
                 Field('vendor_id', type = 'integer', notnull=True),
-                Field('img_url', type = 'string')
+                Field('img_id', type = 'string')
                 )
 
+db.catalogs.requires = IS_IN_DB(db, db.product_images.id, '%(image_name)s')
 
 
 

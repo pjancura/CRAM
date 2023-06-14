@@ -87,3 +87,16 @@ def user():
     also notice there is http://..../[app]/appadmin/manage/auth to allow administrator to manage users
     """
     return dict(form=auth())
+
+
+def display_all_catalogs():
+    rows = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
+                                db.catalogs.category, db.catalogs.mass_kg, db.catalogs.shelf_life_yrs, db.catalogs.ingredient_list, \
+                                db. catalogs.allergens, db.product_images.id, db.product_images.image_name, db.product_images.pic_file, \
+                                join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.id)
+    
+    return locals()
+
+
+def download():
+    return response.download(request, db)

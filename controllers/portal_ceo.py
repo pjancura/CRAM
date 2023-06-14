@@ -308,3 +308,8 @@ def add_new_product():
     else:
         response.flash = 'please fill out the form'
     return locals()
+
+@auth.requires(auth.has_membership('ceo'))
+def product_images():
+    grid = SQLFORM.grid(db.product_images)
+    return locals()

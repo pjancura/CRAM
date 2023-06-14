@@ -70,3 +70,8 @@ def invoices():
 def invoice_line_items():
     grid = SQLFORM.grid(db.invoice_line_items)
     return locals()
+
+@auth.requires(auth.has_membership('database_admin'))
+def product_images():
+    grid = SQLFORM.grid(db.product_images)
+    return locals()
