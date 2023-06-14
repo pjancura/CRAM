@@ -66,12 +66,12 @@
         } else if (button.id == "itemPrice"){
             cellIndex = 2;
             table = document.getElementById("catalogTable");
-            if (button.innerHTML == "Price" || button.innerHTML == "Price ˇ"){
+            if (button.innerHTML == "Price (ß)" || button.innerHTML == "Price (ß) ˇ"){
             ascending = true;
-            button.innerHTML = "Price ^";
+            button.innerHTML = "Price (ß) ^";
             } else {
             ascending = false;
-            button.innerHTML = "Price ˇ"
+            button.innerHTML = "Price (ß) ˇ"
             }
         } else {
           return;

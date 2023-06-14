@@ -43,9 +43,11 @@
       footer {
         background-color: #f5f5f5;
         padding: 20px;
-        text-align: center;
-        font-size: 14px;
+        font-size: 1rem;
         color: #777;
+        display: flex;
+        justify-content: space-between;
+        height: fit-content;
       }
 
       .carousel-item {
@@ -149,23 +151,18 @@
       a:active {
         color: green;
       }
-      #copy {
-          text-align:center;
-      }
-      #email{
-          text-align:left;
-      }
-      #phone{
-          text-align:left;
-      }
-      #address{
-          text-align:left;
-      }
       #team{
-          text-align:right;
+        position: relative;
+        bottom: 0.55rem;
       }
-      #contact{
-          text-align:right;
+      #contactUsDiv{
+        line-height: 0.3rem;
+        height: fit-content;
+      }
+      #copy {
+        position: relative;
+        top: 4rem;
+        height: fit-content;
       }
      
   </style>
@@ -313,12 +310,15 @@
 
     {{block footer}} <!-- this is default footer -->
     <footer>
+      <div id="contactUsDiv">
+        <p id ="contact">Contact Us: </p>
+        <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
+        <p id="phone">phone:(456)234-7890</p>
+        <p id ="email">email: dystopia.co@hotmail.com</p>
+      </div>
+      <p id ="copy">&copy; 2023 PERT Food Distribution</p>
       <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
-       <p id ="contact">Contact Us </p>
-     <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
-     <p id="phone">phone:(456)234-7890</p>
-     <p id ="email">email: dystopia.co@hotmail.com</p>
-        <p id ="copy">&copy; 2023 PERT Food Distribution</p>
+      
     </footer>
     {{end}}
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
