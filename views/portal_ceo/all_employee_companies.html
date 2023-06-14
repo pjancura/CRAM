@@ -16,9 +16,9 @@
         <th>SIC Code</th>
         <th>Social Media Link</th>
     </tr>
-    {{for row in employee_rows_companies:}}
+    {{for row in rows_companies:}}
     <tr>
-        <td><a href="{{=URL('portal_manager','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
+        <td><a href="{{=URL('portal_ceo','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
         <td>{{=row.companies.company_name}}</td>
         <td>{{=row.companies.address}}</td>
         <td>{{=row.companies.city}}</td>
