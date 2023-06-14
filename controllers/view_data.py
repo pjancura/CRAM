@@ -26,7 +26,7 @@ def display_all_employees():
     return locals()
 
 def display_all_invoices():
-    rows = db(db.contact_notes).select(orderby=db.contact_notes.id)
+    rows = db(db.invoices).select(orderby=db.invoices.id)
     return locals()
 
 def display_all_catalogs():
@@ -34,3 +34,5 @@ def display_all_catalogs():
     return locals()
 
 
+
+    #rows = db(db.contact_notes).select(orderby=db.contact_notes.id)

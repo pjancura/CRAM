@@ -1,0 +1,82 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        h1{
+            color:red;
+            font-family:Copperplate;
+        }
+        body{
+            background-color:light grey;
+            color:red;
+        }
+    </style>
+{{end}}
+
+
+<h1><em>Add a Note</em></h1>
+{{if request.vars:}}
+<p><a id="returnToCustomer" href="">Return to Previous Customer</a></p>
+{{pass}}
+{{=BEAUTIFY(note_form)}}
+<br><br>
+
+
+{{block page_js}}
+<script>
+    // makes the note input field required
+    document.getElementById("contact_notes_contact_note").setAttribute("required","true");
+    // adds directions to time_of_event
+    timeAside = document.createElement("p");
+    timeAside.innerHTML = "12:00 AM or 00:00:00 means an event that can happen anytime that day."
+    document.getElementById("contact_notes_time_of_event__row").children[1].append(timeAside);
+
+    //changes who is visible in the customer dropdown
+    customerList = {{=list_customer_ids}};
+    optionsArray = document.getElementById("contact_notes_person_id").options
+    for (i = 1; i < optionsArray.length; i++){
+        if (customerList.indexOf(parseInt(optionsArray[i].value), 0) !== -1){
+            continue;
+        } else {
+            optionsArray[i].setAttribute("style","display:none")
+        }
+    };
+
+    // changes who is visible in the employee name dropdown
+    let employeeList = {{=employees_list}};
+    console.log(employeeList);
+    let employeeOptions = document.getElementById("contact_notes_emp_id").options;
+    for (i = 1; i < employeeOptions.length; i++){
+        if (employeeList.indexOf(parseInt(employeeOptions[i].value), 0) !== -1){
+            continue;
+        } else {
+            employeeOptions[i].setAttribute("style","display:none;");
+        }
+    }
+
+
+    //changes label of person id
+    document.getElementById("contact_notes_person_id__label").innerHTML = "Customer Name";
+
+    //changes label of contact note
+    document.getElementById("contact_notes_contact_note__label").innerHTML = "Note";
+
+    //sets the value of Created On Date to today's date
+    let todayDate = new Date();
+    theDay = todayDate.getDate();
+    if (theDay <= 9){
+        theDay = "0" + theDay;
+    }
+    theMonth = todayDate.getMonth() + 1;
+    if (theMonth <= 9){
+        theMonth = "0" + theMonth;
+    }
+    theYear = todayDate.getFullYear();
+    document.getElementById("contact_notes_date_created").value = `${theYear}-${theMonth}-${theDay}`;
+
+    // sets href to return to the previous customer view
+    {{if request.vars:}}
+    document.getElementById("returnToCustomer").setAttribute("href","{{=return_url}}");
+    {{pass}}
+</script>
+{{end page_js}}
+

@@ -1,0 +1,195 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+   <style>
+       h1,h3{
+           font-family:Copperplate;
+       }
+       body{
+           background-color:light grey;
+           color:red;
+           font-family:Courier New; font-size:15px;
+       }
+    </style> 
+{{end}}
+
+<h1 id="pageHeadline"><em>Add Customer/Company</em></h1>
+<p id="warningPara"></p>
+{{=customer_form}}
+{{=company_form}}
+<br><br>
+
+
+{{block page_js}}
+<script>
+    //change the field name of Co Id 
+    document.getElementById("persons_co_id__label").innerHTML = "Company Name";
+    //change the label name of work phone num
+    document.getElementById("persons_work_phone_num__label").innerHTML = "Work Phone Number";
+
+    // sets default for Birthday input
+    document.getElementById("persons_birthday").setAttribute("value","1827-03-26");
+    // aside for birthday input
+    birthdayAside = document.createElement("p");
+    birthdayAside.innerHTML = "Use the default date if you do not know the actual birthday";
+    document.getElementById("persons_birthday__row").children[1].appendChild(birthdayAside); 
+
+    let divCompany = document.createElement("div");
+    divCompany.setAttribute("id", "divCompany");
+    let divPlacement = document.getElementById("persons_co_id__row");
+    divPlacement.appendChild(divCompany);
+    let eleDivCompany = document.getElementById("divCompany");
+    eleDivCompany.setAttribute("style","margin-left: 5rem;")
+    //create checkbox to expose company form
+    let labelAddCompany = document.createElement("label");
+    labelAddCompany.setAttribute("id", "labelAddCompany");
+    labelAddCompany.setAttribute("for", "addCompany");
+    labelAddCompany.innerHTML = 'Add Company:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="addCompany" id="addCompany" onchange="exposeCompanyForm()">';
+    eleDivCompany.appendChild(labelAddCompany);
+    
+    //sets the display for formCompany to 'none'
+    let formCompany = document.forms[1];
+    formCompany.setAttribute("id","formCompany");
+    let eleFormCompany = document.getElementById("formCompany");
+    //appends a div inside the formCompany
+    let formCompanyHTML = formCompany.innerHTML;
+    formCompany.innerHTML = `<div id='companyFormDiv'>${formCompanyHTML}</div>`;
+    let newCompanyDiv = document.getElementById("companyFormDiv");
+    newCompanyDiv.setAttribute("style","display:none");
+    
+    
+    //repositions the form fields inside a new div below the checkbox 'addCompany'
+    eleDivCompany.appendChild(newCompanyDiv);
+
+    //sets the value of Created On Date to today's date
+    let todayDate = new Date();
+    theDay = todayDate.getDate();
+    if (theDay <= 9){
+        theDay = "0" + theDay;
+    }
+    theMonth = todayDate.getMonth() + 1;
+    if (theMonth <= 9){
+        theMonth = "0" + theMonth;
+    }
+    theYear = todayDate.getFullYear();
+    document.getElementById("persons_created_on_date").value = `${theYear}-${theMonth}-${theDay}`;
+
+    //sets the id for the customer form
+    let formCustomer = document.forms[0];
+    formCustomer.setAttribute("id", "formCustomer");
+    //removes the submit button for the company form
+    document.getElementById("submit_record__row").firstChild.firstChild.remove()
+
+
+
+    //this exposes and hides the company form
+    //changes the action of the customer form so that both forms can be processed
+    function exposeCompanyForm(){
+        let classError = document.getElementsByClassName("error");
+        if (classError.length > 0){
+            for (let i = classError.length - 1; i < classError.length;i--){
+                if(i < 0){
+                    break;
+                } else {
+                    classError[i].remove();
+                }
+            }
+        }
+        document.getElementById("persons_co_id").value = document.getElementById("persons_co_id").options[0].value;
+        let firstName = document.getElementById("persons_first_name");
+        let lastName = document.getElementById("persons_last_name");
+        let companyName = document.getElementById("companies_company_name");
+        let companyAddress = document.getElementById("companies_address");
+        let companyCity = document.getElementById("companies_city");
+        let companyState = document.getElementById("companies_state_abbr");
+        let companyZip = document.getElementById("companies_zipcode");
+        let companySic = document.getElementById("companies_sic_code");
+        let companySocial = document.getElementById("companies_s_media_link");
+        let workPhone = document.getElementById("persons_work_phone_num");
+        let customersEmail = document.getElementById("persons_email");
+        let customersBirthday = document.getElementById("persons_birthday");
+        let customersType = document.getElementById("persons_contact_type");
+        let customersSource = document.getElementById("persons_referral_source");
+        let customersCreatedDate = document.getElementById("persons_created_on_date");
+        if (document.getElementById("addCompany").checked){
+            document.getElementById("persons_co_id").disabled = "True";
+            formCustomer.setAttribute("action", "{{=URL('portal_sales_rep', 'submit_customer_and_company')}}");
+            //  adding html validators to every input element
+            firstName.setAttribute("required", "true");
+            lastName.setAttribute("required", "true");
+            companyName.setAttribute("required", "true");
+            companyAddress.setAttribute("required", "true");
+            companyCity.setAttribute("required", "true");
+            companyState.setAttribute("minlength", 1);
+            companyState.setAttribute("required", "true");
+            companyZip.setAttribute('minlength', 5);
+            companyZip.setAttribute('required', 'true');
+            companyZip.setAttribute("pattern","[0-9]{5}");
+            companySic.setAttribute("required","true");
+            companySocial.setAttribute("type", "url");
+            companySocial.setAttribute("required","true");
+            workPhone.setAttribute("type","tel");
+            workPhone.setAttribute("pattern","[0-9]{3}-[0-9]{3}-[0-9]{4}");
+            workPhone.setAttribute("required","true");
+            customersEmail.setAttribute("type", "email");
+            customersEmail.setAttribute("required","true");
+            customersBirthday.setAttribute("type", 'date');
+            customersType.setAttribute("required","true");
+            customersSource.setAttribute("required","true");
+            customersCreatedDate.setAttribute("type","date");
+            customersCreatedDate.setAttribute("required","true");
+        } else {
+            //remove the html validators
+            firstName.removeAttribute("required");
+            lastName.removeAttribute("required");
+            companyName.removeAttribute("required");
+            companyAddress.removeAttribute("required");
+            companyCity.removeAttribute("required");
+            companyState.removeAttribute("minlength");
+            companyState.removeAttribute("required");
+            companyZip.removeAttribute('minlength');
+            companyZip.removeAttribute('pattern');
+            companyZip.removeAttribute('required');
+            companySic.removeAttribute("required");
+            companySocial.setAttribute("type", "text");
+            companySocial.removeAttribute("required");
+            workPhone.setAttribute("type","text");
+            workPhone.removeAttribute("pattern");
+            workPhone.removeAttribute("required");
+            customersEmail.setAttribute("type", "text");
+            customersEmail.removeAttribute("required");
+            customersBirthday.setAttribute("type", "text");
+            customersType.removeAttribute("required");
+            customersSource.removeAttribute("required");
+            customersCreatedDate.setAttribute("type","text");
+            customersCreatedDate.removeAttribute("required");
+            //remove the disabled attribute
+            document.getElementById("persons_co_id").removeAttribute("disabled");
+            formCustomer.setAttribute("action", "#");
+        }
+        if (newCompanyDiv.getAttribute("style") == "display:none"){
+            newCompanyDiv.setAttribute("style","display:block");  
+        } else{
+            newCompanyDiv.setAttribute("style", "display:none");
+        }
+    }
+
+    //fills in form paceholders where relevant
+    document.getElementById("companies_zipcode").setAttribute("placeholder","#####");
+    document.getElementById("companies_s_media_link").setAttribute("placeholder","http://www.nameofcompany.com");
+    document.getElementById("persons_work_phone_num").setAttribute("placeholder","###-###-####");
+    document.getElementById("persons_email").setAttribute("placeholder","words@mail.com");
+    document.getElementById("persons_birthday").setAttribute("placeholder","YYYY-MM-DD");
+
+    // only displays the appropriate employees
+    let empIdOptions = document.getElementById("persons_employee_id").options;
+    let empIdList = {{=employees_list}};
+    for (i = 0; i < empIdOptions.length; i++){
+        if ((empIdList.indexOf(parseInt(empIdOptions[i].value)) >= 0) || empIdOptions[i].value == ""){
+            continue;
+        } else {
+            empIdOptions[i].setAttribute("style","display:none;");
+        }
+    }
+</script>
+{{end page_js}}
+

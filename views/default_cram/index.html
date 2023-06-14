@@ -1,43 +1,224 @@
 {{extend 'layout_new.html'}}
-<h1>This is the default_cram/index.html template</h1>
+{{if not auth.user:}}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="" data-slide-to="0" class="active"></li>
+      <li data-target="" data-slide-to="1"></li>
+      <li data-target="" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../static/images/DystopianLandscape1.jpeg" alt="Dyst1">
+        <div class="carousel-caption">
+          <h3>Our Mission</h3>
+          <p>"At PERT, our mission is to nourish the dystopian world with innovative and sustainable food solutions. We are committed to providing accessible and nutritious sustenance that transcends the harsh realities of our time. Through cutting-edge technology and relentless creativity, we strive to revolutionize the way people perceive and consume food in the dystopian era. With a focus on resource efficiency, environmental stewardship, and ethical practices, we aim to empower individuals to thrive amidst the challenges of their dystopian existence. PERT: Fueling resilience, sustenance, and hope in a world veiled by darkness."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" href="PERTSustainability.html" src="../static/images/DystopianLandscape02.jpeg" alt="Dyst2">
+        <div class="carousel-caption">
+          <h3>Sustainability</h3>
+          <p>"At PERT, we deeply believe in the power of sustainability. We understand that the choices we make today shape the world we'll inherit tomorrow. That's why we are committed to integrating sustainable practices into every aspect of our operations. From sourcing ethically and locally grown ingredients to minimizing waste through innovative production methods, sustainability is at the core of our business.
 
-This is the homepage for CRAM.....employees will login and then be sent to their
-respective controllers / views.
-<br /><br /><br />
-<a class="btn btn-primary" href="/admin/default">
-  <i class="fa fa-cog"></i>
-  all projects admin
-</a>
-<a class="btn btn-primary" href="/admin/default/design/CRAM">
-  <i class="fa fa-cog"></i>
-  admin for CRAM
-</a>
+            We strive to reduce our environmental footprint by implementing energy-efficient technologies, optimizing packaging materials, and supporting renewable energy sources. Our commitment extends beyond our products to the communities we serve, as we actively engage in initiatives that promote environmental education and conservation.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" href="PERTCareers.html" src="../static/images/Dystopianlandscape03.jpeg" alt="Dyst3">
+        <div class="carousel-caption">
+          <h3>Careers</h3>
+          <p>"At PERT, we believe that our greatest asset is our people. We foster a dynamic and inclusive work environment where individuals are valued, empowered, and inspired to reach their full potential. We are not just a company; we are a community of passionate individuals driven by a shared vision.
+
+            When you join PERT, you become part of a team that embraces innovation, creativity, and collaboration. We encourage a culture of continuous learning and personal growth, providing opportunities for professional development and advancement. We believe in investing in our employees, nurturing their talents, and supporting their aspirations.
+
+            As a Dystopian Food Company, we recognize the challenges and uncertainties of our world. However, we see these challenges as opportunities to make a meaningful impact. We are constantly pushing the boundaries, seeking individuals who are bold, resilient, and forward-thinking. Together, we strive to create a future where food sustainability and innovation coexist.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  {{else:}}
+  <h1>Details of the Day</h1>
+  <div id="wrapperDiv" style="display: flex; justify-content: space-evenly;">
+  <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+</div>
+  <br><br>
+  
+  <table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+      <h3>Most Recent Customer</h3>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Company</th>
+    </tr>
+    <tr>
+
+      <td>{{=recent_customer[0]['id']}}</td>
+      <td>{{=recent_customer[0]['first_name']}}  {{=recent_customer[0]['last_name']}}</td>
+      <td>{{=recent_customer[0]['company_name']}}</td>
+    </tr>
+  </table>
+  <br>
+  <table class="table table-striped table-hover table-bordered table-sm">
+    <tr>
+      <h3>Employee with Most Customers</h3>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Customer Count</th>
+    </tr>
+    <tr>
+      <td>{{=emp_with_most_customers[0]['first_name']}}  {{=emp_with_most_customers[0]['last_name']}}</td>
+      <td>{{=emp_with_most_customers[0]['customer_count']}}</td>
+    </tr>
+  </table>
+  <br><br>
+  {{block page_js}}
+  <script>
+  let stateNameList = '{{=state_name}}';
+  let newStateList = [];
+  let word = '';
+  let discard = '';
+  let counter = 0
+  for (let i = 0; i < stateNameList.length; i++){
+    let newChar = stateNameList[i];
+    if (newChar == "["){
+      continue;
+    } else if (newChar == ","){
+      i++;
+      continue;
+    } else if (newChar == "&"){
+      counter++
+      if (word.length > 0){
+        newStateList.push(word);
+      }
+      word = '';
+      discard += newChar;
+    } else if (discard.length > 0 && newChar != ";"){
+      counter++;
+      discard += newChar
+    } else if (newChar == ";" && word == ""){
+      counter++;
+      discard = '';
+    } else if (newChar == " " && word == ""){
+      counter++;
+      continue;
+    } else if (discard == "" && counter > 0){
+      counter++;
+      word += newChar;
+    } else {
+      console.log(`I ran ${counter} times`)
+      break;
+    }
+  }
+
+  function colorArray(){
+    let startRed = 255;
+    let startGreen = 0;
+    let startBlue = 0;
+    let colorArrayRGB = [];
+    let lenColors = newStateList.length;
+    for (let i = 0; i < lenColors; i++){
+      let newColor = '';
+      if (i == 0){
+        newColor = `rgb(${startRed},${startGreen},${startBlue})`;
+        colorArrayRGB.push(newColor);
+      } else {
+        startRed = 255 - (i * 7);
+        startGreen = i;
+        startBlue = i * 8;
+        newColor = `rgb(${startRed},${startGreen},${startBlue})`;
+        colorArrayRGB.push(newColor);
+      }
+    }
+    return colorArrayRGB;
+  }
+
+  var stateData = [{
+    values: {{=state_count}},
+    labels: newStateList,
+    type: 'pie',
+    marker: {
+      colors: colorArray()
+    }
+  }];
+
+  var stateLayout = {
+    title: "Customers Per State",
+    height: 500,
+    width: 500
+  };
+
+  Plotly.newPlot('statePieChart', stateData, stateLayout);
+
+  let empNameList = "{{=cc_employee_names}}";
+  let newEmpNameList = [];
+  let word2 = '';
+  let discard2 = '';
+  let counter2 = 0
+  for (let i = 0; i < empNameList.length; i++){
+    let newCharE = empNameList[i];
+    if (newCharE == "["){
+      continue;
+    } else if (newCharE == ","){
+      i++;
+      continue;
+    } else if (newCharE == "&"){
+      counter2++
+      if (word2.length > 0){
+        newEmpNameList.push(word2);
+      }
+      word2 = '';
+      discard2 += newCharE;
+    } else if (discard2.length > 0 && newCharE != ";"){
+      counter2++;
+      discard2 += newCharE
+    } else if (newCharE == ";" && word2 == ""){
+      counter2++;
+      discard2 = '';
+    } else if (newCharE == " " && word2 == ""){
+      counter2++;
+      continue;
+    } else if (discard2 == "" && counter2 > 0){
+      counter2++;
+      word2 += newCharE;
+    } else {
+      console.log(`I ran ${counter2} times`)
+      break;
+    }
+  }
+  
 
 
-<a href="../portal_sales_rep/index.html">Landing page for Sales_reps</a>
+  var empData = [{
+    y: {{=cc_customer_counts}},
+    x: newEmpNameList,
+    type: 'bar',
+    marker: {
+      color: 'rgb(186, 39, 39)',
+      line: {
+        color: 'rgb(186, 39, 39)',
+      }
+    }
+  }];
 
-<br><br><br>
-{{if session.flash != None:}}
-    {{if user_role_id != "2":}}
-    <a href="employees.html">Employee Table</a>
-    {{pass}}
-    <br><br>
-    {{=user_f_l}}
-    <br><br>
-    {{=user_role_id}}
-    <p>
-      This says the role to which the person logged in is assigned:<br /><br />{{=dict.keys(session.auth.user_groups)}}
-    </p>
-{{pass}}
+  var empLayout = {
+    title: "Customers Per Employee",
+    height: 500,
+    width: 500,
+  };
 
-<br><br><br>
-<a href="employees.html">Employee Table Test for logged in or not</a>
-<br><br><br>
-
-<!-- ###this returns a dictionary of data that can be accessed -->
-<br /><br />{{=session}}
-
-
-
-
-
+  Plotly.newPlot('employeePieChart', empData, empLayout);
+  </script>
+  {{end page_js}}
+ {{pass}}

@@ -1,0 +1,42 @@
+{{extend 'layout_new.html'}}
+{{block head}}
+    <style>
+        body{
+            background-color:light grey;
+            color:red;
+            font-family:Courier New; font-size:15px;
+        }
+        h1{
+            font-family:Copperplate;
+            color:red;
+        }
+    
+    </style>
+{{end}}
+<h1>New Customer</h1> 
+
+
+
+{{=customer_form}}
+<br><br>
+<br><br>
+{{block page_js}}
+<script>
+     //sets the value of Employee Id to whoever is logged in and disables the field
+     document.getElementById("persons_employee_id__label").innerHTML = "Employee ID";
+    let empId = document.getElementById("persons_employee_id");
+    empId.value = {{=str(session.auth.user.id)}};
+    //changes label name for Co Id to Company Name
+    document.getElementById("persons_co_id__label").innerHTML = "Company Name";
+    //changes labael name for Work Phone Num to Work Phone Number
+    document.getElementById("persons_work_phone_num__label").innerHTML = "Work Phone Number";
+    document.getElementById("persons_work_phone_num").setAttribute("placeholder","###-###-####");
+    // sets default for Birthday input
+    document.getElementById("persons_birthday").setAttribute("value","1827-03-26");
+    // aside for birthday input
+    birthdayAside = document.createElement("p");
+    birthdayAside.innerHTML = "Use the default date if you do not know the actual birthday";
+    document.getElementById("persons_birthday__row").children[1].appendChild(birthdayAside);    
+</script>
+{{end page_js}}
+
