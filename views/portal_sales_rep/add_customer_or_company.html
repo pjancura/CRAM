@@ -96,6 +96,16 @@
     //this exposes and hides the company form
     //changes the action of the customer form so that both forms can be processed
     function exposeCompanyForm(){
+        let classError = document.getElementsByClassName("error");
+        if (classError.length > 0){
+            for (let i = classError.length - 1; i < classError.length;i--){
+                if(i < 0){
+                    break;
+                } else {
+                    classError[i].remove();
+                }
+            }
+        }
         document.getElementById("persons_co_id").value = document.getElementById("persons_co_id").options[0].value;
         let firstName = document.getElementById("persons_first_name");
         let lastName = document.getElementById("persons_last_name");

@@ -46,6 +46,12 @@
   </div>
   {{else:}}
   <h1>Details of the Day</h1>
+  <div id="wrapperDiv" style="display: flex; justify-content: space-evenly;">
+  <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+  <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
+</div>
+  <br><br>
+  
   <table class="table table-striped table-hover table-bordered table-sm">
     <tr>
       <h3>Most Recent Customer</h3>
@@ -77,12 +83,6 @@
     </tr>
   </table>
   <br><br>
-  <div id="wrapperDiv" style="display: flex; justify-content: space-evenly;">
-  <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
-  <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
-</div>
-  <br><br><br>
-  
   {{block page_js}}
   <script>
   let stateNameList = '{{=state_name}}';

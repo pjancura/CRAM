@@ -2,23 +2,27 @@
 
 
 
-<table class="table table-striped table-hover table-bordered table-sm">
+<table class="table table-striped table-hover table-bordered table-sm" id="companyTable">
     <tr>
         <h3>Employee Companies</h3>
     </tr>
     <tr>
-        <th>ID</th>
-        <th>Company Name</th>
-        <th>Address</th>
-        <th>City</th>
-        <th>State</th>
-        <th>ZIP Code</th>
-        <th>SIC Code</th>
-        <th>Social Media Link</th>
-    </tr>
+        <th class="th-sm"><button class="btn btn-light" id="companyID" onclick="sortTable(this)"
+            style="font-weight:bold;">ID</button></th>
+            <th class="th-sm"><button class="btn btn-light" id="companyName" onclick="sortTable(this)"
+                style="font-weight:bold;">Company Name</button></th>
+                <th class="th-sm">Address</th> 
+                <th class="th-sm">City</th>
+                <th class="th-sm"><button class="btn btn-light" id="companyState" onclick="sortTable(this)"
+                    style="font-weight:bold;">State</button></th>
+                    <th class="th-sm">ZIP Code</th>
+                    <th class="th-sm"><button class="btn btn-light" id="companySIC" onclick="sortTable(this)"
+                        style="font-weight: bold;">SIC Code</button></th>
+                        <th class="th-sm">Social Media Link</th>
+                    </tr>
     {{for row in employee_rows_companies:}}
     <tr>
-        <td><a href="{{=URL('portal_manager','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
+        <td><a href="{{=URL('portal_ceo','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
         <td>{{=row.companies.company_name}}</td>
         <td>{{=row.companies.address}}</td>
         <td>{{=row.companies.city}}</td>
@@ -30,3 +34,121 @@
     </tr>
     {{pass}}
 </table>
+
+{{block page_js}}
+<script>
+function sortTable(button) {
+    var table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending;
+    if (button.id == "companyName"){
+        cellIndex = 1;
+        table = document.getElementById("companyTable");
+        if (button.innerHTML == "Company Name" || button.innerHTML == "Company Name ˇ"){
+        ascending = true;
+        button.innerHTML = "Company Name ^";
+        } else {
+          ascending = false;
+          button.innerHTML = "Company Name ˇ"
+        }
+    } else if (button.id == "companyID"){
+        cellIndex = 0;
+        table = document.getElementById("companyTable");
+        if (button.innerHTML == "ID" || button.innerHTML == "ID ˇ"){
+          ascending = true;
+          button.innerHTML = "ID ^";
+        } else {
+          ascending = false;
+          button.innerHTML = "ID ˇ"
+        }
+    } else if (button.id == "companyState"){
+      cellIndex = 4;
+      table = document.getElementById("companyTable");
+      if (button.innerHTML == "State" || button.innerHTML == "State ˇ"){
+          ascending = true;
+          button.innerHTML = "State ^";
+        } else {
+          ascending = false;
+          button.innerHTML = "State ˇ"
+        }
+    } else if (button.id == "companySIC"){
+      cellIndex = 6;
+      table = document.getElementById("companyTable");
+      isDate = true;
+      if (button.innerHTML == "SIC Code" || button.innerHTML == "SIC Code ˇ"){
+          ascending = true;
+          button.innerHTML = "SIC Code ^";
+        } else {
+          ascending = false;
+          button.innerHTML = "SIC Code ˇ"
+        }
+    } else {
+      return;
+    }
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first ones, which contains table headers): */
+    for (i = 2; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      if (rows[i].getElementsByTagName("td")[cellIndex].children.length >= 1){
+        x = rows[i].getElementsByTagName("td")[cellIndex].children[0];
+        y = rows[i + 1].getElementsByTagName("td")[cellIndex].children[0];
+      } else {
+        x = rows[i].getElementsByTagName("td")[cellIndex];
+        y = rows[i + 1].getElementsByTagName("td")[cellIndex];
+      }
+      // Check if the two rows should switch place:
+      if (ascending == true){
+          if (isNaN(x.innerHTML)){
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                  // If so, mark as a switch and break the loop:
+                  shouldSwitch = true;
+                  break;
+              }
+          } else {
+              if (parseInt(x.innerHTML) > parseInt(y.innerHTML)){
+                  shouldSwitch = true;
+                  break;
+              }
+          }
+      } else {
+          if (isNaN(x.innerHTML)){
+              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                  // If so, mark as a switch and break the loop:
+                  shouldSwitch = true;
+                  break;
+              }
+          } else {
+              if (parseInt(x.innerHTML) < parseInt(y.innerHTML)){
+                  shouldSwitch = true;
+                  break;
+              }
+          }
+      }
+    }
+    if (ascending == true){
+      if (shouldSwitch) {
+          /* If a switch has been marked, make the switch
+          and mark that a switch has been done: */
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+      }
+    } else {
+      if (shouldSwitch) {
+          /* If a switch has been marked, make the switch
+          and mark that a switch has been done: */
+          rows[i + 1].after(rows[i]);
+          switching = true;
+      }
+    }
+  }
+}
+</script>
+{{end page_js}}

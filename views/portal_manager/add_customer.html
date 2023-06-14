@@ -14,7 +14,7 @@
     </style>
 {{end}}
     
-
+<h1>New Customer</h1>
 
 
 {{=customer_form}}
@@ -39,9 +39,7 @@
     // only displays the appropriate employees
     let empIdOptions = document.getElementById("persons_employee_id").options;
     let empIdList = {{=employees_list}};
-    console.log(empIdList);
     for (i = 0; i < empIdOptions.length; i++){
-        console.log(empIdList.indexOf(parseInt(empIdOptions[i].value)));
         if ((empIdList.indexOf(parseInt(empIdOptions[i].value)) >= 0) || empIdOptions[i].value == ""){
             continue;
         } else {

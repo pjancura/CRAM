@@ -300,7 +300,9 @@
   </header>
   {{block header}}
     {{end}}
-      
+    {{if response.flash != "":}}
+    <div class="w2p_flash alert alert-dismissable" id="responseFlash">{{=response.flash or ''}}</div>
+    {{pass}}
     <!-- Main ========================================= -->
     <!-- Begin page content -->
     <div class="container-fluid main-container">
@@ -321,6 +323,13 @@
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
        {{block page_js}}{{end page_js}}
+    {{if response.flash != "":}}
+    <script>
+    document.getElementById("responseFlash").addEventListener("click", () => {
+      document.getElementById("responseFlash").remove();
+    })
+  </script>
+  {{pass}}
     {{if response.google_analytics_id:}}
     <!-- Analytics ==================================== -->
     <script src="{{=URL('static','js/analytics.min.js')}}"></script>
@@ -328,7 +337,8 @@
       analytics.initialize({
       'Google Analytics':{trackingId:'{{=response.google_analytics_id}}'}
       });
-    </script>
+
+      </script>
     {{pass}}
      </body>
    </html>
