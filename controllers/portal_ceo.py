@@ -307,6 +307,10 @@ def add_new_product():
         response.flash = 'form has errors'
     else:
         response.flash = 'please fill out the form'
+
+    vendor_ids = db(db.persons.contact_type == 'vendor').select(db.companies.id, db.companies.company_name, \
+                    join=[db.companies.on(db.persons.co_id == db.companies.id)], \
+                        orderby=(db.companies.id))
     return locals()
 
 @auth.requires(auth.has_membership('ceo'))

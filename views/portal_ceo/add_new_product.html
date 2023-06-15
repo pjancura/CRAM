@@ -17,11 +17,55 @@
 
 {{=BEAUTIFY(catalog_form)}}
 <br><br>
-
+<div id="companyNames" style="display:none;">
+    {{for id in vendor_ids:}}
+    <p>{{=id.company_name}}</p>    
+    {{pass}} 
+</div>
+<div id="companyIDs" style="display:none">
+    {{for id in vendor_ids:}}
+    <p>{{=id.id}}</p>
+    {{pass}}
+</div>
 
 {{block page_js}}
 <script>
-
+    let coNames = document.getElementById("companyNames").children;
+    let coNamesList = [];
+    for (let i = 0; i < coNames.length; i++){
+        coNamesList.push(coNames[i].innerHTML);
+    }
+    //console.log(coNamesList);
+    let coIDs = document.getElementById("companyIDs").children;
+    let coIDList = [];
+    for (let i = 0; i < coIDs.length;i++){
+        coIDList.push(coIDs[i].innerHTML);
+    }
+    //console.log(coIDList);
+    let vendorOpts = document.getElementById("catalogs_vendor_id").options;
+    for (let i = 0; i < vendorOpts.length; i++){
+        console.log(vendorOpts[i].value);
+        if (i == 0){
+            continue;
+        } else if (coIDList.indexOf(vendorOpts[i].value) >= 0){
+            let optInner = parseInt(coIDList.indexOf(vendorOpts[i].value));
+            vendorOpts[i].innerHTML = coNamesList[coIDList.indexOf(vendorOpts[i].value)];
+            //console.log(optInner);
+        } else {
+            vendorOpts[i].setAttribute("style","display:none;");
+        }
+    }
+    let previousVendor = "";
+    for (let i = 0; i < vendorOpts.length; i++){
+        if (i == 0){
+            previousVendor = vendorOpts[i].value;
+        } else if (previousVendor == vendorOpts[i].value){
+            vendorOpts[i].setAttribute("style","display:none;");
+            previousVendor = vendorOpts[i].value;
+        } else {
+            previousVendor = vendorOpts[i].value;
+        }
+    }
 </script>
 {{end page_js}}
 

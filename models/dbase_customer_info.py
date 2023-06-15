@@ -82,7 +82,8 @@ db.define_table('catalogs',
                 Field('img_id', type = 'string')
                 )
 
-db.catalogs.requires = IS_IN_DB(db, db.product_images.id, '%(image_name)s')
+db.catalogs.img_id.requires = IS_IN_DB(db, db.product_images.id, '%(image_name)s')
+db.catalogs.vendor_id.requires = IS_IN_DB(db, db.persons.co_id, '%(co_id)s')
 
 ######################################################################################################################################
 #             Everything below that line needs work
@@ -119,41 +120,3 @@ db.invoices.company_id.requires=IS_IN_DB(db, db.companies.id, '%(company_name)s 
 
 
 
-#########################    This is a test element for the invoice calculations
-
-
-db.define_table('fake_line_items',
-                Field('invoice_id', type = 'integer'),
-                Field('prod_id', type = 'integer'),                
-                Field('prod_quantity', type = 'integer'),
-                Field('total_item_price', type = 'decimal(20,2)'),
-                Field('total_mass_kg', type = 'decimal(20,2)'),
-                Field('shipping', type = 'decimal(20,2)'),
-                Field('total_cost', type = 'decimal(20,2)')
-                )
-
-
-
-db.invoice_line_items.prod_id.requires=IS_IN_DB(db, db.catalogs.id, '%(product_name)s')
-
-
-db.define_table('fake_invoices',
-                Field('purchase_date', type = 'date', requires=IS_DATE(), notnull=True),
-                Field('p_id', type = 'integer', notnull=True),
-                Field('due_date', type = 'date', compute=lambda r: r['purchase_date'] + datetime.timedelta(days=30)),
-                Field('invoice_total', type = 'decimal(20,2)', notnull=True),
-                Field('credit', type = 'decimal(20,2)', default=0),
-                Field('payment_total', type = 'decimal(20,2)', default=0),
-                )
-
-db.invoices.p_id.requires=IS_IN_DB(db, db.persons.id, '%(first_name)s %(last_name)s %(co_id)s')
-
-
-
-
-
-
-
-
-
-######################################      WORK SPACE / SAVE FOR LATER
