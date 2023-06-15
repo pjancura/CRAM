@@ -1,4 +1,0 @@
-{{extend 'layout.html'}}
-<h1>This is the default_cram/index.html template</h1>
-
-This is the homepage for CRAM
