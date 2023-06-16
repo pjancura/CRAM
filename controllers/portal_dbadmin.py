@@ -46,8 +46,8 @@ def sic_codes():
     return locals()
 
 @auth.requires(auth.has_membership('database_admin'))
-def states_usa():
-    grid = SQLFORM.grid(db.states_usa)
+def states_usa_2():
+    grid = SQLFORM.grid(db.states_usa_2)
     return locals()
 
 

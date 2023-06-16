@@ -15,9 +15,9 @@ logger.addHandler(handler)
 
 
 def index(): 
-    state_counts = db.executesql('SELECT states_usa.state_name, COUNT(companies.state_abbr) AS state_count\
+    state_counts = db.executesql('SELECT states_usa_2.state_name, COUNT(companies.state_abbr) AS state_count\
                                 FROM companies\
-                                JOIN states_usa ON states_usa.id = companies.state_abbr \
+                                JOIN states_usa_2 ON states_usa_2.id = companies.state_abbr \
                                 GROUP BY companies.state_abbr;', as_dict=True)
     state_count = []
     state_name = []

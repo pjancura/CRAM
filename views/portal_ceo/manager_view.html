@@ -13,7 +13,7 @@
     </thead>
 {{for x in emp_group:}}
     <tr>
-        <td><a href="{{=URL('portal_manager','employee_view',args=[x['id']])}}">{{=x['id']}}</a></td>
+        <td><a href="{{=URL('portal_ceo','employee_view',args=[x['id']])}}">{{=x['id']}}</a></td>
         <td>{{=x['first_name']}}</td>
         <td>{{=x['last_name']}}</td>
     </tr>

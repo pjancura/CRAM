@@ -24,9 +24,9 @@
     </tr>
     {{for row in employee_rows_customers:}}
     <tr>
-        <td><a href="{{=URL('portal_ceo','update_customer',args=[row.persons.id])}}">{{=row.persons.id}}</a></td>
+        <td><a href="{{=URL('portal_manager','update_customer',args=[row.persons.id])}}">{{=row.persons.id}}</a></td>
         <td>{{=row.persons.first_name}}</td>
-        <td><a href="{{=URL('portal_ceo','view_customer',args=[row.persons.id])}}">{{=row.persons.last_name}}</a></td>
+        <td><a href="{{=URL('portal_manager','view_customer',args=[row.persons.id])}}">{{=row.persons.last_name}}</a></td>
         <td>{{=row.companies.company_name}}</td>
         <td>{{=row.persons.work_phone_num}}</td>
         <td>{{=row.persons.email}}</td>

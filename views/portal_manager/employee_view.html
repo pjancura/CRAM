@@ -15,7 +15,7 @@
 {{if emp_num == "0":}}
 <h1>Login error: Please try logging in again</h1>
 {{else:}}
-<h1><em>Sales Rep</em></h1>
+<h1><em>Sales Rep: {{=employee_details[0].first_name}}  {{=employee_details[0].last_name}}</em></h1>
 
 <!-- <p>{{=today_date}}</p> -->
 <!-- <p>This is the employee number: {{=emp_num}}</p> -->
@@ -55,7 +55,7 @@
   </thead>
   {{for x in rows:}} {{if x[4] == emp_num:}}
   <tr>
-    <td><a href="{{=URL('view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
+    <td><a href="{{=URL('portal_manager','view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
     <td>{{=x[1]}}</td>
     <td>{{=x[2]}}</td>
     <td>{{=x[3]}}</td>
@@ -86,7 +86,7 @@
     <tr>
       {{pass}}
       <td>
-        <a href="{{=URL('portal_sales_rep','update_note',args=[x[7]])}}"
+        <a href="{{=URL('portal_manager','update_note',args=[x[7]])}}"
           >{{=x[1]}} {{=x[2]}}</a
         >
       </td>

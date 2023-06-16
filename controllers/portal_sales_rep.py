@@ -5,8 +5,9 @@ import logging
 from logging import handlers
 
 logger = logging.getLogger("portal_sales_rep")
+logger_file_name = 'portal_sales_rep.log'
 logger.setLevel(logging.DEBUG)
-handler = handlers.RotatingFileHandler("../MacOS/applications/CRAM/logs/portal_sales_rep.log", "a", 1000000, 5)
+handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
 handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
@@ -32,7 +33,7 @@ def index():
 def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
-    if request.vars:
+    if request.vars.msg:
         response.flash = msg
     if customer_form.process().accepted:
         response.flash = T('Customer Added')
@@ -133,9 +134,9 @@ def view_customer():
     person_id = person[0].id
     person_company = db(db.companies.id == person[0].co_id) \
                         .select(db.companies.id, db.companies.company_name, db.companies.address, \
-                        db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                        db.companies.city, db.states_usa_2.state_abbr, db.companies.zipcode, \
                         db.companies.sic_code, db.companies.s_media_link, \
-                        join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+                        join=[db.states_usa_2.on(db.companies.state_abbr == db.states_usa_2.id)])
     person_notes = db(db.contact_notes.person_id == person_id).select()    
     return locals()
 
@@ -196,9 +197,9 @@ def my_companies():
     for row in my_companies_ids:
         company_row = db(db.companies.id == row.co_id) \
                     .select(db.companies.id, db.companies.company_name, db.companies.address, \
-                    db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                    db.companies.city, db.states_usa_2.state_abbr, db.companies.zipcode, \
                     db.companies.sic_code, db.companies.s_media_link, \
-                    join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+                    join=[db.states_usa_2.on(db.companies.state_abbr == db.states_usa_2.id)])
         logger.info(company_row)
         rows_of_companies.append(company_row)
                                 

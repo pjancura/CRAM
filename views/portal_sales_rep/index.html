@@ -52,7 +52,7 @@
   </thead>
   {{for x in rows:}} {{if x[4] == emp_num:}}
   <tr>
-    <td><a href="{{=URL('view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
+    <td><a href="{{=URL('portal_sales_rep','view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
     <td>{{=x[1]}}</td>
     <td>{{=x[2]}}</td>
     <td>{{=x[3]}}</td>

@@ -25,6 +25,12 @@
     document.getElementById("persons_co_id__label").innerHTML = "Company Name";
     //change the label name of work phone num
     document.getElementById("persons_work_phone_num__label").innerHTML = "Work Phone Number";
+    // sets default for Birthday input
+    document.getElementById("persons_birthday").setAttribute("value","1827-03-26");
+    // aside for birthday input
+    birthdayAside = document.createElement("p");
+    birthdayAside.innerHTML = "Use the default date if you do not know the actual birthday";
+    document.getElementById("persons_birthday__row").children[1].appendChild(birthdayAside); 
 
     let divCompany = document.createElement("div");
     divCompany.setAttribute("id", "divCompany");

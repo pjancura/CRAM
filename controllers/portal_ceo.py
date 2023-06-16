@@ -4,9 +4,10 @@ import datetime
 import logging
 from logging import handlers
 
-logger = logging.getLogger("portal_manager")
+logger = logging.getLogger("portal_ceo")
+logger_file_name = 'portal_ceo.log'
 logger.setLevel(logging.DEBUG)
-handler = handlers.RotatingFileHandler("../MacOS/applications/CRAM/logs/portal_manager.log", "a", 1000000, 5)
+handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
 handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
@@ -63,7 +64,7 @@ def employee_view():
 def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
-    if request.vars:
+    if request.vars.msg:
         response.flash = msg
     if customer_form.process().accepted:
         response.flash = T('Customer Added')
@@ -100,10 +101,10 @@ def submit_customer_and_company():
         new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
     except:
         logger.critical(f"\nsomething broke\n{request.vars}")
-        redirect(URL(c='portal_sales_rep', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
+        redirect(URL(c='portal_ceo', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
     else:
         logger.debug("\nSubmitted to everyting")
-        redirect(URL(c='portal_sales_rep', f='view_customer', args=[new_customer_id[0].id]))
+        redirect(URL(c='portal_ceo', f='view_customer', args=[new_customer_id[0].id]))
     return locals()
 
 
@@ -160,7 +161,7 @@ def add_new_note():
     else:
         response.flash = 'please fill out the form'
     if request.vars:
-        return_url = URL('portal_sales_rep','view_customer', args=[request.vars.id]) 
+        return_url = URL('portal_ceo','view_customer', args=[request.vars.id]) 
     return locals()
 
 @auth.requires(auth.has_membership('ceo'))
@@ -193,9 +194,9 @@ def view_customer():
     person_id = person[0].id
     person_company = db(db.companies.id == person[0].co_id) \
                         .select(db.companies.id, db.companies.company_name, db.companies.address, \
-                        db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                        db.companies.city, db.states_usa_2.state_abbr, db.companies.zipcode, \
                         db.companies.sic_code, db.companies.s_media_link, \
-                        join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+                        join=[db.states_usa_2.on(db.companies.state_abbr == db.states_usa_2.id)])
     person_notes = db(db.contact_notes.person_id == person_id).select()    
     return locals()
 
@@ -205,7 +206,7 @@ def update_customer():
     persons_id = request.args(0)
     record = db.persons(persons_id) or redirect(URL(''))
     form = SQLFORM(db.persons, record)
-    return_url = URL('portal_sales_rep', 'view_customer', args = [record.id])
+    return_url = URL('portal_ceo', 'view_customer', args = [record.id])
     if form.process().accepted:
         response.flash = 'form accepted'
     elif form.errors:
@@ -223,7 +224,7 @@ def update_company():
     record = db.companies(company_id) or redirect(URL(''))
     form = SQLFORM(db.companies, record)
     attached_customer = db(db.persons.co_id == record.id).select()
-    return_url = URL('portal_sales_rep', 'view_customer', args = [attached_customer[0].id])
+    return_url = URL('portal_ceo', 'view_customer', args = [attached_customer[0].id])
     if form.process().accepted:
         response.flash = 'form accepted'
     elif form.errors:
@@ -237,7 +238,7 @@ def update_note():
     note_id = request.args(0)
     record = db.contact_notes(note_id) or redirect(URL(''))
     form = SQLFORM(db.contact_notes, record)
-    return_url = URL('portal_sales_rep', 'view_customer', args = [record.person_id])
+    return_url = URL('portal_ceo', 'view_customer', args = [record.person_id])
     if form.process().accepted:
         response.flash = 'form accepted'
     elif form.errors:
@@ -256,9 +257,9 @@ def my_companies():
     for row in my_companies_ids:
         company_row = db(db.companies.id == row.co_id) \
                     .select(db.companies.id, db.companies.company_name, db.companies.address, \
-                    db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                    db.companies.city, db.states_usa_2.state_abbr, db.companies.zipcode, \
                     db.companies.sic_code, db.companies.s_media_link, \
-                    join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+                    join=[db.states_usa_2.on(db.companies.state_abbr == db.states_usa_2.id)])
         rows_of_companies.append(company_row)
                                 
     return locals()
@@ -278,9 +279,9 @@ def all_employee_customers():
 def all_employee_companies():
     rows_companies = db(db.companies) \
                     .select(db.companies.id, db.companies.company_name, db.companies.address, \
-                    db.companies.city, db.states_usa.state_abbr, db.companies.zipcode, \
+                    db.companies.city, db.states_usa_2.state_abbr, db.companies.zipcode, \
                     db.companies.sic_code, db.companies.s_media_link, \
-                    join=[db.states_usa.on(db.companies.state_abbr == db.states_usa.id)])
+                    join=[db.states_usa_2.on(db.companies.state_abbr == db.states_usa_2.id)])
     return locals()
 
 @auth.requires(auth.has_membership('ceo'))

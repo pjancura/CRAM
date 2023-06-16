@@ -4,7 +4,7 @@ from gluon.tools import Auth
 from pydal import DAL, Field
 import datetime
 
-db.define_table('states_usa',
+db.define_table('states_usa_2',
                 Field('state_name', type='string', notnull=True, unique=True),
                 Field('state_abbr', type='string', notnull=True, unique=True)
                 )
@@ -28,7 +28,7 @@ db.define_table('companies',
 
 
 #creates foreign key references for table(companies)
-db.companies.state_abbr.requires = IS_IN_DB(db, db.states_usa.id, '%(state_abbr)s')
+db.companies.state_abbr.requires = IS_IN_DB(db, db.states_usa_2.id, '%(state_abbr)s')
 db.companies.sic_code.requires = IS_IN_DB(db, db.sic_codes.sic_code, '%(sic_code)s   %(industry_title)s')
 
 db.define_table('persons',
