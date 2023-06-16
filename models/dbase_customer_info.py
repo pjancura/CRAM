@@ -25,8 +25,6 @@ db.define_table('companies',
                 Field('s_media_link', type = 'string', requires = IS_URL(), notnull=True, unique=True)
                 )
 
-
-
 #creates foreign key references for table(companies)
 db.companies.state_abbr.requires = IS_IN_DB(db, db.states_usa_2.id, '%(state_abbr)s')
 db.companies.sic_code.requires = IS_IN_DB(db, db.sic_codes.sic_code, '%(sic_code)s   %(industry_title)s')
@@ -84,6 +82,7 @@ db.define_table('catalogs',
 
 db.catalogs.img_id.requires = IS_IN_DB(db, db.product_images.id, '%(image_name)s')
 db.catalogs.vendor_id.requires = IS_IN_DB(db, db.persons.co_id, '%(co_id)s')
+
 
 ######################################################################################################################################
 #             Everything below that line needs work
