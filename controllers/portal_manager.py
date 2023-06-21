@@ -4,14 +4,14 @@ import datetime
 import logging
 from logging import handlers
 
-logger = logging.getLogger("portal_manager")
-logger_file_name = 'portal_manager.log'
-logger.setLevel(logging.DEBUG)
-handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
-handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+# logger = logging.getLogger("portal_manager")
+# logger_file_name = 'portal_manager.log'
+# logger.setLevel(logging.DEBUG)
+# handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
+# handler.setLevel(logging.DEBUG)
+# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# handler.setFormatter(formatter)
+# logger.addHandler(handler)
 
 @auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
 def index():
@@ -27,7 +27,7 @@ def index():
                         FROM auth_membership am \
                          JOIN auth_user au ON am.user_id = au.id \
                         WHERE am.group_id = "7";', as_dict=True)
-    logger.info(f'\nmanager group number: {man_group}\nemployee group: {emp_group}')
+    # logger.info(f'\nmanager group number: {man_group}\nemployee group: {emp_group}')
     return locals()
 
 @auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
@@ -68,7 +68,7 @@ def add_customer_or_company():
         employees_list = []
         for x in employees:
             employees_list.append(x.id)
-    logger.info(f"employee id list: {employees_list}")
+    # logger.info(f"employee id list: {employees_list}")
     return locals()
 
 @auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
@@ -99,10 +99,10 @@ def submit_customer_and_company():
                         referral_source=request.vars.referral_source, employee_id=employee_int, created_on_date=created_date)
         new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
     except:
-        logger.critical(f"\nsomething broke\n{request.vars}")
+        # logger.critical(f"\nsomething broke\n{request.vars}")
         redirect(URL(c='portal_manager', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
     else:
-        logger.debug("\nSubmitted to everyting")
+        # logger.debug("\nSubmitted to everyting")
         redirect(URL(c='portal_manager', f='view_customer', args=[new_customer_id[0].id]))
     return locals()
 
@@ -128,7 +128,7 @@ def add_new_note():
         relevant_customers = []
         for row in rows_customers:
             if row.persons.employee_id in employees_list:
-                logger.info(f"employee_id: {row.persons.id}  \t {row.persons.employee_id}")
+                # logger.info(f"employee_id: {row.persons.id}  \t {row.persons.employee_id}")
                 relevant_customers.append(row.persons.id)
             else:
                 continue
@@ -196,7 +196,7 @@ def add_customer():
         employees_list = []
         for x in employees:
             employees_list.append(x.id)
-    logger.info(f"employee id list: {employees_list}")
+    # logger.info(f"employee id list: {employees_list}")
     return locals()
 
 @auth.requires(auth.has_membership('manager1') or auth.has_membership('manager2'))
@@ -297,7 +297,7 @@ def all_employee_customers():
         employee_rows_customers = []
         for row in rows_customers:
             if row.persons.employee_id in employees_list:
-                logger.info(f"employee_id: {row.persons.id}  \t {row.persons.employee_id}")
+                # logger.info(f"employee_id: {row.persons.id}  \t {row.persons.employee_id}")
                 employee_rows_customers.append(row)
             else:
                 continue
@@ -336,7 +336,7 @@ def all_employee_companies():
         customer_co_ids = []
         for row in rows_customers:
             if row.employee_id in employees_list:
-                logger.info(f"employee_id: {row.id}  \t {row.employee_id}")
+                # logger.info(f"employee_id: {row.id}  \t {row.employee_id}")
                 customer_co_ids.append(row.co_id)
             else:
                 continue
