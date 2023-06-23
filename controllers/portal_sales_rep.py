@@ -22,7 +22,8 @@ def index():
                         FROM persons JOIN companies c on c.id = persons.co_id;')
     notes_on_customers = db.executesql('SELECT cn.emp_id, persons.first_name, persons.last_name, \
                                        cn.date_created, cn.time_of_event, cn.contact_note, cn.status , cn.id\
-                                        FROM contact_notes cn join persons on persons.id = cn.person_id;')
+                                        FROM contact_notes cn join persons on persons.id = cn.person_id \
+                                       ORDER BY cn.date_created;')
 
     return locals()
 
