@@ -15,7 +15,7 @@ It is a CRM for a food distribution company.  Through role-based access control,
 employees are given access to only parts of the system that they need.  
 
 Tasks for employees include:
-- CRUD for Companies and the contact person, notes on those relationships
+- CRUD for Companies, the contact person, and notes on those relationships
 - Managers can modify data related of their reports
 - The CEO can see everything and how the data relates to all of their employees, they can also update the food catalog
 - The Database Admin has access to all of the information, and they are the only ones that can modify User accounts
