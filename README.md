@@ -3,7 +3,7 @@ This project was deployed in June 2023 at the following web address.
 
 ***   http://pert.pythonanywhere.com   ***
 
-It runs slow and may no longer be active because it was deployed utilizing a free account. 
+It runs slow or may no longer be active because it was deployed utilizing a free account. 
 
 OUTLINE:
 This is the capstone project for russellr93, 	Marz-Hall, 00fuzz7y, and myself (pjancura).  
