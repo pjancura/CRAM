@@ -73,3 +73,297 @@ employee group: [{'group_id': 6, 'id': 5, 'last_name': 'Firestorm', 'first_name'
 2023-06-12 19:16:09,241 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
 101,qwer,qwer,qwer,AZ,12355,800,http://www.rubblegrains.com
 
+2023-07-21 10:34:07,596 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:34:07,598 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:34:07,599 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:34:07,600 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:34:07,600 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:34:07,601 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:34:07,602 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:34:54,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:34:54,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:34:54,595 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:34:54,595 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:34:54,596 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:34:54,596 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:34:54,597 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:34:54,597 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:34:54,598 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:34:54,598 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:34:54,598 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:34:54,598 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:34:54,599 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:34:54,599 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:35:51,583 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:35:51,583 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:35:51,583 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:35:51,583 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:35:51,583 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:35:51,583 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 10:35:51,585 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:35:51,585 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:35:51,585 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:35:51,585 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:35:51,585 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:35:51,585 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 10:35:51,587 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:35:51,587 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:35:51,587 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:35:51,587 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:35:51,587 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:35:51,587 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 10:35:51,589 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:35:51,589 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:35:51,589 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:35:51,589 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:35:51,589 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:35:51,589 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 10:35:51,590 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:35:51,590 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:35:51,590 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:35:51,590 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:35:51,590 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:35:51,590 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 10:35:51,592 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:35:51,592 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:35:51,592 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:35:51,592 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:35:51,592 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:35:51,592 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 10:35:51,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:35:51,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:35:51,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:35:51,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:35:51,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 10:35:51,593 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 13:33:33,570 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 13:33:33,572 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 13:33:33,573 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 13:33:33,574 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 13:33:33,574 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 13:33:33,575 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 13:33:33,576 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 13:33:49,959 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 13:33:49,959 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 13:33:49,959 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 13:33:49,959 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+6,Nuclear Nibbles,868 Radiation Lane,Radiationville,PA,19004,2060,http://www.nuclearnibbles.com
+
+2023-07-21 13:33:49,961 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 13:33:49,961 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 13:33:49,961 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 13:33:49,961 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+27,Nuked Nourishment,863 Devastation Drive,Nukeburg,OH,43006,2030,http://www.nukednourishment.com
+
+2023-07-21 13:33:49,962 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 13:33:49,962 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 13:33:49,962 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 13:33:49,962 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+30,Ravaged Refreshments,210 Decay Avenue,Ruinberg,MI,48001,2060,http://www.ravagedrefreshments.com
+
+2023-07-21 13:33:49,964 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 13:33:49,964 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 13:33:49,964 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 13:33:49,964 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+36,Mutant Meats,432 Mutagen Street,Mutopia,IL,60007,2015,http://www.mutantmeats.com
+
+2023-07-21 13:33:49,965 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 13:33:49,965 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 13:33:49,965 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 13:33:49,965 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+37,Radiation Refreshments,875 Glow Street,Radiationville,IL,60008,2013,http://www.radiationrefreshments.com
+
+2023-07-21 13:33:49,966 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 13:33:49,966 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 13:33:49,966 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 13:33:49,966 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+50,Wrecked Wholesalers,209 Chaos Boulevard,Devastation City,UT,77003,2092,http://www.wreckedwholesalers.com
+
+2023-07-21 13:33:49,967 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 13:33:49,967 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 13:33:49,967 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
+2023-07-21 13:33:49,967 - portal_sales_rep - INFO - companies.id,companies.company_name,companies.address,companies.city,states_usa_2.state_abbr,companies.zipcode,companies.sic_code,companies.s_media_link
+63,Armageddon Eats,207 Cataclysm Street,Doomsville,CA,90003,2052,http://www.armageddoneats.com
+
