@@ -4,14 +4,14 @@ import datetime
 import logging
 from logging import handlers
 
-logger = logging.getLogger("portal_sales_rep")
-logger_file_name = 'portal_sales_rep.log'
-logger.setLevel(logging.DEBUG)
-handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
-handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+# logger = logging.getLogger("portal_sales_rep")
+# logger_file_name = 'portal_sales_rep.log'
+# logger.setLevel(logging.DEBUG)
+# handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
+# handler.setLevel(logging.DEBUG)
+# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# handler.setFormatter(formatter)
+# logger.addHandler(handler)
 
 
 @auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
@@ -69,10 +69,10 @@ def submit_customer_and_company():
                         referral_source=request.vars.referral_source, employee_id=employee_int, created_on_date=created_date)
         new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
     except:
-        logger.critical(f"\nsomething broke\n{request.vars}")
+        # logger.critical(f"\nsomething broke\n{request.vars}")
         redirect(URL(c='portal_sales_rep', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
     else:
-        logger.debug("\nSubmitted to everyting")
+        # logger.debug("\nSubmitted to everyting")
         redirect(URL(c='portal_sales_rep', f='view_customer', args=[new_customer_id[0].id]))
     return locals()
 
@@ -200,7 +200,7 @@ def my_companies():
                     db.companies.city, db.states_usa_2.state_abbr, db.companies.zipcode, \
                     db.companies.sic_code, db.companies.s_media_link, \
                     join=[db.states_usa_2.on(db.companies.state_abbr == db.states_usa_2.id)])
-        logger.info(company_row)
+        # logger.info(company_row)
         rows_of_companies.append(company_row)
                                 
     #logger.info(f"company row:  {rows_of_companies}")

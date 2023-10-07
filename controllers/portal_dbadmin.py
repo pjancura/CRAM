@@ -3,14 +3,14 @@
 import logging
 from logging import handlers
 
-logger = logging.getLogger("portal_dbadmin")
-file_name = 'portal_dbadmin.log'
-logger.setLevel(logging.DEBUG)
-handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{file_name}", "a", 1000000, 5)
-handler.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+# logger = logging.getLogger("portal_dbadmin")
+# file_name = 'portal_dbadmin.log'
+# logger.setLevel(logging.DEBUG)
+# handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{file_name}", "a", 1000000, 5)
+# handler.setLevel(logging.INFO)
+# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# handler.setFormatter(formatter)
+# logger.addHandler(handler)
 
 @auth.requires(auth.has_membership('database_admin'))
 def index(): return dict(message="hello from portal_dbadmin.py")
