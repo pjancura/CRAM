@@ -163,5 +163,5 @@ if configuration.get('scheduler.enabled'):
 
 auth.settings.login_next = URL(a='CRAM', c='default_cram', f='index')
 auth.settings.logout_next = URL(a='CRAM', c='default_cram', f='index')
-auth.settings.actions_disabled = ['register']
+auth.settings.actions_disabled = ['register', 'retrieve_password']
 auth.settings.reset_password_next = URL(a='CRAM', c='default_cram', f='user')

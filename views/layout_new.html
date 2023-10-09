@@ -44,6 +44,10 @@
         width: 16rem;
       }
 
+      .main-container {
+        min-height: 77vh;
+      }
+
       footer {
         background-color: #f5f5f5;
         padding: 20px;
@@ -51,10 +55,7 @@
         color: #777;
         display: flex;
         justify-content: space-between;
-        width: 100vw;
         height: fit-content;
-        position: fixed;
-        bottom: 0;
       }
 
       .carousel-item {
@@ -171,6 +172,7 @@
         top: 4rem;
         height: fit-content;
       }
+
      
   </style>
 </head>
@@ -314,7 +316,7 @@
     </div>
 
     {{block footer}}
-    <br> <!-- this is default footer -->
+    <!-- this is default footer -->
     <footer class="footer">
       <div id="contactUsDiv">
         <p id ="contact">Contact Us: </p>
@@ -325,7 +327,7 @@
       <p id ="copy">&copy; 2023 PERT Food Distribution</p>
       <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
       
-    </footer class="">
+    </footer>
     {{end}}
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
