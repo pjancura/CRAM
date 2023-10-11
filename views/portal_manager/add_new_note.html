@@ -1,19 +1,6 @@
 {{extend 'layout_new.html'}}
-{{block head}}
-    <style>
-        h1{
-            color:red;
-            font-family:Copperplate;
-        }
-        body{
-            background-color:light grey;
-            color:red;
-        }
-    </style>
-{{end}}
 
-
-<h1><em>Add a Note</em></h1>
+<h2>Add a Note</h2>
 {{if request.vars:}}
 <p><a id="returnToCustomer" href="">Return to Previous Customer</a></p>
 {{pass}}

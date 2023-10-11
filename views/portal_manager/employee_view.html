@@ -1,17 +1,5 @@
-{{extend 'layout_new.html'}} {{import datetime}} {{block head}}
-<style>
-  body {
-    background-color: light grey;
-    color: red;
-    font-family: Courier New;
-    font-size: 15px;
-  }
-  h1 {
-    font-family: Copperplate;
-    color: red;
-  }
-</style>
-{{end}} 
+{{extend 'layout_new.html'}} {{import datetime}}
+ 
 {{if emp_num == "0":}}
 <h1>Login error: Please try logging in again</h1>
 {{else:}}
