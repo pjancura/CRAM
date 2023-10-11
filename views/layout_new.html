@@ -1,190 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PERT - Home</title>
+  <title>PERT</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="PERTCSS.css"> -->
-  	<!-- Load plotly.js into the DOM -->
+  <link rel="stylesheet" href="{{=URL('static/css', 'styles.css')}}">
+  	<!-- Loads plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
-  <style>
-    body, .wrapper {
-      min-height: 100vh;
-    }
-
-    header {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: transparent;
-        padding: 10px;
-      }
-
-      nav ul {
-        background-color: transparent;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      nav ul li {
-        margin-right: 10px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #333;
-        padding: 5px;
-      }
-
-      /* Custom CSS for the home button */
-      .home-button {
-        width: 70px; /* Adjust the width as desired */
-        height: auto; /* Maintain aspect ratio */
-      }
-
-      #theVaultDropdown{
-        width: 16rem;
-      }
-
-      .main-container {
-        min-height: 77vh;
-      }
-
-      footer {
-        background-color: #f5f5f5;
-        padding: 20px;
-        font-size: 1rem;
-        color: #777;
-        display: flex;
-        justify-content: space-between;
-        height: fit-content;
-      }
-
-      .carousel-item {
-        display: relative;
-      }
-
-      .carousel-item img {
-        object-fit: cover;
-        flex: 1;
-      }
-
-      .carousel-item .carousel-caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
-        color: white;
-        padding: 10px;
-        width: 100%; /* Adjust the width as needed */
-        height: 60%;
-        border-radius: 20px;
-      }
-
-          /* Styling for the products section */
-          .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-
-      /* Styling for product items */
-      .product {
-        width: 300px;
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 0px solid #ddd;
-        border-radius: 5px;
-      }
-
-      /* Styling for product images */
-      .product img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
-
-      /* Styling for product names */
-      .product h3 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-      }
-          /* Custom CSS for the login form */
-    .login-container {
-        max-width: 400px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-
-      .login-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .login-container input[type="text"],
-      .login-container input[type="password"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-      }
-
-      .login-container button[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        background-color: #4caf50;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-      }
-
-      body {
-        {{if request.controller == "cram_default" and request.function == "index.html":}}
-        background-image: url("images/Farm.jpeg");
-        {{pass}}
-        background-size: cover; /* Adjust to your preference */
-      }
-      a {
-        color: red;
-      }
-      a:visited {
-        color: purple;
-      }
-      a:hover {
-        color: blue;
-      }
-      a:active {
-        color: green;
-      }
-      #team{
-        position: relative;
-        bottom: 0.55rem;
-      }
-      #contactUsDiv{
-        line-height: 0.3rem;
-        height: fit-content;
-      }
-      #copy {
-        position: relative;
-        top: 4rem;
-        height: fit-content;
-      }
-
-     
-  </style>
+  
 </head>
 <body>
   <div class="wrapper">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="{{=URL('default_cram', 'index.html')}}">
-        <img src="{{=URL('static', 'images/PERT1.jpeg')}}" alt="PERT Logo" class="home-button">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <a class="navbar-brand text-white" href="{{=URL('default_cram', 'index.html')}}">
+        <h2 class="home-button">PERT</h2>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -317,7 +148,7 @@
 
     {{block footer}}
     <!-- this is default footer -->
-    <footer class="footer">
+    <footer class="footer bg-secondary text-light">
       <div id="contactUsDiv">
         <p id ="contact">Contact Us: </p>
         <p id ="address">3456 Distant Dr, Dystopia OH 77777 </p>
@@ -327,7 +158,7 @@
       <p id ="copy">&copy; 2023 PERT Food Distribution</p>
       <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a>
       
-    </footer>
+    </footer >
     {{end}}
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

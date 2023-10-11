@@ -1,0 +1,128 @@
+body,
+.wrapper {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: lightskyblue;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px;
+}
+
+nav ul {
+  background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+#theVaultDropdown {
+  width: 16rem;
+}
+
+.main-container {
+  min-height: 76.25vh;
+}
+
+footer {
+  padding: 20px;
+  font-size: 1rem;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.carousel-item img {
+  max-height: 40rem;
+  border-radius: 10px;
+}
+
+div .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* STYLING FOR BUSINESS INFO PAGES */
+/* AND */
+/* STYLING FOR CAREERS PAGE */
+.detail-image {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+/* Custom CSS for the login form */
+.login-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#team {
+  position: relative;
+  bottom: 0.55rem;
+}
+#contactUsDiv {
+  line-height: 0.3rem;
+  height: fit-content;
+}
+#copy {
+  position: relative;
+  top: 4rem;
+  height: fit-content;
+}
