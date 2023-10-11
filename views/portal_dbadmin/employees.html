@@ -1,20 +1,8 @@
 {{extend 'layout_new.html'}}
-{{block head}}
-    <style>
-        body{
-            background-color:light grey;
-            color:red;
-            font-family:Courier New; font-size:15px;
-        }
-        h1{
-            font-family:Copperplate;
-            color:red;
-        }
-    
-    </style>
-{{end}}
-    
-<h1><em>Employees</em></h1>
 
+    
+<section class="w-75 mx-auto">
+<h2>Employees</h2>
 
 {{=BEAUTIFY(grid)}}
+</section>
