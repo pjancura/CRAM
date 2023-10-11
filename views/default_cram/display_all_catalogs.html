@@ -1,6 +1,6 @@
 {{extend 'layout_new.html'}}
 
-<h2 class="w-75 mx-auto">Catalog</h2>
+<h2 class="w-75 mx-auto my-4">Catalog</h2>
 
 <table class="table table-striped table-hover w-75 mx-auto border border-info" id="catalogTable">
     <tr>
@@ -23,7 +23,11 @@
         <th>Image</th>
     </tr>
     {{for x in rows:}}
-    <tr>
+    {{if x.catalogs.id <= 15:}}
+    <tr class="catalog-row">
+    {{else:}}
+    <tr class="catalog-row" hidden aria-hidden="true">
+    {{pass}}
         <td>{{=x.catalogs.product_name}}</a></td>
         <td>{{=x.catalogs.description}}</td>
         <td>{{=x.catalogs.price}}</td>
@@ -36,10 +40,22 @@
     </tr>
     {{ pass }}
 </table>
+
+<nav class="my-4 mx-auto w-75" aria-label="Product Page Navigation">
+    <ul class="pagination justify-content-center">
+        {{for x in range(len(rows)):}}
+        {{if x % 15 == 0:}}
+      <li class="page-item border-info"><a class="page-link text-info" href="#" onclick="changePage(this)">{{=(x // 15) + 1}}</a></li>
+      {{pass}}
+      {{pass}}
+    </ul>
+  </nav>
+
+
 {{block page_js}}
 <script>
     function sortTable(button) {
-        var table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending, isDate;
+        let table, rows, switching, i, x, y, shouldSwitch, cellIndex, ascending, isDate;
         isDate = false;
         if (button.id == "productName"){
             cellIndex = 0;
@@ -141,5 +157,30 @@
         }
     }
     }
+
+    // THIS WORKS THE PAGINATION ON PRODUCT PAGE
+    const catalogRows = document.getElementsByClassName("catalog-row");
+    const displayRows = 15;
+    
+    
+    
+    function changePage(pageLink) {
+        let pageNum = parseInt(pageLink.textContent);
+        let start = ((pageNum - 1) * displayRows)
+        let productsDisplay = Array.from({length: displayRows}, (value, index) => 
+             start + index
+        )
+        console.log(productsDisplay); 
+        for(i = 0; i < catalogRows.length; i++){
+            if (productsDisplay.includes(i)){
+                catalogRows[i].hidden = false;
+            } else {
+                catalogRows[i].hidden = true;
+            }
+        }
+    }
+
+
+
 </script>
 {{end page_js}}
