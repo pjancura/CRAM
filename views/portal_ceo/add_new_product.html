@@ -1,22 +1,11 @@
 {{extend 'layout_new.html'}}
-{{block head}}
-    <style>
-        h1{
-            color:red;
-            font-family:Copperplate;
-        }
-        body{
-            background-color:light grey;
-            color:red;
-        }
-    </style>
-{{end}}
 
-
-<h1><em>Add a Product</em></h1>
+<h2>Add a Product</h2>
 
 {{=BEAUTIFY(catalog_form)}}
+
 <br><br>
+
 <div id="companyNames" style="display:none;">
     {{for id in vendor_ids:}}
     <p>{{=id.company_name}}</p>    
