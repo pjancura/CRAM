@@ -91,16 +91,3 @@ div .carousel-caption {
   cursor: pointer;
 }
 
-#team {
-  position: relative;
-  bottom: 0.55rem;
-}
-#contactUsDiv {
-  line-height: 0.3rem;
-  height: fit-content;
-}
-#copy {
-  position: relative;
-  top: 4rem;
-  height: fit-content;
-}
