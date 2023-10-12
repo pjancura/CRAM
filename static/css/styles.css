@@ -25,14 +25,6 @@ a:hover {
   min-height: 76.25vh;
 }
 
-footer {
-  padding: 20px;
-  font-size: 1rem;
-  color: #777;
-  display: flex;
-  justify-content: space-between;
-  height: fit-content;
-}
 
 .carousel-item img {
   max-height: 40rem;
@@ -89,5 +81,11 @@ div .carousel-caption {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+
+/*     FOOTER      */
+.footer-content {
+  font-weight: 900;
 }
 

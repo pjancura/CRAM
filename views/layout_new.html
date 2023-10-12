@@ -4,7 +4,7 @@
     <title>PERT</title>
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{=URL('static/css', 'styles.css')}}">
+    <link rel="stylesheet" href="{{=URL('static', 'css/styles.css')}}">
     <!-- Loads plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
 
@@ -244,14 +244,14 @@
       {{block footer}}
       <!-- this is default footer -->
       <footer class="footer bg-secondary text-light">
-        <div class="row">
-          <div id="contactUsDiv" class="col-lg-4">
+        <div class="row d-flex justify-content-between w-100 mx-auto">
+          <div class="contactDiv col-lg-3 mx-auto">
             <h5 id="contact">Contact Us: </h5>
-            <p id="address">3456 Distant Dr, Dystopia OH 77777 </p>
-            <p id="phone">phone:(456)234-7890</p>
-            <p id="email">email: dystopia.co@hotmail.com</p>
+            <p class="footer-content" id="address">3456 Distant Dr, <br>Dystopia, OH 77777 </p>
+            <p class="footer-content" id="phone"><h6>Phone:</h6> (456)234-7890</p>
+            <p class="footer-content" id="email"><h6>Email:</h6> dystopia.co@hotmail.com</p>
           </div>
-          <div class="col-lg-4">
+          <div class="contactDiv col-lg-3 mx-auto align-self-end">
             <p id="copy">&copy; 2023 PERT Food Distribution</p>
             <!-- <a href="{{=URL('default_cram', 'team_bio.html')}}"> <p id ="team">Meet the Core Team</p></a> -->
           </div>
