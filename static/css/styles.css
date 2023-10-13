@@ -54,14 +54,19 @@ div.carousel-caption {
   margin-right: auto;
 }
 
-/*     FOOTER      */
-.footer-content {
-  font-size: 0.9rem;
-}
-
 /*    CUSTOM SQLFORM.GRID STYLES     */
 .grid-section {
   margin-bottom: 1.5rem;
+}
+
+/*    tables with a lot of fields become more responsive    */
+.tableDiv {
+  overflow-x: auto;
+}
+
+/*     FOOTER      */
+.footer-content {
+  font-size: 0.9rem;
 }
 
 
