@@ -14,6 +14,11 @@ a:hover {
   color: darkcyan;
 }
 
+/*    CHANGES BUTTON COLOR FOR SQLFORM.GRID VIEWS */
+a.btn.btn-default.btn-secondary, input.btn.btn-default.btn-secondary {
+  background-color: #17a2b8;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
@@ -49,45 +54,10 @@ div.carousel-caption {
   margin-right: auto;
 }
 
-/* Custom CSS for the login form */
-/* .login-container {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.login-container input[type="text"],
-.login-container input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.login-container button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-} */
-
-
 /*     FOOTER      */
 .footer-content {
   font-size: 0.9rem;
 }
-
 
 /*    CUSTOM SQLFORM.GRID STYLES     */
 .grid-section {
