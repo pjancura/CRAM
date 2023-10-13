@@ -10,11 +10,17 @@
       <link rel="stylesheet" href="{{=URL('static', 'css/styles.css')}}">
       <!-- Loads plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
-
+  <!-- All JavaScript at the bottom, except for Modernizr which enables
+    HTML5 elements & feature detects -->
+    <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+    {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+    {{block head}}{{end}}
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      {{if response.flash != "":}}
+      <div class="w2p_flash alert alert-dismissable bg-info text-white border-info" id="responseFlash">{{=response.flash or ''}}</div>
+      {{pass}}
         <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
           <a class="navbar-brand text-white"
             href="{{=URL('default_cram', 'index.html')}}">
@@ -230,13 +236,10 @@
             {{pass}}
           </div>
         </nav>
-      </header>
+      <!-- Masthead ===================================== -->
       {{block header}}
       {{end}}
-      {{if response.flash != "":}}
-      <div class="w2p_flash alert alert-dismissable" id="responseFlash">{{=response.flash
-        or ''}}</div>
-      {{pass}}
+
       <!-- Main ========================================= -->
       <!-- Begin page content -->
       <div class="container-fluid main-container">

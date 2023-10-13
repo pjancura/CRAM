@@ -89,7 +89,7 @@ response.form_label_separator = ''
 # -------------------------------------------------------------------------
 
 # host names must be a list of allowed host names (glob syntax allowed)
-auth = Auth(db, host_names=configuration.get('host.names'))
+auth = Auth(db, controller='default_cram', function='user', host_names=configuration.get('host.names'))
 
 
 # -------------------------------------------------------------------------
@@ -161,8 +161,8 @@ if configuration.get('scheduler.enabled'):
 ####################################################
 #change login redirect variables
 
+auth.settings.login_url = URL(a='CRAM', c='default_cram', f='user')
 auth.settings.login_next = URL(a='CRAM', c='default_cram', f='index')
 auth.settings.logout_next = URL(a='CRAM', c='default_cram', f='index')
 auth.settings.actions_disabled = ['register', 'retrieve_password']
 auth.settings.reset_password_next = URL(a='CRAM', c='default_cram', f='user')
-auth.settings.on_failed_authentication = URL(a='CRAM', c='default_cram', f='user', args='not_authorized')

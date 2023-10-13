@@ -18,6 +18,7 @@
 
 {{block page_js}}
 <script>
+  document.getElementsByTagName('input')[3].setAttribute("class","btn-info btn")
     jQuery("#web2py_user_form input:visible:enabled:first").focus();
 {{if request.args(0)=='register':}}
     web2py_validate_entropy(jQuery('#auth_user_password'),100);
