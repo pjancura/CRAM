@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>PERT</title>
-    <!-- <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- loads bootstrap 4 min.css -->
       <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
+      <!-- custom CSS that was built for web2py -->
       <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap4.css')}}"/>
+      <!-- my custom CSS for the website -->
       <link rel="stylesheet" href="{{=URL('static', 'css/styles.css')}}">
       <!-- Loads plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
@@ -242,7 +242,7 @@
 
       <!-- Main ========================================= -->
       <!-- Begin page content -->
-      <div class="container-fluid main-container">
+      <div class="container-fluid content-container">
         {{include}}
         {{=response.toolbar() if response.show_toolbar else ''}}
       </div>

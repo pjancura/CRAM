@@ -22,10 +22,11 @@ a:hover {
   width: 16rem;
 }
 
-/*    .main-container IS THE DIV FOR ALL OF THE VIEWS     */
-.main-container {
-  min-height: 71.5vh;
+/*    .content-container IS THE DIV FOR ALL OF THE VIEWS     */
+.content-container {
+  min-height: 71.05vh;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .carousel-item img {
