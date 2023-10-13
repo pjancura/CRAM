@@ -31,7 +31,7 @@
     </tr>
     {{pass}}
     <tr>
-        <td><a href="{{=URL('update_customer', args = [person[0].id])}}">Update Customer</a></td>
+        <td><a class="text-info" href="{{=URL('update_customer', args = [person[0].id])}}">Update Customer</a></td>
     </tr>
 </table>
 <br><br><br>
@@ -67,7 +67,7 @@
     <tr>
         <!-- example below of how to access a value when the row that is returned has a "join" -->
         <!-- you need to have the row[0].table_name.field_name -->
-        <td><a href="{{=URL('update_company', args = [person_company[0].companies.id])}}">Update Company</a></td>
+        <td><a class="text-info" href="{{=URL('update_company', args = [person_company[0].companies.id])}}">Update Company</a></td>
     </tr>
 </table>
 <br><br><br>
@@ -84,7 +84,7 @@
 
     {{ for x in person_notes:}}
     <tr>
-        <td><a href="{{=URL('update_note', args = [x.id])}}">{{=x.date_created}}</a></td>
+        <td><a class="text-info" href="{{=URL('update_note', args = [x.id])}}">{{=x.date_created}}</a></td>
         {{if x.time_of_event.strftime("%H %M") == "00 00":}}
         <td>Anytime Today</td>
         {{else:}}
@@ -101,7 +101,7 @@
     </tr>
     {{pass}}
     <tr>
-       <td><a href="{{=URL('portal_sales_rep','add_new_note.html', vars=dict(id=person[0].id))}}">Add Note</a></td>
+       <td><a class="text-info" href="{{=URL('portal_sales_rep','add_new_note.html', vars=dict(id=person[0].id))}}">Add Note</a></td>
     </tr>
 </table>
 {{block page_js}}
