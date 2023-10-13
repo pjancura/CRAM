@@ -316,5 +316,5 @@ def add_new_product():
 
 @auth.requires(auth.has_membership('ceo'))
 def product_images():
-    grid = SQLFORM.grid(db.product_images)
+    grid = SQLFORM.grid(db.product_images, paginate=10, maxtextlength=256, exportclasses=dict(csv_with_hidden_cols=False, xml=False, html=False, tsv_with_hidden_cols=False, tsv=False))
     return locals()

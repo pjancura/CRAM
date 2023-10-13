@@ -1,5 +1,6 @@
 {{extend 'layout_new.html'}}
-<h2>The Team</h2>
+<section class="w-75 mx-auto my-3">
+<h2 class="mb-3">The Team</h2>
 <table id="dbadminTable" class="table table-striped table-hover table-bordered table-sm">
     <tr>
         <h3>Database Administrators</h3>
@@ -36,7 +37,7 @@
     </thead>
 {{for x in emp_group_manager:}}
     <tr>
-        <td><a href="{{=URL('portal_ceo','manager_view',args=[x['id']])}}">{{=x['id']}}</a></td>
+        <td><a class="text-info" href="{{=URL('portal_ceo','manager_view',args=[x['id']])}}">{{=x['id']}}</a></td>
         <td>{{=x['first_name']}}</td>
         <td>{{=x['last_name']}}</td>
         {{if x['group_id'] == 4:}}
@@ -62,7 +63,7 @@
     </thead>
 {{for x in emp_group_sales_rep:}}
     <tr>
-        <td><a href="{{=URL('portal_ceo','employee_view',args=[x['id']])}}">{{=x['id']}}</a></td>
+        <td><a class="text-info" href="{{=URL('portal_ceo','employee_view',args=[x['id']])}}">{{=x['id']}}</a></td>
         <td>{{=x['first_name']}}</td>
         <td>{{=x['last_name']}}</td>
         {{if x['group_id'] == 6:}}
@@ -73,3 +74,4 @@
     </tr>
 {{pass}}
 </table>
+</section>

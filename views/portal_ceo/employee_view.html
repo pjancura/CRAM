@@ -1,5 +1,5 @@
-{{extend 'layout_new.html'}} {{import datetime}} {{block head}}
-
+{{extend 'layout_new.html'}} {{import datetime}}
+<section class="w-75 mx-auto my-3">
 {{if emp_num == "0":}}
 <h2>Login error: Please try logging in again</h2>
 {{else:}}
@@ -15,25 +15,25 @@
   <thead>
     <tr>
       <th class="th-sm">
-        <button class="btn btn-light" id="customerID" onclick="sortTable(this)" style="color: red; font-weight:bold;">ID</button>
+        <button class="btn btn-info" id="customerID" onclick="sortTable(this)" >ID</button>
       </th>
       <th class="th-sm">First Name</th>
       <th class="th-sm">
         <button
-          class="btn btn-light"
+          class="btn btn-info"
           id="customerLastName"
           onclick="sortTable(this)"
-          style="color: red; font-weight:bold;"
+          
         >
           Last Name
         </button>
       </th>
       <th class="th-sm">        
         <button
-        class="btn btn-light"
+        class="btn btn-info"
         id="customerCoName"
         onclick="sortTable(this)"
-        style="color: red; font-weight:bold;"
+        
       >
         Company Name
       </button></th>
@@ -41,7 +41,7 @@
   </thead>
   {{for x in rows:}} {{if x[4] == emp_num:}}
   <tr>
-    <td><a href="{{=URL('portal_ceo','view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
+    <td><a class="text-info" href="{{=URL('portal_ceo','view_customer',args = [x[0]])}}">{{=x[0]}}</a></td>
     <td>{{=x[1]}}</td>
     <td>{{=x[2]}}</td>
     <td>{{=x[3]}}</td>
@@ -55,8 +55,8 @@
   </tr>
   <tr>
     <th class="th-sm">Customer Name</th>
-    <th class="th-sm"><button class="btn btn-light" id="agendaDate" onclick="sortTable(this)"
-      style="color: red; font-weight:bold;">Date</button></th>
+    <th class="th-sm"><button class="btn btn-info" id="agendaDate" onclick="sortTable(this)"
+      >Date</button></th>
     <th class="th-sm">Time of Event</th>
     <th class="th-sm">Note</th>
   </tr>
@@ -88,14 +88,17 @@
     {{pass}} {{pass}} {{pass}}
   </tbody>
 </table>
-{{pass}} {{block page_js}}
+{{pass}} 
+</section>
+
+{{block page_js}}
 <script>
   let lateEventRow = document.getElementsByClassName("lateEvent");
   for (let i = 0; i < lateEventRow.length; i++){
-      lateEventRow[i].children[0].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
-      lateEventRow[i].children[1].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
-      lateEventRow[i].children[2].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
-      lateEventRow[i].children[3].setAttribute("style","background-color: hsl(300, 47%, 85%); color: black;");
+      lateEventRow[i].children[0].setAttribute("style","background-color: #8a0abf21; color: black;");
+      lateEventRow[i].children[1].setAttribute("style","background-color: #8a0abf21; color: black;");
+      lateEventRow[i].children[2].setAttribute("style","background-color: #8a0abf21; color: black;");
+      lateEventRow[i].children[3].setAttribute("style","background-color: #8a0abf21; color: black;");
   }
 
 

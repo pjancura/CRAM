@@ -15,7 +15,7 @@ a:hover {
 }
 
 /*    CHANGES BUTTON COLOR FOR SQLFORM.GRID VIEWS */
-a.btn.btn-default.btn-secondary, input.btn.btn-default.btn-secondary {
+a.btn.btn-default.btn-secondary, input.btn.btn-default.btn-secondary, input.btn-primary.btn {
   background-color: #17a2b8;
 }
 

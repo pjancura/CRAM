@@ -4,25 +4,25 @@
 
 <table class="table table-striped table-hover table-bordered table-sm" id="companyTable">
     <tr>
-        <h2>Employee Companies</h2>
+        <h2>Companies with Accounts</h2>
     </tr>
     <tr>
-        <th class="th-sm"><button class="btn btn-light" id="companyID" onclick="sortTable(this)"
+        <th class="th-sm"><button class="btn btn-info" id="companyID" onclick="sortTable(this)"
             style="font-weight:bold;">ID</button></th>
-        <th class="th-sm"><button class="btn btn-light" id="companyName" onclick="sortTable(this)"
+        <th class="th-sm"><button class="btn btn-info" id="companyName" onclick="sortTable(this)"
             style="font-weight:bold;">Company Name</button></th>
         <th class="th-sm">Address</th> 
         <th class="th-sm">City</th>
-        <th class="th-sm"><button class="btn btn-light" id="companyState" onclick="sortTable(this)"
+        <th class="th-sm"><button class="btn btn-info" id="companyState" onclick="sortTable(this)"
             style="font-weight:bold;">State</button></th>
         <th class="th-sm">ZIP Code</th>
-        <th class="th-sm"><button class="btn btn-light" id="companySIC" onclick="sortTable(this)"
+        <th class="th-sm"><button class="btn btn-info" id="companySIC" onclick="sortTable(this)"
             style="font-weight: bold;">SIC Code</button></th>
         <th class="th-sm">Social Media Link</th>
     </tr>
     {{for row in rows_companies:}}
     <tr>
-        <td><a href="{{=URL('portal_ceo','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
+        <td><a class="text-info" href="{{=URL('portal_ceo','update_company',args=[row.companies.id])}}">{{=row.companies.id}}</a></td>
         <td>{{=row.companies.company_name}}</td>
         <td>{{=row.companies.address}}</td>
         <td>{{=row.companies.city}}</td>
