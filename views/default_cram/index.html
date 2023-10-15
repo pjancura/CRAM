@@ -45,7 +45,8 @@
     </a>
   </div>
   {{else:}}
-  <h1>Details of the Day</h1>
+  <section class="w-75 mx-auto my-3">
+  <h2>Details of the Day</h2>
   <div id="wrapperDiv" style="display: flex; justify-content: space-evenly;">
   <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
   <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
@@ -82,7 +83,7 @@
       <td>{{=emp_with_most_customers[0]['customer_count']}}</td>
     </tr>
   </table>
-  <br><br>
+</section>
   {{block page_js}}
   <script>
   let stateNameList = '{{=state_name}}';
@@ -144,7 +145,7 @@
     return colorArrayRGB;
   }
 
-  var stateData = [{
+  let stateData = [{
     values: {{=state_count}},
     labels: newStateList,
     type: 'pie',
@@ -153,7 +154,7 @@
     }
   }];
 
-  var stateLayout = {
+  let stateLayout = {
     title: "Customers Per State",
     height: 500,
     width: 500
@@ -205,9 +206,9 @@
     x: newEmpNameList,
     type: 'bar',
     marker: {
-      color: 'rgb(186, 39, 39)',
+      color: 'rgb(23, 162, 184))',
       line: {
-        color: 'rgb(186, 39, 39)',
+        color: 'rgb(23, 162, 184)',
       }
     }
   }];
@@ -218,7 +219,7 @@
     width: 500,
   };
 
-  Plotly.newPlot('employeePieChart', empData, empLayout);
+  Plotly.newPlot('employeePieChart', empData, empLayout, {modeBarButtonsToRemove: ['toImage', 'zoom2d', 'select2d', 'lasso2d', 'autoScale2d']});
   </script>
   {{end page_js}}
  {{pass}}

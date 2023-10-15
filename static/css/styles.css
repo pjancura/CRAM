@@ -6,6 +6,11 @@ body,
   margin-bottom: 0;
 }
 
+/*    makes text lighting match theme */
+::selection {
+  background-color: #17a3b85a;
+}
+
 a {
   color:rgb(11, 15, 18);
 }
@@ -19,8 +24,13 @@ a.btn.btn-default.btn-secondary, input.btn.btn-default.btn-secondary, input.btn-
   background-color: #17a2b8;
 }
 
+/*    Navbar Styling     */
 .navbar-light .navbar-nav .nav-link {
   color: white;
+}
+
+.home-button {
+  text-shadow: 2px 2px 2px #2ddcf7;
 }
 
 #theVaultDropdown {
@@ -63,6 +73,12 @@ div.carousel-caption {
 .tableDiv {
   overflow-x: auto;
 }
+
+/*    changes checkbox color match theme */
+input[type="checkbox" i] {
+  accent-color: #17a2b8;
+}
+
 
 /*     FOOTER      */
 .footer-content {
