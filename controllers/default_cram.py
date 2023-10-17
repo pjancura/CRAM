@@ -15,19 +15,22 @@ from logging import handlers
 
 
 def index(): 
-    state_counts = db.executesql('SELECT states_usa_2.state_name, COUNT(companies.state_abbr) AS state_count\
+    state_counts = db.executesql('SELECT states_usa_2.state_name, COUNT(companies.state_abbr) AS state_count, states_usa_2.state_abbr\
                                 FROM companies\
                                 JOIN states_usa_2 ON states_usa_2.id = companies.state_abbr \
                                 GROUP BY companies.state_abbr;', as_dict=True)
     state_count = []
     state_name = []
+    state_abbr = []
     for item in state_counts:
         state_count.append(int(item['state_count']))
-        state_name.append(item['state_name'])
+        state_name.append(str(item['state_name']))
+        state_abbr.append(str(item['state_abbr']))
 
-    recent_customer = db.executesql('SELECT p.id, p.first_name, p.last_name, c.company_name, MAX(p.created_on_date) AS most_recent_date\
+    recent_customer = db.executesql('SELECT p.id, p.first_name, p.last_name, c.company_name, states.state_name, MAX(p.created_on_date) AS most_recent_date\
                                     FROM persons p \
-                                    JOIN companies c ON c.id = p.co_id;', as_dict=True)
+                                    JOIN companies c ON c.id = p.co_id \
+                                    JOIN states_usa_2 states ON states.id = c.state_abbr;', as_dict=True)
     emp_customer_count = db.executesql('SELECT auth_user.first_name, auth_user.last_name, COUNT(persons.employee_id) as customer_count\
                                             FROM auth_user \
                                             JOIN persons ON auth_user.id = persons.employee_id \
@@ -44,7 +47,6 @@ def index():
                                             GROUP BY p.employee_id \
                                             ORDER BY customer_count DESC \
                                             LIMIT 1;', as_dict=True)
-    state_name_list = list(state_name)
     # logger.debug(f"\n{state_name}")
     return locals()
 

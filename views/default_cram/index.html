@@ -45,95 +45,118 @@
     </a>
   </div>
   {{else:}}
-  <section class="w-75 mx-auto my-3">
-  <h2>Details of the Day</h2>
-  <div id="wrapperDiv" style="display: flex; justify-content: space-evenly;">
-  <div id='statePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
-  <div id='employeePieChart'><!-- Plotly chart will be drawn inside this DIV --></div>
-</div>
-  <br><br>
-  
-  <table class="table table-striped table-hover table-bordered table-sm">
-    <tr>
-      <h3>Most Recent Customer</h3>
-    </tr>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Company</th>
-    </tr>
-    <tr>
+  <!--    BELOW WILL APPEAR ONCE AN EMPLOYEE IS LOGGED IN    -->
+  <header class="container-fluid dashboardHeader bg-info text-white p-5">
+    <h2 class="display-4 w-75 mx-auto text-center">State of the Company</h2>
+  </header>
+  <section class="w-75 mx-auto mt-2 mb-4">
+    <!--    WELCOME TO LATEST CUSTOMER     -->
+    <div class="row border-right border-info d-flex justify-content-around">
+      <div class="col-lg-8 my-auto pl-5">
+        <h3 class="">Welcome,</h3>
+        <p class=""><span class="font-weight-bold">{{=recent_customer[0]['first_name']}}
+            {{=recent_customer[0]['last_name']}}</span>
+          from <span class="font-weight-bold text-justify">{{=recent_customer[0]['company_name']}}</span> in <span
+            class="font-weight-bold">{{=recent_customer[0]['state_name']}}</span> as our latest partner here at Pert.</p>
+        <p class="text-justify">Remember, we value the commitment of our sales team to reach out to new partners. The loyalty is
+          forged in the crucible of chaos, and is now a currency more valuable than the credits of the past. Each new
+          partner means that we can stitch together this tattered country.</p>
+      </div>
+      <div class="detail-image col-lg-4 my-auto">
+        <img id="companyLogo" class="img-fluid p-4" src="{{=URL('static','images/toxic_taters_logo.png')}}" alt="toxic_taters_logo.png created by hotpot.ai/art-generator" />
+      </div>
+    </div>
+    <!--    PLOTLY MAP OF WHERE PERT HAS CUSTOMERS -->
+    <figure class="row border-left border-top border-info d-flex justify-content-around">
+      <div class="col-lg-3 my-auto">
+        <figcaption class="py-2 text-justify">We have expanded to the major collectives throughout the country.  However, <span class="font-weight-bold">Indiana</span> remains a holdout.  We should send a few sales reps into this state to find new partners.</figcaption>
+      </div>
+      <div class="col-lg-8">
+        <div id="choroplethDiv" class="mx-auto"><!-- Plotly choropleth will be drawn here --></div>
+      </div>
+    </figure>
+      
+    <!--    PLOSTLY BAR CHART OF ACCOUNTS PER EMPLOYEE -->
+    <figure class="row border-right border-top border-info d-flex justify-content-around">
+      <div class="col-lg-3 my-auto">
+        <figcaption class="py-2 text-justify">We always appreciate the diligence of our sales team.  Congratulations to <span class="font-weight-bold">{{=emp_with_most_customers[0]['first_name']}} {{=emp_with_most_customers[0]['last_name']}}</span>.  They are currently interacting the with most accounts.</figcaption>
+      </div>
+      <div class="col-lg-8 mx-auto">
+      <div id='employeeBarChart' class=""><!-- Plotly bar chart will be drawn here --></div>
+    </div>
+  </figure>  
 
-      <td>{{=recent_customer[0]['id']}}</td>
-      <td>{{=recent_customer[0]['first_name']}}  {{=recent_customer[0]['last_name']}}</td>
-      <td>{{=recent_customer[0]['company_name']}}</td>
-    </tr>
-  </table>
-  <br>
-  <table class="table table-striped table-hover table-bordered table-sm">
-    <tr>
-      <h3>Employee with Most Customers</h3>
-    </tr>
-    <tr>
-      <th>Name</th>
-      <th>Customer Count</th>
-    </tr>
-    <tr>
-      <td>{{=emp_with_most_customers[0]['first_name']}}  {{=emp_with_most_customers[0]['last_name']}}</td>
-      <td>{{=emp_with_most_customers[0]['customer_count']}}</td>
-    </tr>
-  </table>
 
   <!--    needed to make arrays of some of the data from the list -->
   <p id="stateNames" hidden></p>
+  <p id="stateAbbr" hidden></p>
   <p id="employeeNames" hidden></p>
 </section>
   {{block page_js}}
   <script>
+  //    CHOROPLETH CHART USING THE STATE DATA
     {{ for state in state_name:}}
        document.getElementById("stateNames").textContent += `{{=state}}, `;
     {{pass}}
     let stateNames = document.getElementById("stateNames").textContent.split(", ");
 
+    {{ for abbr in state_abbr:}}
+       document.getElementById("stateAbbr").textContent += `{{=abbr}}, `;
+    {{pass}}
+    let stateAbbr = document.getElementById("stateAbbr").textContent.split(", ");
 
-  function colorArray(){
-    let startRed = 255;
-    let startGreen = 0;
-    let startBlue = 0;
-    let colorArrayRGB = [];
-    let lenColors = stateNames.length;
-    for (let i = 0; i < lenColors; i++){
-      let newColor = '';
-      if (i == 0){
-        newColor = `rgb(${startRed},${startGreen},${startBlue})`;
-        colorArrayRGB.push(newColor);
-      } else {
-        startRed = 255 - (i * 19);
-        startGreen = i + 23;
-        startBlue = i + 13;
-        newColor = `rgb(${startRed},${startGreen},${startBlue})`;
-        colorArrayRGB.push(newColor);
+  let choroData = [{
+    type: 'choropleth',
+    locationmode: 'USA-states',
+    locations: stateAbbr,
+    z: {{=state_count}},
+    text: stateNames,
+    colorscale: [
+      [1.0, '#16A2B8'],[0.9, '#1490A4'],[0.8, '#117E8F'],[0.7, '#0F6C7B'],[0.6, '#0C5A66'],
+      [0.5, '#0A4852'],[0.4, '#07363D'],[0.3, '#052429'],[0.2, '#021214'],[0.0, '#000000']
+    ].reverse(),
+    zauto: true,
+    colorbar: {
+      title: {
+      text: 'Accounts per State',
+      font: {
+        size: 12
       }
-    }
-    return colorArrayRGB;
-  }
-
-  let stateData = [{
-    values: {{=state_count}},
-    labels: stateNames,
-    type: 'pie',
-    marker: {
-      colors: colorArray()
+    },  
+      thickness: 5
     }
   }];
 
-  let stateLayout = {
-    title: "Customers Per State",
-    height: 500,
-    width: 500
+
+
+
+
+  let choroLayout = {
+    title: 'Our Partners Across the USA',
+    geo: {
+      scope: 'usa',
+      countrycolor: 'rgb(255,255,255)',
+      showland: true,
+      landcolor: '#ddd',
+      showlakes: true,
+      lakecolor: 'rgb(255,255,255)',
+      subunitcolor: 'rgb(255,255,255)',
+      lonaxis: {},
+      lataxis: {}
+    },
+    modebar:{
+      remove: [
+        'lasso',
+        'toImage',
+        'select'
+      ]
+    }
   };
 
-  Plotly.newPlot('statePieChart', stateData, stateLayout);
+  Plotly.newPlot("choroplethDiv", choroData, choroLayout, {showlink: false});
+
+
+
 
   //    CREATES THE CUSTOMER PER EMPLOYEE CHART
   {{ for employee in cc_employee_names:}}
@@ -141,25 +164,60 @@
     {{pass}}
     let employeeNames = document.getElementById("employeeNames").textContent.split(", ");
 
+  function createBarColors(arr) {
+    let colorArray = [];
+    console.log(Math.max(arr));
+    for (i = 0; i < arr.length; i++){
+      if (Math.max(...arr) == arr[i]){
+        colorArray.push('#17a2b8');
+      } else {
+        colorArray.push('#ddd')
+      }
+    }
+    return colorArray;
+  }
+
+  console.log({{=cc_customer_counts}});
+
   var empData = [{
     y: {{=cc_customer_counts}},
     x: employeeNames,
     type: 'bar',
     marker: {
-      color: 'rgb(23, 162, 184))',
+      color: createBarColors({{=cc_customer_counts}}),
       line: {
-        color: 'rgb(23, 162, 184)',
+        color: createBarColors({{=cc_customer_counts}}),
       }
-    }
+    },
   }];
 
   var empLayout = {
-    title: "Customers Per Employee",
+    title: {
+      text: "Accounts Per Employee"
+    },
     height: 500,
     width: 500,
+    xaxis: {
+      title:{
+        text: 'Employees'
+      },
+      // tickangle: -45,
+      showticklabels: false,
+      autorangeoptions:{
+        clipmax: 15
+      }
+    },
+    yaxis: {
+      title: {
+        text: 'Number of Accounts',
+      }
+    }
   };
 
-  Plotly.newPlot('employeePieChart', empData, empLayout, {modeBarButtonsToRemove: ['toImage', 'zoom2d', 'select2d', 'lasso2d', 'autoScale2d']});
+  Plotly.newPlot('employeeBarChart', empData, empLayout, {modeBarButtonsToRemove: ['toImage', 'zoom2d', 'select2d', 'lasso2d', 'autoScale2d']});
+
+
+  document.getElementsByClassName("plot-container")[1].setAttribute("id", "barChart");
   </script>
   {{end page_js}}
  {{pass}}

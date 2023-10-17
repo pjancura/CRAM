@@ -44,6 +44,8 @@ a.btn.btn-default.btn-secondary, input.btn.btn-default.btn-secondary, input.btn-
   margin-top: 1.5rem;
 }
 
+/*    STYLING FOR HOMEPAGE */
+
 .carousel-item img {
   max-height: 40rem;
   border-radius: 10px;
@@ -54,6 +56,28 @@ div.carousel-caption {
   padding: 1rem;
   border-radius: 10px;
 }
+
+/*    STYLING FOR HOMEPAGE IF YOU ARE AN EMPLOYEE    */
+header.dashboardHeader {
+  transform: translateY(-1.5rem);
+  width: 100%;
+  /* margin-left: -1.5rem; */
+  text-shadow: 0 0 1px darkcyan;
+}
+
+#companyLogo {
+  border-radius: 2rem;
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+#barChart {
+  margin: auto;
+  width: 500px;
+}
+
 
 /* STYLING FOR BUSINESS INFO PAGES */
 /* AND */
@@ -83,6 +107,11 @@ input[type="checkbox" i] {
 /*     FOOTER      */
 .footer-content {
   font-size: 0.9rem;
+}
+
+.footer-content.smaller-text {
+  margin-bottom: 0;
+  font-size: 0.7rem;
 }
 
 
