@@ -29,7 +29,7 @@
   <body>
     <div class="wrapper">
       {{if response.flash != "":}}
-      <div class="w2p_flash alert alert-dismissable bg-info text-white border-info" id="responseFlash">{{=response.flash or ''}}</div>
+      <div class="w2p_flash alert alert-dismissable bg-info text-white" id="responseFlash" style="border: 1px solid black;">{{=response.flash or ''}}</div>
       {{pass}}
         <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
           <a class="navbar-brand text-white"
