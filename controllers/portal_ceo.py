@@ -65,7 +65,7 @@ def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
     if request.vars.msg:
-        response.flash = msg
+        response.flash = request.vars.msg
     if customer_form.process().accepted:
         response.flash = T('Customer Added')
     else:

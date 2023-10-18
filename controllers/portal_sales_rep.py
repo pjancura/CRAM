@@ -34,7 +34,7 @@ def add_customer_or_company():
     company_form = SQLFORM(db.companies)
     customer_form = SQLFORM(db.persons)
     if request.vars.msg:
-        response.flash = msg
+        response.flash = request.vars.msg
     if customer_form.process().accepted:
         response.flash = T('Customer Added')
     else:
@@ -70,7 +70,7 @@ def submit_customer_and_company():
         new_customer_id = db((db.persons.last_name == request.vars.last_name) & (db.persons.co_id == new_co_id)).select(db.persons.id)
     except:
         # logger.critical(f"\nsomething broke\n{request.vars}")
-        redirect(URL(c='portal_sales_rep', f='add_customer_or_company'), vars=dict(msg="Form didn't submit. Please try again."))
+        redirect(URL(c='portal_sales_rep', f='add_customer_or_company', vars=dict(msg="Form didn't submit. Please try again.")))
     else:
         # logger.debug("\nSubmitted to everyting")
         redirect(URL(c='portal_sales_rep', f='view_customer', args=[new_customer_id[0].id]))
@@ -95,11 +95,11 @@ def add_new_note():
         i = int(r_3)
         list_customer_ids.append(i)
     if note_form.process().accepted:
-        response.flash = 'form accepted'
+        response.flash = 'Form accepted'
     elif note_form.errors:
-        response.flash = 'form has errors'
+        response.flash = 'Form has errors'
     else:
-        response.flash = 'please fill out the form'
+        response.flash = 'Please fill out the form'
     if request.vars:
         return_url = URL('portal_sales_rep','view_customer', args=[request.vars.id]) 
     return locals()
@@ -108,22 +108,22 @@ def add_new_note():
 def add_company():
     company_form = SQLFORM(db.companies)
     if company_form.process().accepted:
-        response.flash = 'form accepted'
+        response.flash = 'Form accepted'
     elif company_form.errors:
-        response.flash = 'form has errors'
+        response.flash = 'Form has errors'
     else:
-        response.flash = 'please fill out the form'
+        response.flash = 'Please fill out the form'
     return locals()
 
 @auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
 def add_customer():
     customer_form = SQLFORM(db.persons)
     if customer_form.process().accepted:
-        response.flash = 'form accepted'
+        response.flash = 'Form accepted'
     elif customer_form.errors:
-        response.flash = 'form has errors'
+        response.flash = 'Form has errors'
     else:
-        response.flash = 'please fill out the form'
+        response.flash = 'Please fill out the form'
     return locals()
 
 @auth.requires(auth.has_membership('sales_rep_1') or auth.has_membership('sales_rep_2'))
@@ -148,11 +148,11 @@ def update_customer():
     form = SQLFORM(db.persons, record)
     return_url = URL('portal_sales_rep', 'view_customer', args = [record.id])
     if form.process().accepted:
-        response.flash = 'form accepted'
+        response.flash = 'Form accepted'
     elif form.errors:
-        response.flash = 'form has errors'
+        response.flash = 'Form has errors'
     else:
-        response.flash = 'please fill out the form'
+        response.flash = 'Please fill out the form'
     return locals()
 
 

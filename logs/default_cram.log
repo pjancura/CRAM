@@ -1110,3 +1110,173 @@
 ['Florida', 'Georgia', 'Illinois', 'Michigan', 'Missouri', 'Arizona', 'New Hampshire', 'New York', 'Ohio', 'Pennsylvania', 'Utah', 'Virginia', 'Washington', 'California', 'Colorado']
 2023-10-07 09:48:10,960 - default_cram - DEBUG - 
 ['Florida', 'Georgia', 'Illinois', 'Michigan', 'Missouri', 'Arizona', 'New Hampshire', 'New York', 'Ohio', 'Pennsylvania', 'Utah', 'Virginia', 'Washington', 'California', 'Colorado']
+2023-10-18 17:10:43,956 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:10:43,956 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:10:43,956 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:10:43,956 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:12:32,159 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:12:32,159 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:12:32,159 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:12:32,159 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:12:32,159 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:12:32,159 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:16:53,622 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:17:40,116 - default_cram - DEBUG - <Storage {'sortBy': 'zToA'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,390 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:18:57,420 - default_cram - DEBUG - testing testing
+2023-10-18 17:20:11,680 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:20:11,680 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:20:11,680 - default_cram - DEBUG - <Storage {'sortBy': 'lowToHigh'}>
+2023-10-18 17:20:11,709 - default_cram - DEBUG - testing testing
+2023-10-18 17:20:11,709 - default_cram - DEBUG - testing testing
+2023-10-18 17:20:11,709 - default_cram - DEBUG - testing testing
+2023-10-18 17:20:11,709 - default_cram - DEBUG - testing testing
+2023-10-18 17:20:45,349 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:20:45,349 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:20:45,349 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:20:45,349 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:20:45,349 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:20:45,349 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow'}>
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:20:45,379 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,303 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'grains': 'on'}>
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:29,333 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,677 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on'}>
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:25:55,723 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,312 - default_cram - DEBUG - <Storage {'sortBy': 'highToLow', 'meats': 'on', 'grains': 'on', 'beverages': 'on'}>
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'
+2023-10-18 17:26:52,339 - default_cram - DEBUG - 'testing testing'

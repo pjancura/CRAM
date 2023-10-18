@@ -4,14 +4,14 @@ import datetime
 import logging
 from logging import handlers
 
-# logger = logging.getLogger("default_cram")
-# logger_file_name = 'default_cram.log'
-# logger.setLevel(logging.DEBUG)
-# handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
-# handler.setLevel(logging.DEBUG)
-# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-# handler.setFormatter(formatter)
-# logger.addHandler(handler)
+logger = logging.getLogger("default_cram")
+logger_file_name = 'default_cram.log'
+logger.setLevel(logging.DEBUG)
+handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
+handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 
 def index(): 
@@ -92,13 +92,28 @@ def user():
 
 
 def display_all_catalogs():
-    rows = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
+    if request.vars.msg:
+        response.flash = request.vars.msg
+    # rows = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
+    #                             db.catalogs.category, db.catalogs.mass_kg, db.catalogs.shelf_life_yrs, db.catalogs.ingredient_list, \
+    #                             db. catalogs.allergens, db.product_images.id, db.product_images.image_name, db.product_images.pic_file, \
+    #                             join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.id)
+    pages_total = db(db.catalogs).select(db.catalogs.id)
+    products = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
                                 db.catalogs.category, db.catalogs.mass_kg, db.catalogs.shelf_life_yrs, db.catalogs.ingredient_list, \
                                 db. catalogs.allergens, db.product_images.id, db.product_images.image_name, db.product_images.pic_file, \
-                                join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.id)
+                                join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.id, limitby=(0,10))
     
     return locals()
 
 
 def download():
     return response.download(request, db)
+
+
+
+def catalog_sort():
+    if request.args:
+        logger.debug(request.args)
+    redirect(URL(c='default_cram', f='display_all_catalogs', vars=dict(msg="testing testing")))
+    return locals()
