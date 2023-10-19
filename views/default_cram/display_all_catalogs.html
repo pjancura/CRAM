@@ -1,4 +1,5 @@
 {{extend 'layout_new.html'}}
+{{import json}}
 <header class="container-fluid dashboardHeader bg-info text-white p-5">
     <h2 class="display-4 w-75 mx-auto text-center">Explore Our Catalog</h2>
   </header>
@@ -6,40 +7,40 @@
 <main class="row w-75 mx-auto">
     <div class="col-xl-2 mr-1">
         <form action="{{=URL('default_cram','catalog_sort')}}" method="post">
-        <div class="my-1 border-bottom border-info">
-            <h3>Filters</h3>
-        </div>
-        <div class="my-1 border-bottom border-info">
-            <h4 style="font-size: 1.25rem;">Sort by:</h4>
-        </div>
-        <div class="my-3">
-            <select class="w-100" name="sortBy" id="">
-                <option value="aToZ" selected>Name A - Z</option>
-                <option value="zToA">Name Z - A</option>
-                <option value="lowToHigh">Price Low - High</option>
-                <option value="highToLow">Price High - Low</option>
-            </select>
-        </div>
-        <div class="my-1 border-bottom border-info">
-            <h4 style="font-size: 1.25rem;">Category</h4>
-        </div>
-        <div class="my-2">
-            <label class="w-100" for="grains"><input type="checkbox" name="grains" id="grains"> Grains</label>
-            <label class="w-100" for="meats"><input type="checkbox" name="meats" id="meats"> Meats</label>
-            <label class="w-100" for="beverages"><input type="checkbox" name="beverages" id="beverages"> Beverages</label>
-            <label class="w-100 text-truncate" for="fruitsAndVegetables"><input type="checkbox" name="fruitsAndVegetables" id="fruitsAndVegetables"> Fruits and Vegetables</label>
-        </div>
-    </form>
+            <div class="my-1 border-bottom border-info">
+                <h3>Filters</h3>
+            </div>
+            <div class="my-1 border-bottom border-info">
+                <h4 style="font-size: 1.25rem;">Sort by:</h4>
+            </div>
+            <div class="my-3">
+                <select class="w-100" name="sortBy" id="sortBy">
+                    <option value="aToZ" selected>Name A - Z</option>
+                    <option value="zToA">Name Z - A</option>
+                    <option value="lowToHigh">Price Low - High</option>
+                    <option value="highToLow">Price High - Low</option>
+                </select>
+            </div>
+            <div class="my-1 border-bottom border-info">
+                <h4 style="font-size: 1.25rem;">Category</h4>
+            </div>
+            <div class="my-2">
+                <label class="w-100" for="grains"><input type="checkbox" name="grains" id="grains"> Grains</label>
+                <label class="w-100" for="meats"><input type="checkbox" name="meats" id="meats"> Meats</label>
+                <label class="w-100" for="beverages"><input type="checkbox" name="beverages" id="beverages"> Beverages</label>
+                <label class="w-100 text-truncate" for="fruitsAndVegetables"><input type="checkbox" name="fruitsAndVegetables" id="fruitsAndVegetables"> Fruits and Vegetables</label>
+            </div>
+        </form>
     </div>
     <div class="col-lg-9 border-left border-top">
-        {{for x in products:}}
+        {{for i in range(len(sql)):}}
         <div class="row d-flex justify-content-between">
             <div class="col-lg-3 py-2">
-                <img class="img-fluid" src="{{=URL('download', args=[x.product_images.pic_file])}}" alt="{{=x.product_images.image_name}}" title="{{x.catalogs.product_name}}">
+                <img class="img-fluid" src="{{=URL('download', args=[sql[i]['pic_file']])}}" alt="{{=sql[i]['image_name']}}" title="{{sql[i]['product_name']}}">
             </div>
             <div class="col-lg-4 my-auto">
-                <h4 style="font-size: 1.25rem;"><a class="" href="">{{=x.catalogs.product_name}}</a></h4>
-                <p>ß{{=x.catalogs.price}}</p>
+                <h4 style="font-size: 1.25rem;"><a class="" href="">{{=sql[i]['product_name']}}</a></h4>
+                <p>ß{{=sql[i]['price']}}</p>
             </div>
             <div class="col-lg-2 my-auto mx-auto">
                 <a href="" type="button" class="btn btn-info">More Info</a>
@@ -49,9 +50,9 @@
     </div>
     <nav class="my-4 mx-auto w-75" aria-label="Product Page Navigation">
         <ul class="pagination justify-content-center">
-            {{for x in range(len(pages_total)):}}
+            {{for x in range(pages_total):}}
             {{if x % 15 == 0:}}
-          <li class="page-item border-info"><a class="page-link text-info" href="#" onclick="changePage(this)">{{=(x // 15) + 1}}</a></li>
+          <li class="page-item border-info"><a class="page-link text-info" href="{{=URL('default_cram', 'catalog_pages')}}">{{=(x // 15) + 1}}</a></li>
           {{pass}}
           {{pass}}
         </ul>
@@ -67,7 +68,7 @@
 
 <section class="w-75 mx-auto my-3">
 <div class="tableDiv" hidden>
-<table class="table table-striped table-hover table-sm border border-info" id="catalogTable">
+<table class="table table-striped table-hover table-sm border border-info" id="catalogTable" name="catalogFilter">
     <tr>
         <th class="th-sm">
           <button
@@ -106,9 +107,12 @@
     {{ pass }}
 </table>
 </div>
-
-
 </section>
+
+{{if request.vars.filters:}}
+<p id="filters">{{=(request.vars.filters)}}</p>
+{{pass}}
+
 
 {{block page_js}}
 <script>
@@ -116,6 +120,33 @@
     document.getElementsByTagName("form")[0].addEventListener("change", function () {
         this.submit();
     })
+
+    {{if request.vars.filters:}}
+        let filters = JSON.parse(`${document.getElementById("filters").textContent}`)
+        console.log(filters)
+        console.log(Object.keys(filters[0]))
+        for (i = 0; i < filters.length; i++){
+            let key = Object.keys(filters[i]);
+            let id = document.getElementById(key);
+            if (id.type == "checkbox") {
+                id.checked = true;
+            } else if (id.type == "select-one") {
+                console.log("select-one");
+                for (j = 0; j < id.options.length; j++){
+                    console.log("looping over options");
+                    console.log(Object.values(filters[i]));
+                    if (id.options[j].value == Object.values(filters[i])) {
+                        id.options[j].selected = true;
+                        console.log("new option displayed");
+                    } else {
+                        id.options[j].selected = false;
+                    }
+                } 
+            } else {
+                continue;
+            }
+        }   
+    {{pass}}
 
 
 

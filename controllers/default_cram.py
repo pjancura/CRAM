@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # try something like
 import datetime
+import json
 import logging
 from logging import handlers
 
@@ -92,20 +93,57 @@ def user():
 
 
 def display_all_catalogs():
-    if request.vars.msg:
-        response.flash = request.vars.msg
-    # rows = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
-    #                             db.catalogs.category, db.catalogs.mass_kg, db.catalogs.shelf_life_yrs, db.catalogs.ingredient_list, \
-    #                             db. catalogs.allergens, db.product_images.id, db.product_images.image_name, db.product_images.pic_file, \
-    #                             join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.id)
-    pages_total = db(db.catalogs).select(db.catalogs.id)
+    orderby_var = ''
+    where_var = ''
+    if request.vars.filters:
+        logger.debug(request.vars.filters)
+        if "highToLow" in request.vars.filters:
+            orderby_var = 'ORDER BY catalogs.price DESC'
+        if "lowToHigh" in request.vars.filters:
+            orderby_var = 'ORDER BY catalogs.price'
+        if "zToA" in request.vars.filters:
+            orderby_var = 'ORDER BY catalogs.product_name DESC'
+        if "aToZ" in request.vars.filters:
+            orderby_var = 'ORDER BY catalogs.product_name'
+        if len(request.vars.filters) > 0:
+            if "grains" in request.vars.filters:
+                if where_var == '':
+                    where_var = 'WHERE catalogs.category = "grain" '
+                else:
+                    where_var += 'OR catalogs.category = "grain" '
+            if "meats" in request.vars.filters:
+                if where_var == '':
+                    where_var = 'WHERE catalogs.category = "meat" '
+                else:
+                    where_var += 'OR catalogs.category = "meat" '
+            if "beverages" in request.vars.filters:
+                if where_var == '':
+                    where_var = 'WHERE catalogs.category = "beverage" '
+                else:
+                    where_var += 'OR catalogs.category = "beverage" '
+            if "fruitsAndVegetables" in request.vars.filters:
+                if where_var == '':
+                    where_var = 'WHERE catalogs.category = "fruits and veggies" '
+                else:
+                    where_var += 'OR catalogs.category = "fruits and veggies" '
+    sql_query = f'SELECT catalogs.id, catalogs.product_name, catalogs.description, catalogs.price, catalogs.category, \
+                        catalogs.mass_kg, catalogs.shelf_life_yrs, catalogs.ingredient_list, \
+                        catalogs.allergens, product_images.image_name, product_images.pic_file \
+                        FROM catalogs \
+                        JOIN product_images ON product_images.id = catalogs.img_id {where_var} {orderby_var}'
+    # logger.debug(sql_query)
+    sql = db.executesql(sql_query, as_dict=True)
     products = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
                                 db.catalogs.category, db.catalogs.mass_kg, db.catalogs.shelf_life_yrs, db.catalogs.ingredient_list, \
                                 db. catalogs.allergens, db.product_images.id, db.product_images.image_name, db.product_images.pic_file, \
-                                join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.id, limitby=(0,10))
-    
+                                join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.product_name)
+    pages_total = len(sql)
+
+
+
     return locals()
 
+                        # catalogs.allergens, product_images.id, product_images.image_name, product_images.pic_file \
 
 def download():
     return response.download(request, db)
@@ -113,7 +151,16 @@ def download():
 
 
 def catalog_sort():
-    if request.args:
-        logger.debug(request.args)
-    redirect(URL(c='default_cram', f='display_all_catalogs', vars=dict(msg="testing testing")))
+    filters = []
+    if request.vars:
+        for prop in request.vars:
+            filters.append({prop: request.vars[prop]})
+        logger.debug(filters)
+    redirect(URL(c='default_cram', f='display_all_catalogs', vars=dict(filters=json.dumps(filters))))
+    return locals()
+
+def catalog_pages():
+    if request.vars:
+        logger.debug(request.vars)
+    redirect(URL(c='default_cram', f='display_all_catalogs'))
     return locals()

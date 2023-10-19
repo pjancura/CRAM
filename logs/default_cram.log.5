@@ -1,2 +1,6 @@
-2023-06-20 20:00:00,754 - default_cram - DEBUG - 
-['Florida', 'Georgia', 'Illinois', 'Michigan', 'Missouri', 'Arizona', 'New Hampshire', 'New York', 'Ohio', 'Pennsylvania', 'Utah', 'Virginia', 'Washington', 'California', 'Colorado']
+2023-10-19 17:03:16,736 - default_cram - DEBUG - SELECT catalogs.id, catalogs.product_name, catalogs.description, catalogs.price, catalogs.category,                         catalogs.mass_kg, catalogs.shelf_life_yrs, catalogs.ingredient_list,                         catalogs.allergens, product_images.image_name, product_images.pic_file                         FROM catalogs                         JOIN product_images ON product_images.id = catalogs.img_id WHERE catalogs.category = "fruits and veggies"  ORDER BY catalogs.price DESC LIMIT 5
+2023-10-19 17:03:17,288 - default_cram - DEBUG - [{'sortBy': 'highToLow'}]
+2023-10-19 17:03:17,325 - default_cram - DEBUG - [{"sortBy": "highToLow"}]
+2023-10-19 17:03:17,331 - default_cram - DEBUG - SELECT catalogs.id, catalogs.product_name, catalogs.description, catalogs.price, catalogs.category,                         catalogs.mass_kg, catalogs.shelf_life_yrs, catalogs.ingredient_list,                         catalogs.allergens, product_images.image_name, product_images.pic_file                         FROM catalogs                         JOIN product_images ON product_images.id = catalogs.img_id  ORDER BY catalogs.price DESC LIMIT 5
+2023-10-19 17:05:59,886 - default_cram - DEBUG - [{"sortBy": "highToLow"}]
+2023-10-19 17:09:08,780 - default_cram - DEBUG - [{"sortBy": "highToLow"}]
