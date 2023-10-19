@@ -36,7 +36,7 @@
         {{for i in range(len(sql)):}}
         <div class="row d-flex justify-content-between">
             <div class="col-lg-3 py-2">
-                <img class="img-fluid" src="{{=URL('download', args=[sql[i]['pic_file']])}}" alt="{{=sql[i]['image_name']}}" title="{{sql[i]['product_name']}}">
+                <img class="img-fluid" style="max-width: 10rem;" src="{{=URL('download', args=[sql[i]['pic_file']])}}" alt="{{=sql[i]['image_name']}}" title="{{sql[i]['product_name']}}">
             </div>
             <div class="col-lg-4 my-auto">
                 <h4 style="font-size: 1.25rem;"><a class="" href="">{{=sql[i]['product_name']}}</a></h4>
@@ -52,66 +52,16 @@
         <ul class="pagination justify-content-center">
             {{for x in range(pages_total):}}
             {{if x % 15 == 0:}}
-          <li class="page-item border-info"><a class="page-link text-info" href="{{=URL('default_cram', 'catalog_pages')}}">{{=(x // 15) + 1}}</a></li>
+          <li class="page-item border-info"><a class="page-link text-info" href="{{=URL('default_cram', 'catalog_pages', args = [(x // 15) + 1], vars=request.vars)}}">{{=(x // 15) + 1}}</a></li>
           {{pass}}
           {{pass}}
         </ul>
       </nav>
-</main>
-
-
-
-
-
-
-
-
-<section class="w-75 mx-auto my-3">
-<div class="tableDiv" hidden>
-<table class="table table-striped table-hover table-sm border border-info" id="catalogTable" name="catalogFilter">
-    <tr>
-        <th class="th-sm">
-          <button
-            class="btn btn-info"
-            id="productName"
-            onclick="sortTable(this)"
-            style="font-weight:bold;"
-          >
-            Product Name
-          </button></th>
-        <th>Description</th>
-        <th><button class="btn btn-info" id="itemPrice" onclick="sortTable(this)" style="font-weight:bold;">Price (ß)</button></th>
-        <th><button class="btn btn-info" id="categoryID" onclick="sortTable(this)" style="font-weight: bold;">Category</button></th>
-        <th>Mass (kg)</th>
-        <th>Shelf Life (years)</th>
-        <th>Ingredient List</th>
-        <th>Allergens</th>
-        <th>Image</th>
-    </tr>
-    {{for x in products:}}
-    {{if x.catalogs.id <= 15:}}
-    <tr class="catalog-row">
-    {{else:}}
-    <tr class="catalog-row" hidden aria-hidden="true">
-    {{pass}}
-        <td>{{=x.catalogs.product_name}}</a></td>
-        <td>{{=x.catalogs.description}}</td>
-        <td>{{=x.catalogs.price}}</td>
-        <td>{{=x.catalogs.category}}</td>
-        <td>{{=x.catalogs.mass_kg}}</td>
-        <td>{{=x.catalogs.shelf_life_yrs}}</td>
-        <td>{{=x.catalogs.ingredient_list}}</td>
-        <td>{{=x.catalogs.allergens}}</td>
-        <td><img width="245" src="{{=URL('download', args=[x.product_images.pic_file])}}" alt="{{=x.product_images.image_name}}"></td>
-    </tr>
-    {{ pass }}
-</table>
-</div>
-</section>
 
 {{if request.vars.filters:}}
-<p id="filters">{{=(request.vars.filters)}}</p>
+<p id="filters" hidden>{{=request.vars.filters}}</p>
 {{pass}}
+</main>
 
 
 {{block page_js}}
@@ -123,21 +73,21 @@
 
     {{if request.vars.filters:}}
         let filters = JSON.parse(`${document.getElementById("filters").textContent}`)
-        console.log(filters)
-        console.log(Object.keys(filters[0]))
+        // console.log(filters)
+        // console.log(Object.keys(filters[0]))
         for (i = 0; i < filters.length; i++){
             let key = Object.keys(filters[i]);
             let id = document.getElementById(key);
             if (id.type == "checkbox") {
                 id.checked = true;
             } else if (id.type == "select-one") {
-                console.log("select-one");
+                // console.log("select-one");
                 for (j = 0; j < id.options.length; j++){
-                    console.log("looping over options");
-                    console.log(Object.values(filters[i]));
+                    // console.log("looping over options");
+                    // console.log(Object.values(filters[i]));
                     if (id.options[j].value == Object.values(filters[i])) {
                         id.options[j].selected = true;
-                        console.log("new option displayed");
+                        // console.log("new option displayed");
                     } else {
                         id.options[j].selected = false;
                     }

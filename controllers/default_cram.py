@@ -96,7 +96,6 @@ def display_all_catalogs():
     orderby_var = ''
     where_var = ''
     if request.vars.filters:
-        logger.debug(request.vars.filters)
         if "highToLow" in request.vars.filters:
             orderby_var = 'ORDER BY catalogs.price DESC'
         if "lowToHigh" in request.vars.filters:
@@ -133,11 +132,20 @@ def display_all_catalogs():
                         JOIN product_images ON product_images.id = catalogs.img_id {where_var} {orderby_var}'
     # logger.debug(sql_query)
     sql = db.executesql(sql_query, as_dict=True)
-    products = db(db.catalogs).select(db.catalogs.id, db.catalogs.product_name, db.catalogs.description, db.catalogs.price, \
-                                db.catalogs.category, db.catalogs.mass_kg, db.catalogs.shelf_life_yrs, db.catalogs.ingredient_list, \
-                                db. catalogs.allergens, db.product_images.id, db.product_images.image_name, db.product_images.pic_file, \
-                                join=[db.product_images.on(db.product_images.id == db.catalogs.img_id)],orderby=db.catalogs.product_name)
     pages_total = len(sql)
+    pages = []
+    on_page = -1
+    for i in range(len(sql)):
+        if i % 15 == 0:
+            pages.append([])
+            on_page += 1
+        pages[on_page].append(sql[i])
+    if request.args:
+        logger.debug(f'd_a_c: {request.args[0]}')
+        logger.debug(f'results for page 1: {pages[int(request.args[0]) - 1]}')
+        sql = pages[int(request.args[0]) - 1]
+    else:
+        sql = pages[0]
 
 
 
@@ -161,6 +169,8 @@ def catalog_sort():
 
 def catalog_pages():
     if request.vars:
-        logger.debug(request.vars)
-    redirect(URL(c='default_cram', f='display_all_catalogs'))
+        logger.debug(f'vars: {request.vars}')
+    if request.args:
+        logger.debug(f'args {request.args}')
+    redirect(URL(c='default_cram', f='display_all_catalogs', args=request.args, vars=request.vars))
     return locals()
