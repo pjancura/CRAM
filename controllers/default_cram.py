@@ -5,14 +5,14 @@ import json
 import logging
 from logging import handlers
 
-logger = logging.getLogger("default_cram")
-logger_file_name = 'default_cram.log'
-logger.setLevel(logging.DEBUG)
-handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
-handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+# logger = logging.getLogger("default_cram")
+# logger_file_name = 'default_cram.log'
+# logger.setLevel(logging.DEBUG)
+# handler = handlers.RotatingFileHandler(f"../MacOS/applications/CRAM/logs/{logger_file_name}", "a", 1000000, 5)
+# handler.setLevel(logging.DEBUG)
+# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# handler.setFormatter(formatter)
+# logger.addHandler(handler)
 
 
 def index(): 
@@ -141,8 +141,8 @@ def display_all_catalogs():
             on_page += 1
         pages[on_page].append(sql[i])
     if request.args:
-        logger.debug(f'd_a_c: {request.args[0]}')
-        logger.debug(f'results for page 1: {pages[int(request.args[0]) - 1]}')
+        # logger.debug(f'd_a_c: {request.args[0]}')
+        # logger.debug(f'results for page 1: {pages[int(request.args[0]) - 1]}')
         sql = pages[int(request.args[0]) - 1]
     else:
         sql = pages[0]
@@ -163,16 +163,18 @@ def catalog_sort():
     if request.vars:
         for prop in request.vars:
             filters.append({prop: request.vars[prop]})
-        logger.debug(filters)
+        # logger.debug(filters)
     redirect(URL(c='default_cram', f='display_all_catalogs', vars=dict(filters=json.dumps(filters))))
     return locals()
 
 def catalog_pages():
     if request.vars:
-        logger.debug(f'vars: {request.vars}')
+        # logger.debug(f'vars: {request.vars}')
+        r_vars = request.vars
     if request.args:
-        logger.debug(f'args {request.args}')
-    redirect(URL(c='default_cram', f='display_all_catalogs', args=request.args, vars=request.vars))
+        # logger.debug(f'args {request.args}')
+        r_args = request.args
+    redirect(URL(c='default_cram', f='display_all_catalogs', args=r_args, vars=r_vars))
     return locals()
 
 def product_page():
