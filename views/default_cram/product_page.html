@@ -1,0 +1,28 @@
+{{extend 'layout_new.html'}}
+
+{{if 'sql' in response._vars:}}
+<main class="w-75 mx-auto">
+<div class="row d-flex justify-content-around">
+    <div class="col-lg-6 py-2">
+        <img class="img-fluid px-2" style="width: 40rem;" src="{{=URL('download', args=[sql[0]['pic_file']])}}" alt="{{=sql[0]['image_name']}}" title="{{sql[0]['product_name']}}">
+    </div>
+    <div class="col-lg-6 px-2">
+        <h2 class="display-4 mb-2 text-info">{{=sql[0]['product_name']}}</h2>
+        <p class="product-price mt-auto"><span class="font-weight-bold">ß</span>{{=sql[0]['price']}}</p>
+        <p class="product-detail mt-auto"><span class="font-weight-bold">Description:</span> {{=sql[0]['description']}}</p>
+        <p class="product-detail mt-auto"><span class="font-weight-bold">Ingredients:</span> {{=sql[0]['ingredient_list']}}</p>
+        <p class="product-detail mt-auto"><span class="font-weight-bold">Allergens:</span> {{=sql[0]['allergens']}}</p>
+        <p class="product-detail mt-auto"><span class="font-weight-bold">Shelf Life:</span> {{=sql[0]['shelf_life_yrs']}} yrs</p>
+        <p class="product-detail mt-auto"><span class="font-weight-bold">Weight:</span> {{=sql[0]['mass_kg']}}kg</p>
+    </div>
+</div>
+
+</main>
+{{pass}}
+
+{{if 'error' in response._vars:}}
+<main class="w-75">
+    <h2>{{=error}}</h2>
+</main>
+
+{{pass}}

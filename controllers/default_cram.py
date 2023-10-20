@@ -174,3 +174,19 @@ def catalog_pages():
         logger.debug(f'args {request.args}')
     redirect(URL(c='default_cram', f='display_all_catalogs', args=request.args, vars=request.vars))
     return locals()
+
+def product_page():
+    try:
+        if request.args:
+            where_var = f'WHERE catalogs.id = {request.args[0]}'
+            query = f'SELECT catalogs.id, catalogs.product_name, catalogs.description, catalogs.price, catalogs.category, \
+                            catalogs.mass_kg, catalogs.shelf_life_yrs, catalogs.ingredient_list, \
+                            catalogs.allergens, product_images.image_name, product_images.pic_file \
+                            FROM catalogs \
+                            JOIN product_images ON product_images.id = catalogs.img_id {where_var}'
+            sql = db.executesql(query, as_dict=True)
+        else:
+            error = "no request.args present"
+    except:
+        error = "404 unable to find product"
+    return locals()

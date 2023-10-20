@@ -103,6 +103,14 @@ input[type="checkbox" i] {
   accent-color: #17a2b8;
 }
 
+/*    PRODUCT PAGE     */
+.product-price {
+  font-size: 3rem;
+}
+.product-detail {
+  font-size: 1.5rem;
+}
+
 
 /*     FOOTER      */
 .footer-content {
