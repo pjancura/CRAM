@@ -32,16 +32,16 @@
             </div>
         </form>
     </div>
-    <div class="col-lg-9 border-left border-top">
+    <div class="col-xl-9 border-left border-top">
         {{for i in range(len(sql)):}}
         <div class="row d-flex justify-content-between">
             <div class="col-lg-3 py-2">
-                <img class="img-fluid" style="max-width: 10rem;" src="{{=URL('download', args=[sql[i]['pic_file']])}}" alt="{{=sql[i]['image_name']}}" title="{{sql[i]['product_name']}}">
+                <img class="img-fluid" style="max-width: 10rem; border-radius: 1.5rem;" src="{{=URL('download', args=[sql[i]['pic_file']])}}" alt="{{=sql[i]['image_name']}}" title="{{sql[i]['product_name']}}">
             </div>
             <div class="col-lg-4 my-auto">
                 <h4 style="font-size: 1.25rem;"><a class="" href="{{=URL('default_cram', 'product_page', args=[sql[i]['id']])}}">{{=sql[i]['product_name']}}</a></h4>
-                <p>ß{{=sql[i]['price']}}</p>
-                <p>Shelf Life: {{=sql[i]['shelf_life_yrs']}} yrs</p>
+                <p><span class="font-weight-bold">ß</span> {{=sql[i]['price']}}</p>
+                <p><span class="font-weight-bold">Shelf Life:</span> {{=sql[i]['shelf_life_yrs']}} yrs</p>
             </div>
             <div class="col-lg-2 my-auto mx-auto">
                 <a href="{{=URL('default_cram', 'product_page', args=[sql[i]['id']])}}" type="button" class="btn btn-info">More Info</a>
