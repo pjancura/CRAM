@@ -3,7 +3,8 @@ This project was deployed in October 2023 at the following web address.
 
 ***http://pert2.pythonanywhere.com***
 
-It runs slow because it was deployed utilizing a free account. 
+DEPLOYED TO:
+https://www.pythonanywhere.com/ using a free account
 
 OUTLINE:
 This is the version of my capstone project.  
