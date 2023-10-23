@@ -94,6 +94,7 @@
 </section>
   {{block page_js}}
   <script>
+    {{if auth.user:}}
   //    CHOROPLETH CHART USING THE STATE DATA
     {{ for state in state_name:}}
        document.getElementById("stateNames").textContent += `{{=state}}, `;
@@ -216,6 +217,7 @@
 
 
   document.getElementsByClassName("plot-container")[1].setAttribute("id", "barChart");
+  {{pass}}
   </script>
   {{end page_js}}
  {{pass}}

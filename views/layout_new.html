@@ -285,6 +285,12 @@
     document.getElementById("responseFlash").addEventListener("click", () => {
       document.getElementById("responseFlash").remove();
     })
+    // sets the timeout for responseFlash
+    window.onload = () => {
+      setTimeout(function () {
+        document.getElementById("responseFlash").remove()},
+        5000);
+    }
   </script>
       {{pass}}
       {{if response.google_analytics_id:}}
@@ -294,7 +300,6 @@
       analytics.initialize({
       'Google Analytics':{trackingId:'{{=response.google_analytics_id}}'}
       });
-
       </script>
       {{pass}}
     </body>
