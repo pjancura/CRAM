@@ -151,7 +151,6 @@ def display_all_catalogs():
 
     return locals()
 
-                        # catalogs.allergens, product_images.id, product_images.image_name, product_images.pic_file \
 
 def download():
     return response.download(request, db)
@@ -168,6 +167,7 @@ def catalog_sort():
     return locals()
 
 def catalog_pages():
+    r_vars = None
     if request.vars:
         # logger.debug(f'vars: {request.vars}')
         r_vars = request.vars
