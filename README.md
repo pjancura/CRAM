@@ -1,7 +1,7 @@
 # CRAM
 This project was deployed in October 2023 at the following web address.  
 
-***   http://pert2.pythonanywhere.com   ***
+***http://pert2.pythonanywhere.com***
 
 It runs slow because it was deployed utilizing a free account. 
 
@@ -25,8 +25,8 @@ Tasks for employees include:
 
 FUNCTIONALITY TO ADD:
 - Order management system (incoming and outgoing)
-~~ - Individual view pages for the catalog ~~
-~~ - more sorting options / search for the catalog ~~
+- ~~Individual view pages for the catalog~~
+- ~~more sorting options / search for the catalog~~
 - A way for customers to submit orders on their own
 - Styles for more viewport sizes
 
