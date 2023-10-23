@@ -1,18 +1,21 @@
 # CRAM
-This project was deployed in June 2023 at the following web address.  
+This project was deployed in October 2023 at the following web address.  
 
-***   http://pert.pythonanywhere.com   ***
+***   http://pert2.pythonanywhere.com   ***
 
-It runs slow or may no longer be active because it was deployed utilizing a free account. 
+It runs slow because it was deployed utilizing a free account. 
 
 OUTLINE:
-This is the capstone project for russellr93, 	Marz-Hall, 00fuzz7y, and myself (pjancura).  
+This is the version of my capstone project.  
 It was built for the Cleveland Codes Software Developer's Academy at Cuyahoga Community College.
 
-The project utilizes the web2py framework, an MVC framework.  
+The project utilizes web2py (http://www.web2py.com/), an MVC framework.  
 
 It is a CRM for a food distribution company.  Through role-based access control, 
-employees are given access to only parts of the system that they need.  
+employees are given access to only parts of the system that they need.  I have built 
+out a catalog page that with filters that can be applied.  The filters make server calls to return
+paginated results.
+
 
 Tasks for employees include:
 - CRUD for Companies, the contact person, and notes on those relationships
@@ -22,7 +25,8 @@ Tasks for employees include:
 
 FUNCTIONALITY TO ADD:
 - Order management system (incoming and outgoing)
-- Individual view pages for the catalog
-- more sorting options / search for the catalog
+~~ - Individual view pages for the catalog ~~
+~~ - more sorting options / search for the catalog ~~
 - A way for customers to submit orders on their own
+- Styles for more viewport sizes
 
