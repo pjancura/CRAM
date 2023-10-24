@@ -1,6 +1,10 @@
 {{extend 'layout_new.html'}}
 
 <section class="w-75 mx-auto my-3">
+    <!--    DEMONSTRATION OF SKILLS POPOVER     -->
+    <div class="side-popover">
+        <button type="button" class="btn btn-sm" data-toggle="popover" title="DOM Manipulation / Form Submissions" data-content="When 'Add Company' is checked, it exposes another form.  This allows the sales rep to submit information to two tables in the database at the same time.  Certain fields are prefilled and/or unaccessible depending on the role of the user.">Skills</button>
+      </div>
 <h2 id="pageHeadline">Add Customer/Company</h2>
 <p id="warningPara"></p>
 {{=customer_form}}

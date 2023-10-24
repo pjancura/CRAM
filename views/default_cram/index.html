@@ -46,10 +46,21 @@
   </div>
   {{else:}}
   <!--    BELOW WILL APPEAR ONCE AN EMPLOYEE IS LOGGED IN    -->
+      <!--    DEMONSTRATION OF SKILLS POPOVER     -->
+  <div class="top-popover">
+    <button type="button" class="btn btn-sm" data-toggle="popover" data-placement="bottom" title="Role-based Access Control" data-content="When you click on 'Your Vault', the links that appear are based on your role within the database.">Skills</button>
+  </div>
   <header class="container-fluid dashboardHeader bg-info text-white p-5">
     <h2 class="display-4 w-75 mx-auto text-center">State of the Company</h2>
   </header>
   <section class="w-75 mx-auto mt-2 mb-4">
+    <!--    DEMONSTRATION OF SKILLS POPOVER     -->
+    <div class="side-popover">
+      <button type="button" class="btn btn-sm" data-toggle="popover" title="Data Visualization" data-content="This page demonstrates data visualization using the Plotly.js library.  The first is a choropleth with a custom color scale. The second is a bar graph highlighting the current sales representative with the most clients.">Skills</button>
+    </div>
+
+
+
     <!--    WELCOME TO LATEST CUSTOMER     -->
     <div class="row border-right border-info d-flex justify-content-around">
       <div class="col-lg-8 my-auto pl-5">
@@ -68,17 +79,17 @@
     </div>
     <!--    PLOTLY MAP OF WHERE PERT HAS CUSTOMERS -->
     <figure class="row border-left border-top border-info d-flex justify-content-around">
-      <div class="col-lg-3 my-auto">
+      <div class="col-lg-3 my-auto pl-5">
         <figcaption class="py-2 text-justify">We have expanded to the major collectives throughout the country.  However, <span class="font-weight-bold">Indiana</span> remains a holdout.  We should send a few sales reps into this state to find new partners.</figcaption>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-8 mx-auto">
         <div id="choroplethDiv" class="mx-auto"><!-- Plotly choropleth will be drawn here --></div>
       </div>
     </figure>
       
     <!--    PLOSTLY BAR CHART OF ACCOUNTS PER EMPLOYEE -->
     <figure class="row border-right border-top border-info d-flex justify-content-around">
-      <div class="col-lg-3 my-auto">
+      <div class="col-lg-3 my-auto pl-5">
         <figcaption class="py-2 text-justify">We always appreciate the diligence of our sales team.  Congratulations to <span class="font-weight-bold">{{=emp_with_most_customers[0]['first_name']}} {{=emp_with_most_customers[0]['last_name']}}</span>.  They are currently interacting the with most accounts.</figcaption>
       </div>
       <div class="col-lg-8 mx-auto">

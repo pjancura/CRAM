@@ -123,3 +123,47 @@ input[type="checkbox" i] {
 }
 
 
+/*    STYLES FOR INFO POPOVERS     */
+/* Style the links inside the sidenav */
+.side-popover button {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  background-color: #fc367f;
+}
+
+.side-popover button:hover {
+  left: 0;
+  outline: 0.2rem solid #fc367f82;
+}
+
+.top-popover button {
+  position: absolute; /* Position them relative to the browser window */
+  margin-left: 50%;
+  margin-right: 50%;
+  left: 0;
+  top: -3rem;
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  font-size: 1.25rem; 
+  color: white;
+  border-radius: 0 0 5px 5px;
+  background-color: #fc367f;
+}
+
+.top-popover button:hover {
+  top: 0;
+  outline: 0.2rem solid #fc367f82;
+}
+
+.side-popover button:focus, .top-popover button:focus {
+  outline: 0.2rem solid #fc367f82;
+}
+
+
