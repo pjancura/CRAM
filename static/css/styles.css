@@ -39,7 +39,7 @@ a.btn.btn-default.btn-secondary, input.btn.btn-default.btn-secondary, input.btn-
 
 /*    .content-container IS THE DIV FOR ALL OF THE VIEWS     */
 .content-container {
-  min-height: 71.05vh;
+  min-height: 73vh;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
