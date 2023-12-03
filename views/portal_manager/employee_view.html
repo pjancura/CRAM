@@ -64,7 +64,7 @@
   </tr>
   <tbody>
     {{for x in notes_on_customers:}} 
-    {{if x[3] >= today_date and x[6] != "complete":}} 
+    {{if x[6] != "complete":}} 
     {{if x[0] == emp_num:}} 
     {{if x[3] <= today_date:}}
     <tr class="lateEvent">
