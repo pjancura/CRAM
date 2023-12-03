@@ -7,13 +7,13 @@ import shutil
 
 # delete the old  storage.sqlite file
 try:
-    os.remove("CRAM/databases/storage.sqlite")
+    os.remove("/home/pert2/web2py/applications/CRAM/databases/storage.sqlite")
 except:
-    print(FileNotFoundError)
+    print(FileNotFoundError, "unable to delete old storage.sqlite")
 else:
 # put a clean copy of the database into the databases folder
     try:
-        shutil.copy2("storage.sqlite", "CRAM/databases")
+        shutil.copy2("storage.sqlite", "/home/pert2/web2py/applications/CRAM/databases")
     except:
         print("unable to copy / paste")
     else:
