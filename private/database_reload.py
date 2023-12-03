@@ -13,7 +13,7 @@ except:
 else:
 # put a clean copy of the database into the databases folder
     try:
-        shutil.copy2("storage.sqlite", "/home/pert2/web2py/applications/CRAM/databases")
+        shutil.copy2("/home/pert2/web2py/applications/CRAM/private/storage.sqlite", "/home/pert2/web2py/applications/CRAM/databases")
     except:
         print("unable to copy / paste")
     else:
