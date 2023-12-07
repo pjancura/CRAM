@@ -25,7 +25,7 @@ Tasks for employees include:
 - The CEO can see everything and how the data relates to all of their employees, they can also update the food catalog
 - The Database Admin has access to all of the information, and they are the only ones that can modify User accounts
 
-FUNCTIONALITY TO ADD:
+FUNCTIONALITY TO ADD (post Cleveland Codes):
 - Order management system (incoming and outgoing)
 - ~~Individual view pages for the catalog~~
 - ~~more sorting options / search for the catalog~~
