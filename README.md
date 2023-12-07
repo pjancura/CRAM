@@ -1,5 +1,5 @@
 # CRAM
-This project was deployed in October 2023 at the following web address.  
+This project was deployed in October 2023 at the following web address by Paul Jancura.  
 
 ***http://pert2.pythonanywhere.com***
 
@@ -7,14 +7,15 @@ DEPLOYED TO:
 https://www.pythonanywhere.com/ using a free account
 
 OUTLINE:
-This is the version of my capstone project.  
-It was built for the Cleveland Codes Software Developer's Academy at Cuyahoga Community College.
+This is a version of my group's capstone project for the Cleveland Codes Software Developer's Academy
+at Cuyahoga Community College. This new version contains updates to the theme (page layout and color 
+palette), product page filters, product page pagination, employee home view, and image formats.  
 
 The project utilizes web2py (http://www.web2py.com/), an MVC framework.  
 
 It is a CRM for a food distribution company.  Through role-based access control, 
 employees are given access to only parts of the system that they need.  I have built 
-out a catalog page that with filters that can be applied.  The filters make server calls to return
+out a product page with filters that can be applied in various combinations.  The filters make server calls and return
 paginated results.
 
 
